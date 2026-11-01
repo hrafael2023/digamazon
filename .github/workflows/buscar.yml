@@ -1,0 +1,54 @@
+# Busca os vinis na Amazon (todo dia às 13h e pelo botão da página),
+# guarda dados.json no repositório e publica a página no GitHub Pages.
+# Mudanças em index.html só republicam a página, sem buscar.
+name: Buscar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 16 * * *"
+  push:
+    branches: [main]
+    paths: [index.html]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: buscar
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Buscar na Amazon
+        if: github.event_name != 'push'
+        run: python3 buscar.py
+
+      - name: Guardar os dados
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "digamazon"
+          git config user.email "digamazon@users.noreply.github.com"
+          git add dados.json vistos.json
+          git diff --cached --quiet || git commit -m "Atualiza os discos ($(TZ=America/Sao_Paulo date '+%d/%m %H:%M'))"
+          git push
+
+      - name: Montar a página
+        run: mkdir _site && cp index.html dados.json _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: publicar
+        uses: actions/deploy-pages@v4
