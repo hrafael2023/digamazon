@@ -1,6 +1,6 @@
 # Busca os vinis na Amazon (todo dia às 13h e pelo botão da página),
 # guarda dados.json no repositório e publica a página no GitHub Pages.
-# Mudanças em index.html só republicam a página, sem buscar.
+# Mudanças no código também rodam a busca e republicam a página.
 name: Buscar
 
 on:
@@ -9,7 +9,7 @@ on:
     - cron: "0 16 * * *"
   push:
     branches: [main]
-    paths: [index.html]
+    paths: [index.html, buscar.py, .github/workflows/buscar.yml]
 
 permissions:
   contents: write
@@ -31,11 +31,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Buscar na Amazon
-        if: github.event_name != 'push'
         run: python3 buscar.py
 
       - name: Guardar os dados
-        if: github.event_name != 'push'
         run: |
           git config user.name "digamazon"
           git config user.email "digamazon@users.noreply.github.com"
