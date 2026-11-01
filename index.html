@@ -125,11 +125,11 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
 
 <dialog id="dlg-token">
   <h3>Liberar a pesquisa por este celular</h3>
-  <p class="nota" style="margin:0">A pesquisa roda no GitHub. Para o botão poder disparar, crie uma chave uma única vez:</p>
+  <p class="nota" style="margin:0">O botão deixa um pedido no GitHub, que o Mac atende. Para isso, crie uma chave uma única vez:</p>
   <ol>
     <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
     <li>Em <b>Repository access</b>, escolha <b>Only select repositories</b> → <b>digamazon</b></li>
-    <li>Em <b>Permissions</b>, dê <b>Actions: Read and write</b></li>
+    <li>Em <b>Permissions</b>, dê <b>Actions: Read and write</b> e <b>Contents: Read-only</b></li>
     <li>Gere e cole a chave aqui</li>
   </ol>
   <input id="token" type="password" placeholder="github_pat_…" autocomplete="off">
@@ -142,7 +142,8 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
 
 <script>
 const REPO = "hrafael2023/digamazon";
-const WORKFLOW = "buscar.yml";
+const WORKFLOW = "pedido.yml";
+const PEDIDO = "digamazon.pedido";
 const CHAVE = "digamazon.token";
 const API = "https://api.github.com/repos/" + REPO;
 const $ = id => document.getElementById(id);
@@ -229,44 +230,47 @@ async function gh(caminho, opcoes = {}) {
 
 const espera = ms => new Promise(r => setTimeout(r, ms));
 
-async function ultimaExecucao() {
-  const j = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1&event=workflow_dispatch`);
-  return j.workflow_runs[0];
+async function arquivo(nome) {
+  // Lê direto do repositório (o Pages leva um minuto para republicar).
+  const r = await gh(`/contents/${nome}?ref=main&t=${Date.now()}`, { headers: { "Accept": "application/vnd.github.raw+json" } });
+  return r;
 }
 
 async function acompanhar(desde) {
-  // Espera a execução disparada aparecer e terminar (a busca leva uns 5 minutos).
+  // O pedido vira uma execução do workflow; o Mac a atende e conta o andamento em estado.json.
   let run, inicio = Date.now();
   for (;;) {
-    run = await ultimaExecucao();
+    run = (await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1&event=workflow_dispatch`)).workflow_runs[0];
     if (run && new Date(run.created_at) >= desde) break;
-    if (Date.now() - inicio > 60000) throw new Error("a pesquisa não começou; tente de novo");
+    if (Date.now() - inicio > 60000) throw new Error("o pedido não chegou ao GitHub; tente de novo");
     await espera(4000);
   }
-  guardado("digamazon.run", String(run.id));
+  guardado(PEDIDO, String(run.id));
   for (;;) {
-    if (run.status === "completed") break;
+    const e = await arquivo("estado.json");
     const min = Math.floor((Date.now() - new Date(run.created_at)) / 60000);
-    status(`Pesquisando na Amazon… ${min} min (leva uns 5). Pode fechar a página e voltar depois.`);
+    if (e.pedido >= run.id && e.estado === "ok") break;
+    if (e.pedido >= run.id && e.estado === "erro") { guardado(PEDIDO, null); throw new Error("A pesquisa falhou no Mac: " + e.mensagem); }
+    if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 5). Pode fechar a página e voltar depois.`);
+    else status(min < 3
+      ? "Pedido enviado. Esperando o Mac pegar (ele confere a cada 2 minutos)…"
+      : `Esperando o Mac há ${min} min. Ele precisa estar ligado e acordado; o pedido fica guardado até lá.`);
     await espera(15000);
-    run = await gh(`/actions/runs/${run.id}`);
   }
-  guardado("digamazon.run", null);
-  if (run.conclusion !== "success") throw new Error(`a pesquisa falhou (${run.conclusion}). Detalhes: ${run.html_url}`);
+  guardado(PEDIDO, null);
+  dados = await arquivo("dados.json");
+  mostrar();
+  status(dados.novos.length ? `Pronto: ${dados.novos.length} discos novos.` : "Pronto: nenhum disco novo desta vez.");
 }
 
 async function pesquisar() {
   if (!guardado(CHAVE)) { $("dlg-token").showModal(); return; }
-  rodando(true, "Iniciando");
+  rodando(true, "Enviando");
   try {
     const desde = new Date(Date.now() - 5000);
     await gh(`/actions/workflows/${WORKFLOW}/dispatches`, { method: "POST", body: JSON.stringify({ ref: "main" }) });
     rodando(true);
     await acompanhar(desde);
-    status("Pesquisa concluída. Atualizando a lista…");
-    await espera(3000);
-    await carregar();
-    status(dados.novos.length ? `${dados.novos.length} discos novos.` : "Nenhum disco novo desta vez.");
   } catch (e) {
     if (e.chave) { guardado(CHAVE, null); status("O GitHub recusou a chave. Toque em Pesquisar para cadastrar outra.", true); }
     else status(e.message, true);
@@ -274,15 +278,13 @@ async function pesquisar() {
 }
 
 async function retomar() {
-  // Se a página foi fechada no meio de uma pesquisa, continua acompanhando.
-  if (!guardado(CHAVE) || !guardado("digamazon.run")) return;
+  // Se a página foi fechada com um pedido em andamento, continua acompanhando.
+  const id = guardado(PEDIDO);
+  if (!guardado(CHAVE) || !id) return;
+  rodando(true);
   try {
-    const run = await gh(`/actions/runs/${guardado("digamazon.run")}`);
-    if (run.status === "completed") { guardado("digamazon.run", null); return; }
-    rodando(true);
+    const run = await gh(`/actions/runs/${id}`);
     await acompanhar(new Date(run.created_at));
-    await carregar();
-    status(dados.novos.length ? `${dados.novos.length} discos novos.` : "Nenhum disco novo desta vez.");
   } catch (e) { status(e.message, true); }
   finally { rodando(false); }
 }

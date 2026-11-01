@@ -1,0 +1,34 @@
+# Publica a página no GitHub Pages quando ela ou a lista de discos muda.
+name: Publicar
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [index.html, dados.json]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Montar a página
+        run: mkdir _site && cp index.html dados.json _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: publicar
+        uses: actions/deploy-pages@v4

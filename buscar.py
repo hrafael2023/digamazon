@@ -135,18 +135,21 @@ def coletar():
     return achados
 
 
-def main():
+class Falhou(Exception):
+    pass
+
+
+def buscar():
+    """Faz a busca e grava os arquivos; devolve (discos, novos) ou levanta Falhou."""
     vistos = json.loads(VISTOS.read_text()) if VISTOS.exists() else {}
     primeira = not vistos
 
     try:
         achados = coletar()
     except Exception as e:
-        avisar(f"busca interrompida: {e}", "error")
-        sys.exit(1)
+        raise Falhou(f"busca interrompida: {e}") from e
     if len(achados) < 50:
-        avisar(f"só {len(achados)} discos: provavelmente bloqueado, mantendo os dados antigos", "error")
-        sys.exit(1)
+        raise Falhou(f"só {len(achados)} discos: provavelmente bloqueado, mantendo os dados antigos")
 
     agora = dt.datetime.now(FUSO).isoformat(timespec="minutes")
     for asin in achados:
@@ -162,7 +165,17 @@ def main():
         "novos": [d["asin"] for d in novos],
         "discos": discos,
     }, ensure_ascii=False, indent=0) + "\n")
-    avisar(f"{len(discos)} discos abaixo de R$ {LIMITE:.0f}, {len(novos)} novos", "notice")
+    return len(discos), len(novos)
+
+
+def main():
+    try:
+        total, novos = buscar()
+    except Falhou as e:
+        avisar(str(e), "error")
+        sys.exit(1)
+    avisar(f"{total} discos abaixo de R$ {LIMITE:.0f}, {novos} novos", "notice")
+
 
 if __name__ == "__main__":
     main()
