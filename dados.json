@@ -1,7 +1,7 @@
 {
-"atualizado": "2026-11-01T20:08-03:00",
+"atualizado": "2026-11-01T20:32-03:00",
 "limite": 150.0,
-"primeira": true,
+"primeira": false,
 "novos": [],
 "discos": [
 {
@@ -6211,14 +6211,6 @@
 "ano": "2024",
 "preco": 133.02,
 "foto": "https://m.media-amazon.com/images/I/71aLELnhFoL._AC_UY218_.jpg"
-},
-{
-"asin": "B07NR8BR3K",
-"titulo": "Best Of Hannah Montana - Exclusive Limited Edition Purple Vinyl LP",
-"artista": "Hannah Montana",
-"ano": "",
-"preco": 133.04,
-"foto": "https://m.media-amazon.com/images/I/81O0TrZ0ftL._AC_UY218_.jpg"
 },
 {
 "asin": "B0CL816MTQ",

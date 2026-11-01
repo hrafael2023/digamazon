@@ -1,6 +1,6 @@
 {
  "pedido": 1,
- "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-01T20:28:28-03:00"
+ "estado": "ok",
+ "mensagem": "1133 discos, 0 novos",
+ "quando": "2026-11-01T20:32:07-03:00"
 }
