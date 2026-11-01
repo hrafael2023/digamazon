@@ -14,6 +14,7 @@ import datetime as dt
 import gzip
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -42,6 +43,11 @@ class Bloqueado(Exception):
     pass
 
 
+def avisar(msg, nivel="warning"):
+    # No GitHub Actions, vira uma anotação visível na página da execução.
+    print(f"::{nivel}::{msg}" if os.environ.get("GITHUB_ACTIONS") else msg, file=sys.stderr)
+
+
 def baixar(pagina):
     pedido = urllib.request.Request(URL.format(pagina=pagina), headers=CABECALHOS)
     with urllib.request.urlopen(pedido, timeout=30) as r:
@@ -64,7 +70,7 @@ def baixar_com_paciencia(pagina, tentativas=4):
             if n == tentativas - 1:
                 raise
             espera = 10 * (n + 1)
-            print(f"  {e}; tentando de novo em {espera}s", file=sys.stderr)
+            avisar(f"{e}; tentando de novo em {espera}s")
             time.sleep(espera)
 
 
@@ -110,7 +116,10 @@ def coletar():
     achados = {}
     acima = 0
     for pagina in range(1, MAX_PAGINAS + 1):
-        discos = extrair(baixar_com_paciencia(pagina))
+        try:
+            discos = extrair(baixar_com_paciencia(pagina))
+        except Exception as e:
+            raise RuntimeError(f"{e} (depois de {len(achados)} discos)") from e
         if not discos:
             break
         for d in discos:
@@ -133,10 +142,10 @@ def main():
     try:
         achados = coletar()
     except Exception as e:
-        print(f"busca interrompida: {e}", file=sys.stderr)
+        avisar(f"busca interrompida: {e}", "error")
         sys.exit(1)
     if len(achados) < 50:
-        print(f"só {len(achados)} discos: provavelmente bloqueado, mantendo os dados antigos", file=sys.stderr)
+        avisar(f"só {len(achados)} discos: provavelmente bloqueado, mantendo os dados antigos", "error")
         sys.exit(1)
 
     agora = dt.datetime.now(FUSO).isoformat(timespec="minutes")
@@ -153,7 +162,7 @@ def main():
         "novos": [d["asin"] for d in novos],
         "discos": discos,
     }, ensure_ascii=False, indent=0) + "\n")
-    print(f"{len(discos)} discos abaixo de R$ {LIMITE:.0f}, {len(novos)} novos")
+    avisar(f"{len(discos)} discos abaixo de R$ {LIMITE:.0f}, {len(novos)} novos", "notice")
 
 if __name__ == "__main__":
     main()
