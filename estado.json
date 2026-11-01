@@ -1,6 +1,6 @@
 {
- "pedido": 0,
- "estado": "ok",
+ "pedido": 1,
+ "estado": "buscando",
  "mensagem": "",
- "quando": ""
+ "quando": "2026-11-01T20:28:28-03:00"
 }
