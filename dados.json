@@ -1,8 +1,10 @@
 {
-"atualizado": "2026-11-02T10:32-03:00",
+"atualizado": "2026-11-02T12:58-03:00",
 "limite": 150.0,
 "primeira": false,
-"novos": [],
+"novos": [
+"B0C6XF6M94"
+],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -5981,6 +5983,14 @@
 "foto": "https://m.media-amazon.com/images/I/718ynbrKdFL._AC_UY218_.jpg"
 },
 {
+"asin": "B0BZWNJDC3",
+"titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
+"artista": "Joy Division",
+"ano": "2023",
+"preco": 131.59,
+"foto": "https://m.media-amazon.com/images/I/71Uy2RRjDRL._AC_UY218_.jpg"
+},
+{
 "asin": "B0BVRLX9Q6",
 "titulo": "WILDERNESS WITHIN YOU",
 "artista": "",
@@ -5995,14 +6005,6 @@
 "ano": "2025",
 "preco": 131.62,
 "foto": "https://m.media-amazon.com/images/I/91pMHbeOKRL._AC_UY218_.jpg"
-},
-{
-"asin": "B0BZWNJDC3",
-"titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
-"artista": "Joy Division",
-"ano": "2023",
-"preco": 131.63,
-"foto": "https://m.media-amazon.com/images/I/71Uy2RRjDRL._AC_UY218_.jpg"
 },
 {
 "asin": "B0F19D3KS4",
@@ -8003,6 +8005,14 @@
 "ano": "2012",
 "preco": 143.87,
 "foto": "https://m.media-amazon.com/images/I/51BmZHzhQOL._AC_UY218_.jpg"
+},
+{
+"asin": "B0C6XF6M94",
+"titulo": "Lavette",
+"artista": "",
+"ano": "2025",
+"preco": 143.91,
+"foto": "https://m.media-amazon.com/images/I/61Ocw8gzptL._AC_UY218_.jpg"
 },
 {
 "asin": "B0DSC711C4",
