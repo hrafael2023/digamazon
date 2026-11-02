@@ -23,7 +23,7 @@ from pathlib import Path
 
 PASTA = Path(__file__).resolve().parent
 NOTAS = PASTA / "notas.json"
-DIG = 85  # nota acima disto ganha o selo "Dig!"
+DIG = 85  # nota a partir desta ganha o selo "Dig!"
 REVER_DEPOIS = dt.timedelta(days=30)
 BUSCA = "https://backend.metacritic.com/finder/metacritic/search/{q}/web?offset=0&limit=10&mcoTypeId=31"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -135,8 +135,8 @@ def main():
     achados = atualizar(dados["discos"])
     buscar.anotar(dados["discos"], achados)
     buscar.DADOS.write_text(json.dumps(dados, ensure_ascii=False, indent=0) + "\n")
-    dig = sum(1 for d in dados["discos"] if d.get("nota", 0) > DIG)
-    print(f"{len(achados)} discos com nota, {dig} acima de {DIG}")
+    dig = sum(1 for d in dados["discos"] if d.get("nota", 0) >= DIG)
+    print(f"{len(achados)} discos com nota, {dig} de {DIG} ou mais")
 
 
 if __name__ == "__main__":
