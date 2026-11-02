@@ -22,6 +22,8 @@ import time
 import urllib.request
 from pathlib import Path
 
+import notas
+
 PASTA = Path(__file__).resolve().parent
 DADOS = PASTA / "dados.json"
 # ASIN → quando o disco apareceu pela primeira vez abaixo do limite.
@@ -149,6 +151,14 @@ def coletar():
     return achados
 
 
+def anotar(discos, achados):
+    """Junta a nota do Metacritic a cada disco que tiver uma."""
+    for d in discos:
+        if d["asin"] in achados:
+            d["nota"] = achados[d["asin"]]["nota"]
+            d["nota_url"] = achados[d["asin"]]["url"]
+
+
 class Falhou(Exception):
     pass
 
@@ -170,6 +180,7 @@ def buscar():
         vistos.setdefault(asin, agora)
     discos = sorted(achados.values(), key=lambda d: d["preco"])
     novos = [] if primeira else [d for d in discos if vistos[d["asin"]] == agora]
+    anotar(discos, notas.atualizar(discos, mostrar=lambda m: avisar(m, "notice")))
 
     VISTOS.write_text(json.dumps(vistos, indent=0, sort_keys=True) + "\n")
     DADOS.write_text(json.dumps({

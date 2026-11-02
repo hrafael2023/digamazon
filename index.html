@@ -68,7 +68,9 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .separador::before, .separador::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
 .disco { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; }
-.disco .capa { aspect-ratio: 1; background: #fff; display: flex; align-items: center; justify-content: center; }
+.disco .capa { position: relative; aspect-ratio: 1; background: #fff; display: flex; align-items: center; justify-content: center; }
+/* Selo dos discos com crítica acima de 85 no Metacritic */
+.dig { position: absolute; top: 6px; right: 6px; background: var(--accent); color: #fff; font: 800 12px/1 var(--sans); font-stretch: 80%; letter-spacing: .02em; padding: 4px 7px; border-radius: 999px; box-shadow: 0 1px 3px rgb(0 0 0 / .25); }
 .disco img { width: 100%; height: 100%; object-fit: contain; }
 .disco .info { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
 .disco .titulo { font-weight: 600; font-size: 14px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
@@ -125,7 +127,7 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
   <div class="grade" id="todos"></div>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.0</footer>
+<footer class="rodape">DigAmazon · versão 1.1</footer>
 
 <dialog id="dlg-token">
   <h3>Liberar a pesquisa por este celular</h3>
@@ -151,6 +153,7 @@ const PEDIDO = "digamazon.pedido";
 const CHAVE = "digamazon.token";
 const API = "https://api.github.com/repos/" + REPO;
 const $ = id => document.getElementById(id);
+const DIG = 85;  // nota do Metacritic acima disto ganha o selo "Dig!"
 const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 let dados = null;
 
@@ -172,6 +175,11 @@ function card(d, novo) {
   a.target = "_blank"; a.rel = "noopener";
   const capa = document.createElement("div"); capa.className = "capa";
   if (d.foto) { const img = document.createElement("img"); img.src = d.foto.replace(/\._AC_[^.]*_\./, "._AC_SL400_."); img.alt = ""; img.loading = "lazy"; capa.append(img); }
+  if (d.nota > DIG) {
+    const selo = document.createElement("span"); selo.className = "dig"; selo.textContent = "Dig!";
+    selo.title = `Metacritic ${d.nota}`; selo.setAttribute("aria-label", `Dig! Nota ${d.nota} no Metacritic`);
+    capa.append(selo);
+  }
   const info = document.createElement("div"); info.className = "info";
   const t = document.createElement("div"); t.className = "titulo"; t.textContent = d.titulo;
   const ar = document.createElement("div"); ar.className = "artista"; ar.textContent = [d.artista, d.ano].filter(Boolean).join(" · ");

@@ -10,7 +10,9 @@ A Amazon recusa buscas vindas dos servidores do GitHub, então a busca roda no M
    `buscar.py` e envia `dados.json` (lista completa e discos novos na faixa),
    `vistos.json` (quando cada disco apareceu pela primeira vez) e `estado.json`
    (andamento, que a página acompanha).
-3. O workflow `publicar.yml` republica a página quando `dados.json` ou `index.html` mudam.
+3. Para cada disco novo, `notas.py` procura a nota da crítica no Metacritic (guardada em
+   `notas.json`); acima de 85, a capa ganha o selo **Dig!**.
+4. O workflow `publicar.yml` republica a página quando `dados.json` ou `index.html` mudam.
 
 Para o Mac começar a conferir os pedidos: `./instalar-agendamento.sh`
 (para parar: `./instalar-agendamento.sh --remover`). O Mac precisa estar ligado e acordado.

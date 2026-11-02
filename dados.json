@@ -422,7 +422,9 @@
 "artista": "M. Ward",
 "ano": "2025",
 "preco": 83.09,
-"foto": "https://m.media-amazon.com/images/I/71NDzMFWGoL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71NDzMFWGoL._AC_UY218_.jpg",
+"nota": 75,
+"nota_url": "https://www.metacritic.com/music/more-rain/m-ward/critic-reviews/"
 },
 {
 "asin": "B0CHZ21XHM",
@@ -486,7 +488,9 @@
 "artista": "Say Anything",
 "ano": "",
 "preco": 85.0,
-"foto": "https://m.media-amazon.com/images/I/91a83pfym-L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91a83pfym-L._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/oliver-appropriate/say-anything/critic-reviews/"
 },
 {
 "asin": "B07MBHQZ51",
@@ -766,7 +770,9 @@
 "artista": "Jeffrey Martin",
 "ano": "2025",
 "preco": 89.47,
-"foto": "https://m.media-amazon.com/images/I/91p5Ma5Y-VL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91p5Ma5Y-VL._AC_UY218_.jpg",
+"nota": 88,
+"nota_url": "https://www.metacritic.com/music/thank-god-we-left-the-garden/jeffrey-martin/critic-reviews/"
 },
 {
 "asin": "B009GGWVWO",
@@ -814,7 +820,9 @@
 "artista": "Matraca Berg",
 "ano": "2025",
 "preco": 89.99,
-"foto": "https://m.media-amazon.com/images/I/71sZvboTsSL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71sZvboTsSL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/the-dreaming-fields/matraca-berg/critic-reviews/"
 },
 {
 "asin": "B01MT8IWME",
@@ -958,7 +966,9 @@
 "artista": "Sean Rowe",
 "ano": "2025",
 "preco": 92.13,
-"foto": "https://m.media-amazon.com/images/I/71LcLAfZbKL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71LcLAfZbKL._AC_UY218_.jpg",
+"nota": 70,
+"nota_url": "https://www.metacritic.com/music/the-salesman-and-the-shark/sean-rowe/critic-reviews/"
 },
 {
 "asin": "B0BGMVWHR5",
@@ -1038,7 +1048,9 @@
 "artista": "O.",
 "ano": "2024",
 "preco": 93.44,
-"foto": "https://m.media-amazon.com/images/I/81O3grxj+yL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81O3grxj+yL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/weirdos/o/critic-reviews/"
 },
 {
 "asin": "B01M2CA6KL",
@@ -1222,7 +1234,9 @@
 "artista": "Diet Cig",
 "ano": "2025",
 "preco": 95.5,
-"foto": "https://m.media-amazon.com/images/I/A1sH0fRq3SL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/A1sH0fRq3SL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/swear-im-good-at-this/diet-cig/critic-reviews/"
 },
 {
 "asin": "B0BW2BSXXS",
@@ -1414,7 +1428,9 @@
 "artista": "Beverly Glenn-Copeland",
 "ano": "2025",
 "preco": 97.71,
-"foto": "https://m.media-amazon.com/images/I/5194PWgu+JL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/5194PWgu+JL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/the-ones-ahead/beverly-glenn-copeland/critic-reviews/"
 },
 {
 "asin": "B008Y5OXEM",
@@ -1758,7 +1774,9 @@
 "artista": "Joan Shelley",
 "ano": "2025",
 "preco": 100.95,
-"foto": "https://m.media-amazon.com/images/I/A1NaFe8220L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/A1NaFe8220L._AC_UY218_.jpg",
+"nota": 85,
+"nota_url": "https://www.metacritic.com/music/the-spur/joan-shelley/critic-reviews/"
 },
 {
 "asin": "B0CLF8SZ5V",
@@ -1814,7 +1832,9 @@
 "artista": "Hiss Golden Messenger",
 "ano": "2021",
 "preco": 101.25,
-"foto": "https://m.media-amazon.com/images/I/81JK9Ff5zIL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81JK9Ff5zIL._AC_UY218_.jpg",
+"nota": 80,
+"nota_url": "https://www.metacritic.com/music/quietly-blowing-it/hiss-golden-messenger/critic-reviews/"
 },
 {
 "asin": "B0BM3YFYM3",
@@ -1862,7 +1882,9 @@
 "artista": "Nina Nesbitt",
 "ano": "2019",
 "preco": 102.06,
-"foto": "https://m.media-amazon.com/images/I/81KiOVw+yJL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81KiOVw+yJL._AC_UY218_.jpg",
+"nota": 74,
+"nota_url": "https://www.metacritic.com/music/the-sun-will-come-up-the-seasons-will-change/nina-nesbitt/critic-reviews/"
 },
 {
 "asin": "B0CKWN5FYW",
@@ -1886,7 +1908,9 @@
 "artista": "Lip Critic",
 "ano": "2024",
 "preco": 102.25,
-"foto": "https://m.media-amazon.com/images/I/51oeOOQh9kL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/51oeOOQh9kL._AC_UY218_.jpg",
+"nota": 84,
+"nota_url": "https://www.metacritic.com/music/hex-dealer/lip-critic/critic-reviews/"
 },
 {
 "asin": "B01HXGXHDU",
@@ -2086,7 +2110,9 @@
 "artista": "Moonface",
 "ano": "2013",
 "preco": 103.45,
-"foto": "https://m.media-amazon.com/images/I/91sAoK13HlL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91sAoK13HlL._AC_UY218_.jpg",
+"nota": 80,
+"nota_url": "https://www.metacritic.com/music/julia-with-blue-jeans-on/moonface/critic-reviews/"
 },
 {
 "asin": "B08FS9NN9X",
@@ -2326,7 +2352,9 @@
 "artista": "Frog Eyes",
 "ano": "2025",
 "preco": 105.45,
-"foto": "https://m.media-amazon.com/images/I/417GFHNJJEL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/417GFHNJJEL._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/pickpockets-locket/frog-eyes/critic-reviews/"
 },
 {
 "asin": "B0CKJ53PQB",
@@ -2390,7 +2418,9 @@
 "artista": "Margaret Glaspy",
 "ano": "2020",
 "preco": 105.95,
-"foto": "https://m.media-amazon.com/images/I/618JN9P6lHL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/618JN9P6lHL._AC_UY218_.jpg",
+"nota": 72,
+"nota_url": "https://www.metacritic.com/music/devotion/margaret-glaspy/critic-reviews/"
 },
 {
 "asin": "B07GGPP9CJ",
@@ -2462,7 +2492,9 @@
 "artista": "Lucero",
 "ano": "2023",
 "preco": 106.26,
-"foto": "https://m.media-amazon.com/images/I/91MU0POx+OL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91MU0POx+OL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/shouldve-learned-by-now/lucero/critic-reviews/"
 },
 {
 "asin": "B0CCV3ZYNR",
@@ -2702,7 +2734,9 @@
 "artista": "Katy J Pearson",
 "ano": "2024",
 "preco": 108.21,
-"foto": "https://m.media-amazon.com/images/I/71V4yRV9diL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71V4yRV9diL._AC_UY218_.jpg",
+"nota": 83,
+"nota_url": "https://www.metacritic.com/music/someday-now/katy-j-pearson/critic-reviews/"
 },
 {
 "asin": "B0C43X631X",
@@ -2734,7 +2768,9 @@
 "artista": "Blitzen Trapper",
 "ano": "2008",
 "preco": 108.36,
-"foto": "https://m.media-amazon.com/images/I/71XatiFVCUL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71XatiFVCUL._AC_UY218_.jpg",
+"nota": 80,
+"nota_url": "https://www.metacritic.com/music/furr/blitzen-trapper/critic-reviews/"
 },
 {
 "asin": "B07H5VVL5X",
@@ -2806,7 +2842,9 @@
 "artista": "Lydia Loveless",
 "ano": "2025",
 "preco": 109.16,
-"foto": "https://m.media-amazon.com/images/I/41npsidPdNL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/41npsidPdNL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/somewhere-else/lydia-loveless/critic-reviews/"
 },
 {
 "asin": "B001NJY50S",
@@ -2886,7 +2924,9 @@
 "artista": "Vanishing Twin",
 "ano": "2023",
 "preco": 109.82,
-"foto": "https://m.media-amazon.com/images/I/81xPmFtV0rL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81xPmFtV0rL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/afternoon-x/vanishing-twin/critic-reviews/"
 },
 {
 "asin": "B0CK4LR883",
@@ -3054,7 +3094,9 @@
 "artista": "Third Eye Blind",
 "ano": "2025",
 "preco": 111.35,
-"foto": "https://m.media-amazon.com/images/I/51ESuOBcBCS._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/51ESuOBcBCS._AC_UY218_.jpg",
+"nota": 60,
+"nota_url": "https://www.metacritic.com/music/dopamine/third-eye-blind/critic-reviews/"
 },
 {
 "asin": "B09BGFB6FS",
@@ -3062,7 +3104,9 @@
 "artista": "Buffalo Nichols",
 "ano": "2025",
 "preco": 111.46,
-"foto": "https://m.media-amazon.com/images/I/81ksnytrujL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81ksnytrujL._AC_UY218_.jpg",
+"nota": 90,
+"nota_url": "https://www.metacritic.com/music/buffalo-nichols/buffalo-nichols/critic-reviews/"
 },
 {
 "asin": "B0C9JQR842",
@@ -3174,7 +3218,9 @@
 "artista": "Piroshka",
 "ano": "2019",
 "preco": 111.92,
-"foto": "https://m.media-amazon.com/images/I/81WXK0utc5L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81WXK0utc5L._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/brickbat/piroshka/critic-reviews/"
 },
 {
 "asin": "B07X27V9PH",
@@ -3190,7 +3236,9 @@
 "artista": "AERIAL EAST",
 "ano": "2025",
 "preco": 112.06,
-"foto": "https://m.media-amazon.com/images/I/9185xANXJ2L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/9185xANXJ2L._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/try-harder/aerial-east/critic-reviews/"
 },
 {
 "asin": "B0988PPVXT",
@@ -3326,7 +3374,9 @@
 "artista": "Brent Cobb",
 "ano": "",
 "preco": 112.86,
-"foto": "https://m.media-amazon.com/images/I/81tutiesAYL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81tutiesAYL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/shine-on-rainy-day/brent-cobb/critic-reviews/"
 },
 {
 "asin": "B07QDW6NJQ",
@@ -3350,7 +3400,9 @@
 "artista": "",
 "ano": "",
 "preco": 113.13,
-"foto": "https://m.media-amazon.com/images/I/81TjP99cFeL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81TjP99cFeL._AC_UY218_.jpg",
+"nota": 72,
+"nota_url": "https://www.metacritic.com/music/luke-bell-2016/luke-bell/critic-reviews/"
 },
 {
 "asin": "B09L1F5H3D",
@@ -3494,7 +3546,9 @@
 "artista": "FERNANDEZ,J",
 "ano": "2025",
 "preco": 113.98,
-"foto": "https://m.media-amazon.com/images/I/71a0AAMtmqL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71a0AAMtmqL._AC_UY218_.jpg",
+"nota": 77,
+"nota_url": "https://www.metacritic.com/music/many-levels-of-laughter/j-fernandez/critic-reviews/"
 },
 {
 "asin": "B00WGX6CX8",
@@ -3534,7 +3588,9 @@
 "artista": "Girl Friday",
 "ano": "2025",
 "preco": 114.23,
-"foto": "https://m.media-amazon.com/images/I/71cXe9qMePL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71cXe9qMePL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/androgynous-mary/girl-friday/critic-reviews/"
 },
 {
 "asin": "B07X5FYMV2",
@@ -3654,7 +3710,9 @@
 "artista": "DIANE,ALELA",
 "ano": "2025",
 "preco": 115.27,
-"foto": "https://m.media-amazon.com/images/I/61vDhgg3BzL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61vDhgg3BzL._AC_UY218_.jpg",
+"nota": 75,
+"nota_url": "https://www.metacritic.com/music/to-be-still/alela-diane/critic-reviews/"
 },
 {
 "asin": "B0B53KZPDH",
@@ -3750,7 +3808,9 @@
 "artista": "Terry Allen",
 "ano": "2025",
 "preco": 116.24,
-"foto": "https://m.media-amazon.com/images/I/81uxZzM+kxL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81uxZzM+kxL._AC_UY218_.jpg",
+"nota": 84,
+"nota_url": "https://www.metacritic.com/music/juarez-reissue/terry-allen/critic-reviews/"
 },
 {
 "asin": "B07G1YKPSF",
@@ -3766,7 +3826,9 @@
 "artista": "Caitlin Rose",
 "ano": "2025",
 "preco": 116.34,
-"foto": "https://m.media-amazon.com/images/I/712GUBHr3wL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/712GUBHr3wL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/cazimi/caitlin-rose/critic-reviews/"
 },
 {
 "asin": "B0B53S2SQY",
@@ -3894,7 +3956,9 @@
 "artista": "Ray LaMontagne",
 "ano": "",
 "preco": 117.34,
-"foto": "https://m.media-amazon.com/images/I/61W3V4mQZYL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61W3V4mQZYL._AC_UY218_.jpg",
+"nota": 74,
+"nota_url": "https://www.metacritic.com/music/part-of-the-light/ray-lamontagne/critic-reviews/"
 },
 {
 "asin": "B07KLJDSL7",
@@ -3966,7 +4030,9 @@
 "artista": "Amanda Shires",
 "ano": "2018",
 "preco": 118.01,
-"foto": "https://m.media-amazon.com/images/I/71y5IAaQojL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71y5IAaQojL._AC_UY218_.jpg",
+"nota": 86,
+"nota_url": "https://www.metacritic.com/music/to-the-sunset/amanda-shires/critic-reviews/"
 },
 {
 "asin": "B0BTW99TBX",
@@ -4046,7 +4112,9 @@
 "artista": "Pip Blom",
 "ano": "2025",
 "preco": 118.33,
-"foto": "https://m.media-amazon.com/images/I/61ItVd9tSZL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61ItVd9tSZL._AC_UY218_.jpg",
+"nota": 78,
+"nota_url": "https://www.metacritic.com/music/boat/pip-blom/critic-reviews/"
 },
 {
 "asin": "B01MXSDUJB",
@@ -4286,7 +4354,9 @@
 "artista": "Punch Brothers",
 "ano": "2022",
 "preco": 119.97,
-"foto": "https://m.media-amazon.com/images/I/719Nh5gSKJL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/719Nh5gSKJL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/hell-on-church-street/punch-brothers/critic-reviews/"
 },
 {
 "asin": "B0CH32JSB2",
@@ -4334,7 +4404,9 @@
 "artista": "NNAMDI",
 "ano": "2025",
 "preco": 120.11,
-"foto": "https://m.media-amazon.com/images/I/61k1ub0d7hL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61k1ub0d7hL._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/please-have-a-seat/nnamd/critic-reviews/"
 },
 {
 "asin": "B09RLS9W28",
@@ -4518,7 +4590,9 @@
 "artista": "Sturgill Simpson",
 "ano": "2014",
 "preco": 121.62,
-"foto": "https://m.media-amazon.com/images/I/81CirDqTGgL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81CirDqTGgL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/metamodern-sounds-in-country-music/sturgill-simpson/critic-reviews/"
 },
 {
 "asin": "B07Z75QVBN",
@@ -4526,7 +4600,9 @@
 "artista": "Les Amazones D'Afrique",
 "ano": "2025",
 "preco": 121.68,
-"foto": "https://m.media-amazon.com/images/I/71CdVaAdDIL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71CdVaAdDIL._AC_UY218_.jpg",
+"nota": 85,
+"nota_url": "https://www.metacritic.com/music/amazones-power/les-amazones-dafrique/critic-reviews/"
 },
 {
 "asin": "B08L3NW8R5",
@@ -4542,7 +4618,9 @@
 "artista": "Bartees Strange",
 "ano": "2022",
 "preco": 121.93,
-"foto": "https://m.media-amazon.com/images/I/81KDeuLg5pL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81KDeuLg5pL._AC_UY218_.jpg",
+"nota": 83,
+"nota_url": "https://www.metacritic.com/music/farm-to-table/bartees-strange/critic-reviews/"
 },
 {
 "asin": "B0CHZ1H9KW",
@@ -4702,7 +4780,9 @@
 "artista": "Dave Okumu",
 "ano": "2021",
 "preco": 122.81,
-"foto": "https://m.media-amazon.com/images/I/81CuY6F+3uL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81CuY6F+3uL._AC_UY218_.jpg",
+"nota": 83,
+"nota_url": "https://www.metacritic.com/music/i-came-from-love/dave-okumu/critic-reviews/"
 },
 {
 "asin": "B0D5RS9FTZ",
@@ -4830,7 +4910,9 @@
 "artista": "Louis XIV",
 "ano": "2025",
 "preco": 123.52,
-"foto": "https://m.media-amazon.com/images/I/71lcfgA1XOL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71lcfgA1XOL._AC_UY218_.jpg",
+"nota": 37,
+"nota_url": "https://www.metacritic.com/music/slick-dogs-and-ponies/louis-xiv/critic-reviews/"
 },
 {
 "asin": "B004UHF5JA",
@@ -4838,7 +4920,9 @@
 "artista": "The Felice Brothers",
 "ano": "2011",
 "preco": 123.59,
-"foto": "https://m.media-amazon.com/images/I/71kJ91aq-ZL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71kJ91aq-ZL._AC_UY218_.jpg",
+"nota": 77,
+"nota_url": "https://www.metacritic.com/music/celebration-florida/the-felice-brothers/critic-reviews/"
 },
 {
 "asin": "B07CCFSCKY",
@@ -4902,7 +4986,9 @@
 "artista": "CRAMPTON,ELYSIA",
 "ano": "2025",
 "preco": 124.18,
-"foto": "https://m.media-amazon.com/images/I/A1jkOf262TL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/A1jkOf262TL._AC_UY218_.jpg",
+"nota": 87,
+"nota_url": "https://www.metacritic.com/music/orcorara-2010/elysia-crampton/critic-reviews/"
 },
 {
 "asin": "B0BSJFYBYG",
@@ -4926,7 +5012,9 @@
 "artista": "Tierra Whack",
 "ano": "2024",
 "preco": 124.26,
-"foto": "https://m.media-amazon.com/images/I/614NGfLaX5L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/614NGfLaX5L._AC_UY218_.jpg",
+"nota": 84,
+"nota_url": "https://www.metacritic.com/music/world-wide-whack/tierra-whack/critic-reviews/"
 },
 {
 "asin": "B094RSP7L3",
@@ -4950,7 +5038,9 @@
 "artista": "The Hold Steady",
 "ano": "2023",
 "preco": 124.51,
-"foto": "https://m.media-amazon.com/images/I/817lBUgbXoL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/817lBUgbXoL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/the-price-of-progress/the-hold-steady/critic-reviews/"
 },
 {
 "asin": "B0BRSN8YPY",
@@ -5022,7 +5112,9 @@
 "artista": "BUCKNER,RICHARD",
 "ano": "2025",
 "preco": 124.81,
-"foto": "https://m.media-amazon.com/images/I/71SXn+fEUgL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71SXn+fEUgL._AC_UY218_.jpg",
+"nota": 77,
+"nota_url": "https://www.metacritic.com/music/dents-and-shells/richard-buckner/critic-reviews/"
 },
 {
 "asin": "B0CHK1BX82",
@@ -5078,7 +5170,9 @@
 "artista": "Lanterns on the Lake",
 "ano": "2025",
 "preco": 125.22,
-"foto": "https://m.media-amazon.com/images/I/81+l75JNdqL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81+l75JNdqL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/spook-the-herd/lanterns-on-the-lake/critic-reviews/"
 },
 {
 "asin": "B0C63ZDMC6",
@@ -5246,7 +5340,9 @@
 "artista": "Titus Andronicus",
 "ano": "2025",
 "preco": 126.23,
-"foto": "https://m.media-amazon.com/images/I/81FATfue5oL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81FATfue5oL._AC_UY218_.jpg",
+"nota": 65,
+"nota_url": "https://www.metacritic.com/music/s+dium-rock-five-nights-at-the-opera-live/titus-andronicus/critic-reviews/"
 },
 {
 "asin": "B07G2D7QF1",
@@ -5334,7 +5430,9 @@
 "artista": "Whatever the Weather",
 "ano": "2025",
 "preco": 126.78,
-"foto": "https://m.media-amazon.com/images/I/819fBz7Vy2L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/819fBz7Vy2L._AC_UY218_.jpg",
+"nota": 83,
+"nota_url": "https://www.metacritic.com/music/whatever-the-weather/whatever-the-weather/critic-reviews/"
 },
 {
 "asin": "B0B7DKN345",
@@ -5406,7 +5504,9 @@
 "artista": "Weezer",
 "ano": "",
 "preco": 127.43,
-"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg",
+"nota": 58,
+"nota_url": "https://www.metacritic.com/music/weezer-teal-album/weezer/critic-reviews/"
 },
 {
 "asin": "B0CGKLGKGD",
@@ -5486,7 +5586,9 @@
 "artista": "Bruce Hornsby",
 "ano": "2019",
 "preco": 128.04,
-"foto": "https://m.media-amazon.com/images/I/91CFIOUQCZL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91CFIOUQCZL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/absolute-zero/bruce-hornsby/critic-reviews/"
 },
 {
 "asin": "B07MC26XFN",
@@ -5526,7 +5628,9 @@
 "artista": "Grouplove",
 "ano": "",
 "preco": 128.41,
-"foto": "https://m.media-amazon.com/images/I/91PpTIJA1PL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91PpTIJA1PL._AC_UY218_.jpg",
+"nota": 64,
+"nota_url": "https://www.metacritic.com/music/big-mess/grouplove/critic-reviews/"
 },
 {
 "asin": "B00U8GBGL8",
@@ -5734,7 +5838,9 @@
 "artista": "Toro Y Moi",
 "ano": "2024",
 "preco": 129.5,
-"foto": "https://m.media-amazon.com/images/I/91XC2N-I-1L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91XC2N-I-1L._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/hole-erth/toro-y-moi/critic-reviews/"
 },
 {
 "asin": "B0F1LVX76J",
@@ -5846,7 +5952,9 @@
 "artista": "Mykki Blanco",
 "ano": "2025",
 "preco": 130.37,
-"foto": "https://m.media-amazon.com/images/I/71U5336e+kL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71U5336e+kL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/stay-close-to-music/mykki-blanco/critic-reviews/"
 },
 {
 "asin": "B01LDIMHHG",
@@ -5862,7 +5970,9 @@
 "artista": "Wreckless Eric",
 "ano": "2023",
 "preco": 130.43,
-"foto": "https://m.media-amazon.com/images/I/71f7q6LNtXL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71f7q6LNtXL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/leisureland/wreckless-eric/critic-reviews/"
 },
 {
 "asin": "B075GGQ535",
@@ -5902,7 +6012,9 @@
 "artista": "Parker Millsap",
 "ano": "",
 "preco": 130.71,
-"foto": "https://m.media-amazon.com/images/I/71QH0csuR8L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71QH0csuR8L._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/other-arrangements/parker-millsap/critic-reviews/"
 },
 {
 "asin": "B099BWRRG3",
@@ -6222,7 +6334,9 @@
 "artista": "Michael Nau",
 "ano": "2025",
 "preco": 133.04,
-"foto": "https://m.media-amazon.com/images/I/81EVBvuklgL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81EVBvuklgL._AC_UY218_.jpg",
+"nota": 84,
+"nota_url": "https://www.metacritic.com/music/accompany/michael-nau/critic-reviews/"
 },
 {
 "asin": "B09YSXM779",
@@ -6374,7 +6488,9 @@
 "artista": "George Strait",
 "ano": "",
 "preco": 134.22,
-"foto": "https://m.media-amazon.com/images/I/91455sTW+fL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91455sTW+fL._AC_UY218_.jpg",
+"nota": 72,
+"nota_url": "https://www.metacritic.com/music/cold-beer-conversation/george-strait/critic-reviews/"
 },
 {
 "asin": "B0DN8HS9QL",
@@ -6526,7 +6642,9 @@
 "artista": "FUTURE",
 "ano": "2023",
 "preco": 135.06,
-"foto": "https://m.media-amazon.com/images/I/91v7mfpYEJL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91v7mfpYEJL._AC_UY218_.jpg",
+"nota": 68,
+"nota_url": "https://www.metacritic.com/music/pluto/future/critic-reviews/"
 },
 {
 "asin": "B09WYW2RXL",
@@ -6654,7 +6772,9 @@
 "artista": "Daniel Lanois",
 "ano": "2025",
 "preco": 135.93,
-"foto": "https://m.media-amazon.com/images/I/91c9UOT6gBL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91c9UOT6gBL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/heavy-sun/daniel-lanois/critic-reviews/"
 },
 {
 "asin": "B0D33VV33C",
@@ -6718,7 +6838,9 @@
 "artista": "Four Year Strong",
 "ano": "2025",
 "preco": 136.33,
-"foto": "https://m.media-amazon.com/images/I/91uVNB+331L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91uVNB+331L._AC_UY218_.jpg",
+"nota": 87,
+"nota_url": "https://www.metacritic.com/music/go-down-in-history-ep/four-year-strong/critic-reviews/"
 },
 {
 "asin": "B0CJJPZJCF",
@@ -6766,7 +6888,9 @@
 "artista": "Lael Neale",
 "ano": "2025",
 "preco": 136.75,
-"foto": "https://m.media-amazon.com/images/I/51VTOWr9UuL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/51VTOWr9UuL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/star-eaters-delight/lael-neale/critic-reviews/"
 },
 {
 "asin": "B07JJ64GHY",
@@ -6830,7 +6954,9 @@
 "artista": "Todd Rundgren",
 "ano": "2024",
 "preco": 137.12,
-"foto": "https://m.media-amazon.com/images/I/81ZSRodvgiL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81ZSRodvgiL._AC_UY218_.jpg",
+"nota": 57,
+"nota_url": "https://www.metacritic.com/music/global/todd-rundgren/critic-reviews/"
 },
 {
 "asin": "B0718ZF4XP",
@@ -6894,7 +7020,9 @@
 "artista": "Langhorne Slim",
 "ano": "2026",
 "preco": 137.31,
-"foto": "https://m.media-amazon.com/images/I/61nYKVHBg5L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61nYKVHBg5L._AC_UY218_.jpg",
+"nota": 84,
+"nota_url": "https://www.metacritic.com/music/strawberry-mansion/langhorne-slim/critic-reviews/"
 },
 {
 "asin": "B0D26S4B5H",
@@ -7022,7 +7150,9 @@
 "artista": "The Delines",
 "ano": "2025",
 "preco": 138.43,
-"foto": "https://m.media-amazon.com/images/I/81QwD+xRU3L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81QwD+xRU3L._AC_UY218_.jpg",
+"nota": 88,
+"nota_url": "https://www.metacritic.com/music/mr-luck-ms-doom/the-delines/critic-reviews/"
 },
 {
 "asin": "B0C6TW72FR",
@@ -7054,7 +7184,9 @@
 "artista": "Jay Som",
 "ano": "2025",
 "preco": 138.57,
-"foto": "https://m.media-amazon.com/images/I/71OwOSgoVfL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71OwOSgoVfL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/everybody-works/jay-som/critic-reviews/"
 },
 {
 "asin": "B09HFXGTJ9",
@@ -7142,7 +7274,9 @@
 "artista": "Josh Ritter",
 "ano": "2019",
 "preco": 138.97,
-"foto": "https://m.media-amazon.com/images/I/81MV70GqmAL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81MV70GqmAL._AC_UY218_.jpg",
+"nota": 75,
+"nota_url": "https://www.metacritic.com/music/fever-breaks/josh-ritter/critic-reviews/"
 },
 {
 "asin": "B0CF85GWJN",
@@ -7326,7 +7460,9 @@
 "artista": "Kelly Clarkson",
 "ano": "2013",
 "preco": 140.44,
-"foto": "https://m.media-amazon.com/images/I/819R+DuyAtL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/819R+DuyAtL._AC_UY218_.jpg",
+"nota": 73,
+"nota_url": "https://www.metacritic.com/music/wrapped-in-red/kelly-clarkson/critic-reviews/"
 },
 {
 "asin": "B01DL0TP6K",
@@ -7406,7 +7542,9 @@
 "artista": "Angelo De Augustine",
 "ano": "2025",
 "preco": 140.91,
-"foto": "https://m.media-amazon.com/images/I/81Ut0nBCxVL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81Ut0nBCxVL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/swim-inside-the-moon/angelo-de-augustine/critic-reviews/"
 },
 {
 "asin": "B08W7SQCQ4",
@@ -7422,7 +7560,9 @@
 "artista": "The Mavericks",
 "ano": "2019",
 "preco": 141.13,
-"foto": "https://m.media-amazon.com/images/I/81lk8H4nCAL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81lk8H4nCAL._AC_UY218_.jpg",
+"nota": 74,
+"nota_url": "https://www.metacritic.com/music/play-the-hits/the-mavericks/critic-reviews/"
 },
 {
 "asin": "B098MB11YC",
@@ -7446,7 +7586,9 @@
 "artista": "Gruff Rhys",
 "ano": "2021",
 "preco": 141.27,
-"foto": "https://m.media-amazon.com/images/I/811VuUaJRrS._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/811VuUaJRrS._AC_UY218_.jpg",
+"nota": 85,
+"nota_url": "https://www.metacritic.com/music/seeking-new-gods/gruff-rhys/critic-reviews/"
 },
 {
 "asin": "B0C5Y66M1M",
@@ -7502,7 +7644,9 @@
 "artista": "Mary Gauthier",
 "ano": "2025",
 "preco": 141.49,
-"foto": "https://m.media-amazon.com/images/I/71jpOMcY5rL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71jpOMcY5rL._AC_UY218_.jpg",
+"nota": 92,
+"nota_url": "https://www.metacritic.com/music/rifles-and-rosary-beads/mary-gauthier/critic-reviews/"
 },
 {
 "asin": "B0BY59YD47",
@@ -7718,7 +7862,9 @@
 "artista": "Grace Cummings",
 "ano": "2025",
 "preco": 142.25,
-"foto": "https://m.media-amazon.com/images/I/61nveFYq9gL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61nveFYq9gL._AC_UY218_.jpg",
+"nota": 68,
+"nota_url": "https://www.metacritic.com/music/ramona/grace-cummings/critic-reviews/"
 },
 {
 "asin": "B084Z5484H",
@@ -7838,7 +7984,9 @@
 "artista": "Eric Bachmann",
 "ano": "2025",
 "preco": 143.12,
-"foto": "https://m.media-amazon.com/images/I/617HeGOLJfL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/617HeGOLJfL._AC_UY218_.jpg",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/eric-bachmann/eric-bachmann/critic-reviews/"
 },
 {
 "asin": "B0CX9CCXQ6",
@@ -7926,7 +8074,9 @@
 "artista": "Sam Lee",
 "ano": "2020",
 "preco": 143.46,
-"foto": "https://m.media-amazon.com/images/I/916koBCPaOL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/916koBCPaOL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/old-wow/sam-lee/critic-reviews/"
 },
 {
 "asin": "B07WNLY2CW",
@@ -7942,7 +8092,9 @@
 "artista": "dvsn",
 "ano": "2021",
 "preco": 143.6,
-"foto": "https://m.media-amazon.com/images/I/81uibdSWy9L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/81uibdSWy9L._AC_UY218_.jpg",
+"nota": 78,
+"nota_url": "https://www.metacritic.com/music/a-muse-in-her-feelings/dvsn/critic-reviews/"
 },
 {
 "asin": "B07T845D6F",
@@ -7958,7 +8110,9 @@
 "artista": "The Long Ryders",
 "ano": "2025",
 "preco": 143.61,
-"foto": "https://m.media-amazon.com/images/I/A1uyGXBtb4L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/A1uyGXBtb4L._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/september-november/the-long-ryders/critic-reviews/"
 },
 {
 "asin": "B0B7F5MYNP",
@@ -8022,7 +8176,9 @@
 "artista": "Ingrid Michaelson",
 "ano": "2012",
 "preco": 143.82,
-"foto": "https://m.media-amazon.com/images/I/51BmZHzhQOL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/51BmZHzhQOL._AC_UY218_.jpg",
+"nota": 70,
+"nota_url": "https://www.metacritic.com/music/human-again/ingrid-michaelson/critic-reviews/"
 },
 {
 "asin": "B0C6XF6M94",
@@ -8070,7 +8226,9 @@
 "artista": "Tonight Alive",
 "ano": "2016",
 "preco": 144.03,
-"foto": "https://m.media-amazon.com/images/I/91-ghV9OyFL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91-ghV9OyFL._AC_UY218_.jpg",
+"nota": 67,
+"nota_url": "https://www.metacritic.com/music/limitless/tonight-alive/critic-reviews/"
 },
 {
 "asin": "B0BXNPGD5N",
@@ -8126,7 +8284,9 @@
 "artista": "John Smith",
 "ano": "2021",
 "preco": 144.28,
-"foto": "https://m.media-amazon.com/images/I/61CR0v9JEVS._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/61CR0v9JEVS._AC_UY218_.jpg",
+"nota": 69,
+"nota_url": "https://www.metacritic.com/music/fray/john-smith/critic-reviews/"
 },
 {
 "asin": "B007IX38LU",
@@ -8246,7 +8406,9 @@
 "artista": "Mount Moriah",
 "ano": "2025",
 "preco": 145.04,
-"foto": "https://m.media-amazon.com/images/I/71IFNUkHTZL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71IFNUkHTZL._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/mount-moriah/mount-moriah/critic-reviews/"
 },
 {
 "asin": "B0DHDBHXTK",
@@ -8278,7 +8440,9 @@
 "artista": "The Mountain Goats",
 "ano": "2021",
 "preco": 145.19,
-"foto": "https://m.media-amazon.com/images/I/91jC5FZlpML._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91jC5FZlpML._AC_UY218_.jpg",
+"nota": 80,
+"nota_url": "https://www.metacritic.com/music/dark-in-here/the-mountain-goats/critic-reviews/"
 },
 {
 "asin": "B09V8B5ZCC",
@@ -8318,7 +8482,9 @@
 "artista": "Loretta Lynn",
 "ano": "",
 "preco": 145.39,
-"foto": "https://m.media-amazon.com/images/I/911V++NeIaL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/911V++NeIaL._AC_UY218_.jpg",
+"nota": 84,
+"nota_url": "https://www.metacritic.com/music/full-circle/loretta-lynn/critic-reviews/"
 },
 {
 "asin": "B0DSF8Q9BW",
@@ -8406,7 +8572,9 @@
 "artista": "Sea Power",
 "ano": "2022",
 "preco": 145.7,
-"foto": "https://m.media-amazon.com/images/I/91PzdStnDeL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91PzdStnDeL._AC_UY218_.jpg",
+"nota": 79,
+"nota_url": "https://www.metacritic.com/music/everything-was-forever/sea-power/critic-reviews/"
 },
 {
 "asin": "B0CG9V6RTJ",
@@ -8526,7 +8694,9 @@
 "artista": "Piroshka",
 "ano": "2021",
 "preco": 146.55,
-"foto": "https://m.media-amazon.com/images/I/71HM5-oRfIL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71HM5-oRfIL._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/love-drips-and-gathers/piroshka/critic-reviews/"
 },
 {
 "asin": "B001NG3PZM",
@@ -8534,7 +8704,9 @@
 "artista": "Phosphorescent",
 "ano": "2025",
 "preco": 146.59,
-"foto": "https://m.media-amazon.com/images/I/51Fv0TOe4aL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/51Fv0TOe4aL._AC_UY218_.jpg",
+"nota": 78,
+"nota_url": "https://www.metacritic.com/music/to-willie/phosphorescent/critic-reviews/"
 },
 {
 "asin": "B01CDMMQCM",
@@ -8590,7 +8762,9 @@
 "artista": "Sturgill Simpson",
 "ano": "2022",
 "preco": 146.99,
-"foto": "https://m.media-amazon.com/images/I/8173VeJRmuL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/8173VeJRmuL._AC_UY218_.jpg",
+"nota": 76,
+"nota_url": "https://www.metacritic.com/music/the-ballad-of-dood-juanita/sturgill-simpson/critic-reviews/"
 },
 {
 "asin": "B00L8DB6IS",
@@ -8598,7 +8772,9 @@
 "artista": "",
 "ano": "",
 "preco": 147.27,
-"foto": "https://m.media-amazon.com/images/I/7104myWpauL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/7104myWpauL._AC_UY218_.jpg",
+"nota": 69,
+"nota_url": "https://www.metacritic.com/music/blood-lemonade/american-hi-fi/critic-reviews/"
 },
 {
 "asin": "B08FWMNS1H",
@@ -8646,7 +8822,9 @@
 "artista": "Ron Sexsmith",
 "ano": "2025",
 "preco": 147.52,
-"foto": "https://m.media-amazon.com/images/I/A1VIHf-sgXL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/A1VIHf-sgXL._AC_UY218_.jpg",
+"nota": 80,
+"nota_url": "https://www.metacritic.com/music/hermitage/ron-sexsmith/critic-reviews/"
 },
 {
 "asin": "B0DY1WZGPD",
@@ -8686,7 +8864,9 @@
 "artista": "Mandolin Orange",
 "ano": "2019",
 "preco": 147.91,
-"foto": "https://m.media-amazon.com/images/I/71h32+rLICL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71h32+rLICL._AC_UY218_.jpg",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/tides-of-a-teardrop/mandolin-orange/critic-reviews/"
 },
 {
 "asin": "B0C2W52744",
@@ -8814,7 +8994,9 @@
 "artista": "Lucero",
 "ano": "2018",
 "preco": 148.53,
-"foto": "https://m.media-amazon.com/images/I/91SOXW89JWL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91SOXW89JWL._AC_UY218_.jpg",
+"nota": 77,
+"nota_url": "https://www.metacritic.com/music/among-the-ghosts/lucero/critic-reviews/"
 },
 {
 "asin": "B07DVGQJQM",
@@ -8918,7 +9100,9 @@
 "artista": "Little Big Town",
 "ano": "",
 "preco": 149.1,
-"foto": "https://m.media-amazon.com/images/I/A1UMCi4mTrL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/A1UMCi4mTrL._AC_UY218_.jpg",
+"nota": 78,
+"nota_url": "https://www.metacritic.com/music/the-breaker/little-big-town/critic-reviews/"
 },
 {
 "asin": "B00F4IEAJ0",
@@ -9038,7 +9222,9 @@
 "artista": "Allison Russell",
 "ano": "",
 "preco": 149.64,
-"foto": "https://m.media-amazon.com/images/I/71Wawgup+oL._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/71Wawgup+oL._AC_UY218_.jpg",
+"nota": 93,
+"nota_url": "https://www.metacritic.com/music/the-returner/allison-russell/critic-reviews/"
 },
 {
 "asin": "B079BF4GDS",
@@ -9062,7 +9248,9 @@
 "artista": "Matthew Sweet",
 "ano": "2018",
 "preco": 149.8,
-"foto": "https://m.media-amazon.com/images/I/91Wk8lUf0+L._AC_UY218_.jpg"
+"foto": "https://m.media-amazon.com/images/I/91Wk8lUf0+L._AC_UY218_.jpg",
+"nota": 73,
+"nota_url": "https://www.metacritic.com/music/tomorrows-daughter/matthew-sweet/critic-reviews/"
 },
 {
 "asin": "B0CC3SXT22",

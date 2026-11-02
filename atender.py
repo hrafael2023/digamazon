@@ -89,7 +89,7 @@ def main():
     resumo = f"{total} discos, {novos} novos"
     log(f"pedido {pedido}: {resumo}")
     marcar(pedido, "ok", resumo)
-    enviar(["dados.json", "vistos.json", "estado.json"],
+    enviar(["dados.json", "vistos.json", "notas.json", "estado.json"],
            f"Atualiza os discos ({dt.datetime.now(buscar.FUSO):%d/%m %H:%M}): {resumo}")
 
 
