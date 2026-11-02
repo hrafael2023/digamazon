@@ -1,5 +1,5 @@
 {
-"atualizado": "2026-11-01T20:51-03:00",
+"atualizado": "2026-11-02T10:32-03:00",
 "limite": 150.0,
 "primeira": false,
 "novos": [],
@@ -65,7 +65,7 @@
 "titulo": "Christmas With A K",
 "artista": "Ktrevor Wilson",
 "ano": "2020",
-"preco": 62.51,
+"preco": 62.49,
 "foto": "https://m.media-amazon.com/images/I/61fNygpsvzL._AC_UY218_.jpg"
 },
 {
@@ -195,6 +195,14 @@
 "ano": "2025",
 "preco": 73.41,
 "foto": "https://m.media-amazon.com/images/I/61be2pyjO5L._AC_UY218_.jpg"
+},
+{
+"asin": "B0CXSKGYDG",
+"titulo": "Baby J",
+"artista": "John Mulaney",
+"ano": "2024",
+"preco": 73.67,
+"foto": "https://m.media-amazon.com/images/I/71n7nBtBnpL._AC_UY218_.jpg"
 },
 {
 "asin": "B09MWJKGHD",
@@ -379,14 +387,6 @@
 "ano": "2025",
 "preco": 81.6,
 "foto": "https://m.media-amazon.com/images/I/81nL1br9hWL._AC_UY218_.jpg"
-},
-{
-"asin": "B0CXSKGYDG",
-"titulo": "Baby J",
-"artista": "John Mulaney",
-"ano": "2024",
-"preco": 81.86,
-"foto": "https://m.media-amazon.com/images/I/71n7nBtBnpL._AC_UY218_.jpg"
 },
 {
 "asin": "B0B3RRXMG4",
@@ -2949,14 +2949,6 @@
 "foto": "https://m.media-amazon.com/images/I/81j0D+adxFL._AC_UY218_.jpg"
 },
 {
-"asin": "B00O4UN60S",
-"titulo": "Langhorne, Bruce : Hired Hand / O.S.T.",
-"artista": "",
-"ano": "2025",
-"preco": 110.86,
-"foto": "https://m.media-amazon.com/images/I/51p5myyhHJL._AC_UY218_.jpg"
-},
-{
 "asin": "B093KPX1RQ",
 "titulo": "Fuckin Whatever",
 "artista": "Fuckin Whatever",
@@ -4445,14 +4437,6 @@
 "foto": "https://m.media-amazon.com/images/I/B1w995z+1tL._AC_UY218_.jpg"
 },
 {
-"asin": "B0DCGJ548Q",
-"titulo": "New Ghosts",
-"artista": "The Copyrights",
-"ano": "2024",
-"preco": 121.14,
-"foto": "https://m.media-amazon.com/images/I/91KQGemmqNL._AC_UY218_.jpg"
-},
-{
 "asin": "B0B1VKQR99",
 "titulo": "GUIDE TO ADULT DESPAIR",
 "artista": "Weak",
@@ -4667,6 +4651,14 @@
 "ano": "2025",
 "preco": 122.65,
 "foto": "https://m.media-amazon.com/images/I/81cec4H0n5L._AC_UY218_.jpg"
+},
+{
+"asin": "B0DCGJ548Q",
+"titulo": "New Ghosts",
+"artista": "The Copyrights",
+"ano": "2024",
+"preco": 122.68,
+"foto": "https://m.media-amazon.com/images/I/91KQGemmqNL._AC_UY218_.jpg"
 },
 {
 "asin": "B0CMJFKF8F",
@@ -5293,6 +5285,14 @@
 "foto": "https://m.media-amazon.com/images/I/71Sz36psXML._AC_UY218_.jpg"
 },
 {
+"asin": "B000AA4JJS",
+"titulo": "One Day Week: Sum Up Broke",
+"artista": "",
+"ano": "",
+"preco": 126.56,
+"foto": "https://m.media-amazon.com/images/I/91LBU2oFTIL._AC_UY218_.jpg"
+},
+{
 "asin": "B0D2PD6KNC",
 "titulo": "Divided Kind [VINYL]",
 "artista": "Native Harrow",
@@ -5381,14 +5381,6 @@
 "foto": "https://m.media-amazon.com/images/I/917J5zYBHCL._AC_UY218_.jpg"
 },
 {
-"asin": "B07PYJ3XVF",
-"titulo": "Weezer (teal Album)",
-"artista": "Weezer",
-"ano": "",
-"preco": 127.33,
-"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg"
-},
-{
 "asin": "B0849VNRXR",
 "titulo": "Dualtone Christmas (Various Artists) [Vinyl] Various Artists",
 "artista": "Various Artists",
@@ -5403,6 +5395,14 @@
 "ano": "2022",
 "preco": 127.38,
 "foto": "https://m.media-amazon.com/images/I/81U44iFKIIL._AC_UY218_.jpg"
+},
+{
+"asin": "B07PYJ3XVF",
+"titulo": "Weezer (teal Album)",
+"artista": "Weezer",
+"ano": "",
+"preco": 127.43,
+"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg"
 },
 {
 "asin": "B0CGKLGKGD",
@@ -7093,14 +7093,6 @@
 "foto": "https://m.media-amazon.com/images/I/81sDmnt+oSL._AC_UY218_.jpg"
 },
 {
-"asin": "B09XKLY4FB",
-"titulo": "Never Slept Better - ELECTRIC BLUE [Explicit Content] (Parental Advisory Explicit Lyrics, Colored Vinyl, Blue)",
-"artista": "",
-"ano": "2025",
-"preco": 138.79,
-"foto": "https://m.media-amazon.com/images/I/61UROzh1+bL._AC_UY218_.jpg"
-},
-{
 "asin": "B0CBNJRHB2",
 "titulo": "Joy To The World",
 "artista": "",
@@ -7147,6 +7139,14 @@
 "ano": "2025",
 "preco": 139.03,
 "foto": "https://m.media-amazon.com/images/I/81j3QI+aVQL._AC_UY218_.jpg"
+},
+{
+"asin": "B09XKLY4FB",
+"titulo": "Never Slept Better - ELECTRIC BLUE [Explicit Content] (Parental Advisory Explicit Lyrics, Colored Vinyl, Blue)",
+"artista": "",
+"ano": "2025",
+"preco": 139.18,
+"foto": "https://m.media-amazon.com/images/I/61UROzh1+bL._AC_UY218_.jpg"
 },
 {
 "asin": "B0FBX7XDBK",
@@ -7413,28 +7413,12 @@
 "foto": "https://m.media-amazon.com/images/I/81lk8H4nCAL._AC_UY218_.jpg"
 },
 {
-"asin": "B0C3Y48GSR",
-"titulo": "Take A Picture [Explicit Content] (Parental Advisory Explicit Lyrics, Splatter)",
-"artista": "",
-"ano": "2025",
-"preco": 141.19,
-"foto": "https://m.media-amazon.com/images/I/81XM072n1cL._AC_UY218_.jpg"
-},
-{
 "asin": "B098MB11YC",
 "titulo": "IMPOSSIBLE BIRD (REMASTERED/DL CARD)",
 "artista": "Nick Lowe",
 "ano": "2022",
 "preco": 141.24,
 "foto": "https://m.media-amazon.com/images/I/71y9r5jsMrL._AC_UY218_.jpg"
-},
-{
-"asin": "B000AA4JJS",
-"titulo": "One Day Week: Sum Up Broke",
-"artista": "",
-"ano": "",
-"preco": 141.25,
-"foto": "https://m.media-amazon.com/images/I/91LBU2oFTIL._AC_UY218_.jpg"
 },
 {
 "asin": "B06X3WMFBH",
@@ -7653,20 +7637,20 @@
 "foto": "https://m.media-amazon.com/images/I/718g7+BO77L._AC_UY218_.jpg"
 },
 {
-"asin": "B07ZWBD8BY",
-"titulo": "Continuum b/w Fate",
-"artista": "Loma Prieta",
-"ano": "2025",
-"preco": 142.17,
-"foto": "https://m.media-amazon.com/images/I/81nVDxQGXlL._AC_UY218_.jpg"
-},
-{
 "asin": "B09QMKFFHD",
 "titulo": "UNCIVIL WAR",
 "artista": "",
 "ano": "",
 "preco": 142.17,
 "foto": "https://m.media-amazon.com/images/I/81sw8tdVVGL._AC_UY218_.jpg"
+},
+{
+"asin": "B07ZWBD8BY",
+"titulo": "Continuum b/w Fate",
+"artista": "Loma Prieta",
+"ano": "2025",
+"preco": 142.17,
+"foto": "https://m.media-amazon.com/images/I/81nVDxQGXlL._AC_UY218_.jpg"
 },
 {
 "asin": "B075XDNHL6",
@@ -8995,14 +8979,6 @@
 "ano": "2025",
 "preco": 149.53,
 "foto": "https://m.media-amazon.com/images/I/714TLELYapL._AC_UY218_.jpg"
-},
-{
-"asin": "B087SCJZ32",
-"titulo": "Bad Vacation [LP]",
-"artista": "Liza Anne",
-"ano": "2025",
-"preco": 149.53,
-"foto": "https://m.media-amazon.com/images/I/71Jzo9UR--L._AC_UY218_.jpg"
 },
 {
 "asin": "B0DFTY5FKC",
