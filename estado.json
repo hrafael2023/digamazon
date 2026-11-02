@@ -1,6 +1,6 @@
 {
- "pedido": 41449838430,
- "estado": "erro",
- "mensagem": "busca interrompida: página 27 veio sem resultados (depois de 414 discos)",
- "quando": "2026-11-02T10:07:24-03:00"
+ "pedido": 41453089652,
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-02T10:27:35-03:00"
 }
