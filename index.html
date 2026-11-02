@@ -225,6 +225,7 @@ async function gh(caminho, opcoes = {}) {
     const msg = await r.json().then(j => j.message).catch(() => "");
     const e = new Error(`GitHub respondeu ${r.status}${msg ? ": " + msg : ""}`);
     e.chave = r.status === 401;  // chave inválida ou expirada; 403/404 costumam ser permissão faltando
+    e.github = true;
     throw e;
   }
   return r.status === 204 ? null : r.json();
@@ -275,7 +276,8 @@ async function pesquisar() {
     await acompanhar(desde);
   } catch (e) {
     if (e.chave) { guardado(CHAVE, null); status("O GitHub recusou a chave. Toque em Pesquisar para cadastrar outra.", true); }
-    else status(e.message + ". Confira se a chave tem Actions: Read and write e Contents: Read-only no repositório digamazon.", true);
+    else if (e.github) status(e.message + ". Confira se a chave tem Actions: Read and write e Contents: Read-only no repositório digamazon.", true);
+    else status(e.message, true);
   } finally { rodando(false); }
 }
 

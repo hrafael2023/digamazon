@@ -15,6 +15,7 @@ import gzip
 import html
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -55,21 +56,34 @@ def baixar(pagina):
         if r.headers.get("Content-Encoding") == "gzip":
             corpo = gzip.decompress(corpo)
     texto = corpo.decode("utf-8", "replace")
-    if "validateCaptcha" in texto or "/errors/validateCaptcha" in texto:
+    if "validateCaptcha" in texto:
+        guardar_falha(pagina, texto)
         raise Bloqueado(f"captcha na página {pagina}")
     if 's-search-result' not in texto:
+        guardar_falha(pagina, texto)
         raise Bloqueado(f"página {pagina} veio sem resultados")
     return texto
 
 
-def baixar_com_paciencia(pagina, tentativas=4):
-    for n in range(tentativas):
+def guardar_falha(pagina, texto):
+    # Guarda o que a Amazon devolveu, para entender depois o que houve.
+    pasta = PASTA / "logs"
+    pasta.mkdir(exist_ok=True)
+    (pasta / f"falha-pagina-{pagina}.html").write_text(texto)
+
+
+# A Amazon às vezes devolve páginas vazias por alguns minutos seguidos;
+# esperar cada vez mais (até uns 7 minutos no total) costuma resolver.
+ESPERAS = [15, 30, 60, 120, 180]
+
+
+def baixar_com_paciencia(pagina):
+    for espera in ESPERAS + [None]:
         try:
             return baixar(pagina)
         except (Bloqueado, OSError) as e:
-            if n == tentativas - 1:
+            if espera is None:
                 raise
-            espera = 10 * (n + 1)
             avisar(f"{e}; tentando de novo em {espera}s")
             time.sleep(espera)
 
@@ -131,7 +145,7 @@ def coletar():
         acima = acima + 1 if menor >= LIMITE else 0
         if acima >= 2:
             break
-        time.sleep(2)
+        time.sleep(random.uniform(2, 4))
     return achados
 
 
