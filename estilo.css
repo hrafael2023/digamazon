@@ -67,7 +67,7 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .disco .capa { position: relative; aspect-ratio: 1; background: #fff; display: flex; align-items: center; justify-content: center; }
 /* Selo dos discos com crítica de 85 ou mais no Metacritic, no canto do cartão */
 .dig { position: absolute; bottom: 6px; right: 6px; width: 46px; height: 46px; display: grid; place-items: center; filter: drop-shadow(0 1px 2px rgb(0 0 0 / .35)); }
-.dig svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: #b4f000; animation: girar 6s linear infinite; }
+.dig svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: #13ff00; animation: girar 6s linear infinite; }
 .dig b { position: relative; color: #111; font: 900 13px/1 var(--sans); letter-spacing: -.01em; }
 @keyframes girar { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .dig svg { animation: none; } }
