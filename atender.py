@@ -15,6 +15,7 @@ import datetime as dt
 import json
 import subprocess
 import sys
+import time
 import urllib.request
 from pathlib import Path
 
@@ -33,7 +34,10 @@ def log(msg):
 
 
 def git(*args):
-    subprocess.run(["git", "-C", str(PASTA), *args], check=True, capture_output=True, text=True)
+    r = subprocess.run(["git", "-C", str(PASTA), *args], capture_output=True, text=True)
+    if r.returncode:
+        raise RuntimeError(f"git {args[0]} falhou: {(r.stderr or r.stdout).strip()}")
+    return r.stdout
 
 
 def ultimo_pedido():
@@ -46,7 +50,34 @@ def ultimo_pedido():
 def enviar(arquivos, mensagem):
     git("add", *arquivos)
     git("commit", "-m", mensagem)
-    git("push", "-q", "origin", "main")
+    publicar()
+
+
+def publicar():
+    """Envia os commits ao GitHub; a rede às vezes falha, então tenta algumas vezes."""
+    for espera in [10, 30, 60, None]:
+        try:
+            git("push", "-q", "origin", "main")
+            return True
+        except RuntimeError as e:
+            log(str(e))
+            if espera is None:
+                return False  # fica para a próxima rodada, daqui a 2 minutos
+            time.sleep(espera)
+            try:
+                git("pull", "-q", "--rebase", "origin", "main")
+            except RuntimeError as e:
+                log(str(e))
+
+
+def pendente():
+    """Há commits deste Mac que ainda não chegaram ao GitHub?"""
+    try:
+        git("fetch", "-q", "origin", "main")
+        return int(git("rev-list", "--count", "origin/main..main").strip() or 0) > 0
+    except RuntimeError as e:
+        log(str(e))
+        return False
 
 
 def marcar(pedido, estado, mensagem=""):
@@ -59,6 +90,9 @@ def marcar(pedido, estado, mensagem=""):
 
 
 def main():
+    if pendente():
+        log("enviando resultado que tinha ficado sem chegar ao GitHub")
+        publicar()
     try:
         pedido = ultimo_pedido()
     except OSError as e:
