@@ -80,7 +80,7 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 /* Dig! Discover: a nota no lugar do selo */
 /* Dig! Discover: o cartão leva à Amazon e o botão Escutar, ao Bandcamp */
 .disco .ir { display: flex; flex-direction: column; flex: 1; color: inherit; text-decoration: none; }
-.escutar { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0 10px 10px; min-height: 40px; border-radius: 999px; background: var(--btn); color: var(--on-btn); font: 700 14px var(--sans); text-decoration: none; }
+.escutar { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0 10px 10px; min-height: 40px; border-radius: 999px; background: var(--card); color: var(--ink); border: 2px solid var(--ink); font: 700 14px var(--sans); text-decoration: none; }
 .escutar svg { width: 12px; height: 12px; fill: currentColor; }
 .disco .critica { font-size: 12.5px; font-weight: 700; color: var(--novo); }
 .novo .info::before { content: "novo"; align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--novo); background: var(--novo-bg); padding: 2px 7px; border-radius: 999px; margin-bottom: 3px; }
