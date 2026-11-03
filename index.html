@@ -2,12 +2,16 @@
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DigAmazon</title>
+<script>
+  // aplica o tema escolhido antes de pintar a página, para não piscar
+  try { const t = localStorage.getItem("digamazon.tema"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 <meta name="theme-color" content="#16130f">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%2316130f'/%3E%3Ccircle cx='24' cy='24' r='8' fill='%23f08a00'/%3E%3Ccircle cx='24' cy='24' r='2' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=1.13">
+<link rel="stylesheet" href="estilo.css?v=1.14">
 </head>
 <body>
 <header class="topo">
@@ -25,7 +29,14 @@
 </header>
 
 <main>
-  <h2>Novos discos <span class="conta" id="conta-novos"></span></h2>
+  <h2>Novos discos <span class="conta" id="conta-novos"></span>
+    <button type="button" class="tema" id="tema" aria-label="Alternar tema claro/escuro">
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10 2a8 8 0 0 1 0 16z" fill="currentColor"/>
+      </svg>
+    </button>
+  </h2>
   <p class="nota">Discos que entraram na faixa de preço na última pesquisa.</p>
   <div class="grade" id="novos"></div>
 
@@ -44,9 +55,9 @@
   <nav class="paginas" id="paginas" aria-label="Páginas"></nav>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.13</footer>
+<footer class="rodape">DigAmazon · versão 1.14</footer>
 
-<script src="comum.js?v=1.13"></script>
+<script src="comum.js?v=1.14"></script>
 <script>
 // Estrela de 10 pontas; gira por trás do texto, que fica parado.
 const ESTRELA = '<svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,0 61.4,14.8 79.4,9.5 79.9,28.3 97.6,34.5 87,50 97.6,65.5 79.9,71.7 79.4,90.5 61.4,85.2 50,100 38.6,85.2 20.6,90.5 20.1,71.7 2.4,65.5 13,50 2.4,34.5 20.1,28.3 20.6,9.5 38.6,14.8"/></svg><b>Dig!</b>';
@@ -124,6 +135,21 @@ function mostrar() {
     : "Nenhum disco novo desde a pesquisa anterior."}</div>`;
   mostrarTodos();
 }
+
+// Tema: alterna entre claro e escuro e lembra a escolha neste navegador.
+const raiz = document.documentElement, sistemaEscuro = matchMedia("(prefers-color-scheme: dark)");
+const temaAtual = () => raiz.dataset.theme || (sistemaEscuro.matches ? "dark" : "light");
+const marcarTema = () => {
+  raiz.dataset.temaEfetivo = temaAtual();
+  $("tema").setAttribute("aria-pressed", temaAtual() === "dark");
+};
+$("tema").addEventListener("click", () => {
+  raiz.dataset.theme = temaAtual() === "dark" ? "light" : "dark";
+  try { localStorage.setItem("digamazon.tema", raiz.dataset.theme); } catch (e) {}
+  marcarTema();
+});
+sistemaEscuro.addEventListener("change", marcarTema);
+marcarTema();
 
 // Mudou a busca ou a ordem: volta para a primeira página.
 $("filtro").addEventListener("input", () => { pagina = 1; mostrarTodos(); });
