@@ -1,6 +1,6 @@
 {
  "pedido": 41722355640,
- "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-03T18:31:07-03:00"
+ "estado": "erro",
+ "mensagem": "busca interrompida: página 22 veio sem resultados (depois de 335 discos)",
+ "quando": "2026-11-03T18:39:24-03:00"
 }
