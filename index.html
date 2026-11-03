@@ -7,98 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg: #fbf8f3;
-  --card: #ffffff;
-  --ink: #16130f;
-  --mut: #7a736a;
-  --line: #e7e1d8;
-  --accent: #c25e00;
-  --accent-bg: #fff1e0;
-  --btn: #16130f;
-  --on-btn: #ffffff;
-  --novo: #0f7a4a;
-  --novo-bg: #e3f4ea;
-  --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #12100d; --card: #1c1915; --ink: #f1ece4; --mut: #9a9187; --line: #2e2a24;
-    --accent: #ffa03a; --accent-bg: #33230f; --btn: #f1ece4; --on-btn: #12100d;
-    --novo: #5fd39a; --novo-bg: #12301f; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #12100d; --card: #1c1915; --ink: #f1ece4; --mut: #9a9187; --line: #2e2a24;
-  --accent: #ffa03a; --accent-bg: #33230f; --btn: #f1ece4; --on-btn: #12100d;
-  --novo: #5fd39a; --novo-bg: #12301f; color-scheme: dark;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.4 var(--sans); -webkit-text-size-adjust: 100%; }
-a { color: inherit; }
-.topo {
-  position: sticky; top: 0; z-index: 5; background: var(--bg);
-  padding: calc(12px + env(safe-area-inset-top)) 16px 12px; border-bottom: 1px solid var(--line);
-}
-.linha { display: flex; align-items: center; gap: 12px; max-width: 1100px; margin: 0 auto; }
-h1 { margin: 0; font-size: 28px; font-weight: 800; font-stretch: 75%; letter-spacing: -.01em; line-height: 1; }
-h1 span { color: var(--accent); }
-.sub { color: var(--mut); font-size: 13px; margin-top: 3px; }
-#pesquisar {
-  margin-left: auto; flex: none; border: 0; border-radius: 999px; padding: 12px 18px;
-  background: var(--btn); color: var(--on-btn); font: 700 15px var(--sans); cursor: pointer;
-  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
-}
-#pesquisar:disabled { opacity: .6; cursor: default; }
-#pesquisar .gira { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: none; animation: g 0.8s linear infinite; }
-#pesquisar.rodando .gira { display: inline-block; }
-@keyframes g { to { transform: rotate(360deg); } }
-#status { max-width: 1100px; margin: 8px auto 0; font-size: 13px; color: var(--mut); }
-#status:empty { display: none; }
-#status.erro { color: #c0392b; }
-main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 24px; }
-/* A versão sobe a cada mudança no código, para conferir se o navegador já pegou a nova. */
-.rodape { max-width: 1100px; margin: 0 auto; padding: 16px 16px calc(24px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); color: var(--mut); font-size: 12px; text-align: center; }
-h2 { font-size: 20px; font-weight: 800; font-stretch: 85%; margin: 22px 0 4px; display: flex; align-items: baseline; gap: 8px; }
-h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
-.nota { color: var(--mut); font-size: 13px; margin: 0 0 12px; }
-.separador { display: flex; align-items: center; gap: 12px; margin: 32px 0 8px; color: var(--mut); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
-.separador::before, .separador::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
-.disco { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; }
-.disco .capa { position: relative; aspect-ratio: 1; background: #fff; display: flex; align-items: center; justify-content: center; }
-/* Selo dos discos com crítica acima de 85 no Metacritic */
-.dig { position: absolute; top: 4px; right: 4px; width: 46px; height: 46px; display: grid; place-items: center; filter: drop-shadow(0 1px 2px rgb(0 0 0 / .35)); }
-.dig svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: #b4f000; animation: girar 6s linear infinite; }
-.dig b { position: relative; color: #111; font: 900 13px/1 var(--sans); letter-spacing: -.01em; }
-@keyframes girar { to { transform: rotate(360deg); } }
-@media (prefers-reduced-motion: reduce) { .dig svg { animation: none; } }
-.disco img { width: 100%; height: 100%; object-fit: contain; }
-.disco .info { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
-.disco .titulo { font-weight: 600; font-size: 14px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.disco .artista { color: var(--mut); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.disco .preco { margin-top: auto; padding-top: 6px; font-weight: 800; font-size: 17px; color: var(--accent); font-variant-numeric: tabular-nums; }
-.novo .info::before { content: "novo"; align-self: flex-start; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--novo); background: var(--novo-bg); padding: 2px 7px; border-radius: 999px; margin-bottom: 3px; }
-.vazio { grid-column: 1 / -1; border: 1px dashed var(--line); border-radius: 10px; padding: 18px; color: var(--mut); text-align: center; font-size: 14px; }
-.filtros { display: flex; gap: 8px; margin: 4px 0 14px; }
-.filtros input, .filtros select { font: 15px var(--sans); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-height: 44px; }
-.filtros input { flex: 1; min-width: 0; }
-dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); max-width: min(440px, calc(100vw - 32px)); padding: 20px; }
-dialog::backdrop { background: rgb(0 0 0 / .45); }
-dialog h3 { margin: 0 0 8px; font-size: 18px; }
-dialog ol { padding-left: 20px; margin: 8px 0; font-size: 14px; }
-dialog input { width: 100%; font: 14px ui-monospace, monospace; padding: 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); margin: 8px 0 12px; }
-dialog .acoes { display: flex; gap: 8px; justify-content: flex-end; }
-dialog button { font: 600 14px var(--sans); border-radius: 999px; padding: 10px 16px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
-dialog button.principal { background: var(--btn); color: var(--on-btn); border-color: var(--btn); }
-@media (max-width: 480px) {
-  .grade { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  h1 { font-size: 24px; }
-  #pesquisar { padding: 11px 14px; }
-}
-</style>
+<link rel="stylesheet" href="estilo.css?v=1.3">
 </head>
 <body>
 <header class="topo">
@@ -107,7 +16,10 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
       <h1>Dig<span>Amazon</span></h1>
       <div class="sub" id="sub">vinis até R$ 150</div>
     </div>
-    <button id="pesquisar" type="button"><span class="gira"></span><span id="rotulo">Pesquisar</span></button>
+    <nav class="acoes-topo">
+      <a class="link-topo" href="dig.html">Dig! Records</a>
+      <button id="pesquisar" type="button"><span class="gira"></span><span id="rotulo">Pesquisar</span></button>
+    </nav>
   </div>
   <div id="status" role="status"></div>
 </header>
@@ -131,7 +43,7 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
   <div class="grade" id="todos"></div>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.2</footer>
+<footer class="rodape">DigAmazon · versão 1.3</footer>
 
 <dialog id="dlg-token">
   <h3>Liberar a pesquisa por este celular</h3>
