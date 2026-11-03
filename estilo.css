@@ -87,6 +87,7 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .filtros { display: flex; gap: 8px; margin: 4px 0 14px; }
 .filtros input, .filtros select { font: 15px var(--sans); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-height: 44px; }
 .filtros input { flex: 1; min-width: 0; }
+.filtros select { flex: none; }  /* a busca encolhe; a ordenação mostra o texto inteiro */
 dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); max-width: min(440px, calc(100vw - 32px)); padding: 20px; }
 dialog::backdrop { background: rgb(0 0 0 / .45); }
 dialog h3 { margin: 0 0 8px; font-size: 18px; }
