@@ -5,7 +5,7 @@ https://hrafael2023.github.io/digamazon/
 
 A Amazon recusa buscas vindas dos servidores do GitHub, então a busca roda no Mac:
 
-1. O botão **Pesquisar** da página dispara o workflow `pedido.yml`, que só registra o pedido.
+1. O botão **Dig** da página dispara o workflow `pedido.yml`, que só registra o pedido.
 2. No Mac, `atender.py` confere a cada 2 minutos se há pedido novo. Se houver, roda
    `buscar.py` e envia `dados.json` (lista completa e discos novos na faixa),
    `vistos.json` (quando cada disco apareceu pela primeira vez) e `estado.json`

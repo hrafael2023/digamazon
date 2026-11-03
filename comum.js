@@ -1,5 +1,5 @@
 // Parte comum às duas páginas: o topo (data da última pesquisa e, na principal, o
-// botão Pesquisar) e a leitura dos discos. Cada página define mostrar(), chamada sempre que os dados mudam.
+// botão Dig) e a leitura dos discos. Cada página define mostrar(), chamada sempre que os dados mudam.
 const REPO = "hrafael2023/digamazon";
 const WORKFLOW = "pedido.yml";
 const PEDIDO = "digamazon.pedido";
@@ -58,7 +58,7 @@ async function carregar() {
 function rodando(sim, texto) {
   $("pesquisar").disabled = sim;
   $("pesquisar").classList.toggle("rodando", sim);
-  $("rotulo").textContent = sim ? (texto || "Pesquisando") : "Pesquisar";
+  $("rotulo").textContent = sim ? (texto || "Pesquisando") : "Dig";
 }
 
 async function gh(caminho, opcoes = {}) {
@@ -119,7 +119,7 @@ async function pesquisar() {
     rodando(true);
     await acompanhar(desde);
   } catch (e) {
-    if (e.chave) { guardado(CHAVE, null); status("O GitHub recusou a chave. Toque em Pesquisar para cadastrar outra.", true); }
+    if (e.chave) { guardado(CHAVE, null); status("O GitHub recusou a chave. Toque em Dig para cadastrar outra.", true); }
     else if (e.github) status(e.message + ". Confira se a chave tem Actions: Read and write e Contents: Read-only no repositório digamazon.", true);
     else status(e.message, true);
   } finally { rodando(false); }

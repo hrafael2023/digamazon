@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Atende os pedidos do botão Pesquisar, rodando a busca neste Mac.
+"""Atende os pedidos do botão Dig, rodando a busca neste Mac.
 
 O botão da página dispara o workflow pedido.yml no GitHub. Este script
 (chamado a cada 2 minutos pelo agendamento do macOS) confere se há pedido
