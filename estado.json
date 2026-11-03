@@ -1,6 +1,6 @@
 {
  "pedido": 41566791177,
- "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-02T23:32:57-03:00"
+ "estado": "erro",
+ "mensagem": "busca interrompida: HTTP Error 503: Service Unavailable (depois de 478 discos)",
+ "quando": "2026-11-02T23:44:09-03:00"
 }
