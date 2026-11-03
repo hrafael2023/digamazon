@@ -63,10 +63,10 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .separador { display: flex; align-items: center; gap: 12px; margin: 32px 0 8px; color: var(--mut); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; }
 .separador::before, .separador::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
-.disco { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; }
+.disco { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; }
 .disco .capa { position: relative; aspect-ratio: 1; background: #fff; display: flex; align-items: center; justify-content: center; }
-/* Selo dos discos com crítica de 85 ou mais no Metacritic */
-.dig { position: absolute; bottom: 4px; right: 4px; width: 46px; height: 46px; display: grid; place-items: center; filter: drop-shadow(0 1px 2px rgb(0 0 0 / .35)); }
+/* Selo dos discos com crítica de 85 ou mais no Metacritic, no canto do cartão */
+.dig { position: absolute; bottom: 6px; right: 6px; width: 46px; height: 46px; display: grid; place-items: center; filter: drop-shadow(0 1px 2px rgb(0 0 0 / .35)); }
 .dig svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: #b4f000; animation: girar 6s linear infinite; }
 .dig b { position: relative; color: #111; font: 900 13px/1 var(--sans); letter-spacing: -.01em; }
 @keyframes girar { to { transform: rotate(360deg); } }

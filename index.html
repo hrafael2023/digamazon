@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=1.6">
+<link rel="stylesheet" href="estilo.css?v=1.7">
 </head>
 <body>
 <header class="topo">
@@ -43,9 +43,9 @@
   <div class="grade" id="todos"></div>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.6</footer>
+<footer class="rodape">DigAmazon · versão 1.7</footer>
 
-<script src="comum.js?v=1.6"></script>
+<script src="comum.js?v=1.7"></script>
 <script>
 // Estrela de 10 pontas; gira por trás do texto, que fica parado.
 const ESTRELA = '<svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,0 61.4,14.8 79.4,9.5 79.9,28.3 97.6,34.5 87,50 97.6,65.5 79.9,71.7 79.4,90.5 61.4,85.2 50,100 38.6,85.2 20.6,90.5 20.1,71.7 2.4,65.5 13,50 2.4,34.5 20.1,28.3 20.6,9.5 38.6,14.8"/></svg><b>Dig!</b>';
@@ -60,13 +60,13 @@ function card(d, novo) {
   if (d.nota >= DIG) {
     const selo = document.createElement("span"); selo.className = "dig"; selo.innerHTML = ESTRELA;
     selo.title = `Metacritic ${d.nota}`; selo.setAttribute("aria-label", `Dig! Nota ${d.nota} no Metacritic`);
-    capa.append(selo);
+    a.append(selo);
   }
   const info = document.createElement("div"); info.className = "info";
   const t = document.createElement("div"); t.className = "titulo"; t.textContent = d.titulo;
   const ar = document.createElement("div"); ar.className = "artista"; ar.textContent = [d.artista, d.ano].filter(Boolean).join(" · ");
   const p = document.createElement("div"); p.className = "preco"; p.textContent = real(d.preco);
-  info.append(t, ar, p); a.append(capa, info);
+  info.append(t, ar, p); a.prepend(capa, info);
   return a;
 }
 
