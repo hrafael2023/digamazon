@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Notas da crítica para os discos, pelo Metacritic.
 
+Para os discos do selo, procura também a página do álbum no Bandcamp,
+para escutar antes de comprar.
+
 O Metacritic reúne as críticas de vários sites (Pitchfork, AllMusic e
 outros) numa nota de 0 a 100. Album of the Year e AllMusic bloqueiam
 acesso automático, por isso ficam de fora. Cada disco é procurado uma vez
@@ -25,6 +28,7 @@ PASTA = Path(__file__).resolve().parent
 NOTAS = PASTA / "notas.json"
 DIG = 85  # nota a partir desta ganha o selo "Dig!"
 REVER_DEPOIS = dt.timedelta(days=30)
+BANDCAMP = "https://bandcamp.com/api/bcsearch_public_api/1/autocomplete_elastic"
 BUSCA = "https://backend.metacritic.com/finder/metacritic/search/{q}/web?offset=0&limit=10&mcoTypeId=31"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
@@ -99,13 +103,47 @@ def procurar(disco):
     return None
 
 
+def no_bandcamp(disco):
+    """Endereço do álbum no Bandcamp, se algum resultado casar com o disco."""
+    q = " ".join(f"{artista_de(disco)} {limpar(disco['titulo'])}".split())[:80]
+    corpo = json.dumps({"search_text": q, "search_filter": "a", "full_page": False, "fan_id": None}).encode()
+    pedido = urllib.request.Request(BANDCAMP, data=corpo, headers={"User-Agent": UA, "Content-Type": "application/json"})
+    with urllib.request.urlopen(pedido, timeout=40) as r:
+        itens = json.load(r)["auto"]["results"]
+    for item in itens:
+        if item.get("type") == "a" and casa(disco, {"artists": [{"name": item["band_name"]}], "title": item["name"]}):
+            return item["item_url_path"]
+    return None
+
+
+def vencido(quando, agora):
+    return agora - dt.datetime.fromisoformat(quando) > REVER_DEPOIS
+
+
+def escutar(discos, notas, agora, mostrar):
+    """Acha no Bandcamp os discos do selo que ainda não foram procurados lá."""
+    faltam = [d for d in discos if (notas.get(d["asin"], {}).get("nota") or 0) >= DIG
+              and ("bandcamp" not in notas[d["asin"]]
+                   or (notas[d["asin"]]["bandcamp"] is None and vencido(notas[d["asin"]]["bandcamp_quando"], agora)))]
+    if faltam:
+        mostrar(f"procurando {len(faltam)} discos no Bandcamp")
+    for d in faltam:
+        try:
+            url = no_bandcamp(d)
+        except (OSError, ValueError, KeyError) as e:
+            mostrar(f"Bandcamp falhou ({e}); continua na próxima pesquisa")
+            break
+        notas[d["asin"]].update(bandcamp=url, bandcamp_quando=agora.isoformat(timespec="minutes"))
+        time.sleep(1)
+
+
 def atualizar(discos, mostrar=print):
     """Procura as notas que faltam e devolve {asin: nota} dos discos achados."""
     notas = json.loads(NOTAS.read_text()) if NOTAS.exists() else {}
     agora = dt.datetime.now()
     faltam = [d for d in discos if d["asin"] not in notas
               or (notas[d["asin"]].get("nota") is None
-                  and agora - dt.datetime.fromisoformat(notas[d["asin"]]["quando"]) > REVER_DEPOIS)]
+                  and vencido(notas[d["asin"]]["quando"], agora))]
     if faltam:
         mostrar(f"procurando notas de {len(faltam)} discos no Metacritic")
     erros = 0  # seguidos; uma falha solta só deixa o disco para a próxima pesquisa
@@ -125,6 +163,7 @@ def atualizar(discos, mostrar=print):
             NOTAS.write_text(json.dumps(notas, ensure_ascii=False, indent=0, sort_keys=True) + "\n")
             mostrar(f"  {n}/{len(faltam)}")
         time.sleep(1)
+    escutar(discos, notas, agora, mostrar)
     NOTAS.write_text(json.dumps(notas, ensure_ascii=False, indent=0, sort_keys=True) + "\n")
     return {a: n for a, n in notas.items() if n.get("nota") is not None}
 
@@ -133,7 +172,7 @@ def main():
     import buscar
     dados = json.loads(buscar.DADOS.read_text())
     achados = atualizar(dados["discos"])
-    buscar.anotar(dados["discos"], achados)
+    buscar.anotar(dados["discos"], achados, json.loads(buscar.VISTOS.read_text()))
     buscar.DADOS.write_text(json.dumps(dados, ensure_ascii=False, indent=0) + "\n")
     dig = sum(1 for d in dados["discos"] if d.get("nota", 0) >= DIG)
     print(f"{len(achados)} discos com nota, {dig} de {DIG} ou mais")

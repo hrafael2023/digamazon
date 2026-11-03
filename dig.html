@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=1.3">
+<link rel="stylesheet" href="estilo.css?v=1.4">
 </head>
 <body>
 <header class="topo">
@@ -23,20 +23,30 @@
 
 <main>
   <h2>Os mais bem avaliados <span class="conta" id="conta"></span></h2>
-  <p class="nota">Vinis abaixo de R$ 150 com nota da crítica de 85 ou mais, da maior para a menor.</p>
+  <p class="nota">Vinis abaixo de R$ 150 com nota da crítica de 85 ou mais.</p>
+  <div class="filtros">
+    <select id="ordem" aria-label="Ordenar">
+      <option value="entrada">Por ordem de entrada</option>
+      <option value="score">Por score</option>
+      <option value="preco">Por preço</option>
+    </select>
+  </div>
   <div class="grade" id="discos"></div>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.3</footer>
+<footer class="rodape">DigAmazon · versão 1.4</footer>
 
 <script>
 const DIG = 85;  // o mesmo corte do selo na página principal
 const $ = id => document.getElementById(id);
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
 const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
+// O cartão leva à Amazon; o Escutar abre o disco no Bandcamp (ou a busca, se não foi achado lá).
 function card(d, novo) {
-  const a = document.createElement("a");
-  a.className = "disco" + (novo ? " novo" : "");
+  const caixa = document.createElement("div");
+  caixa.className = "disco" + (novo ? " novo" : "");
+  const a = document.createElement("a"); a.className = "ir";
   a.href = "https://www.amazon.com.br/dp/" + d.asin;
   a.target = "_blank"; a.rel = "noopener";
   const capa = document.createElement("div"); capa.className = "capa";
@@ -47,21 +57,40 @@ function card(d, novo) {
   const c = document.createElement("div"); c.className = "critica"; c.textContent = `Metacritic ${d.nota}`;
   const p = document.createElement("div"); p.className = "preco"; p.textContent = real(d.preco);
   info.append(t, ar, c, p); a.append(capa, info);
-  return a;
+  const ouvir = document.createElement("a"); ouvir.className = "escutar";
+  ouvir.href = d.bandcamp || "https://bandcamp.com/search?item_type=a&q=" + encodeURIComponent(`${d.artista} ${d.titulo}`);
+  ouvir.target = "_blank"; ouvir.rel = "noopener";
+  ouvir.innerHTML = PLAY + "Escutar";
+  caixa.append(a, ouvir);
+  return caixa;
 }
 
-async function carregar() {
-  const r = await fetch("dados.json?t=" + Date.now(), { cache: "no-store" });
-  if (!r.ok) throw new Error("não consegui abrir os dados (" + r.status + ")");
-  const dados = await r.json();
+// Entrou no Dig! Records quando o disco apareceu na faixa de preço ou ganhou a nota, o que veio depois.
+const entrada = d => [d.visto, d.nota_desde].filter(Boolean).map(q => q.slice(0, 16)).sort().pop() || "";
+const ORDENS = {
+  entrada: (a, b) => entrada(b).localeCompare(entrada(a)) || b.nota - a.nota,
+  score: (a, b) => b.nota - a.nota || a.preco - b.preco,
+  preco: (a, b) => a.preco - b.preco,
+};
+let dados = null;
+
+function mostrar() {
   const novos = new Set(dados.novos);
-  const lista = dados.discos.filter(d => d.nota >= DIG).sort((a, b) => b.nota - a.nota || a.preco - b.preco);
+  const lista = dados.discos.filter(d => d.nota >= DIG).sort(ORDENS[$("ordem").value]);
   $("conta").textContent = lista.length;
   const g = $("discos");
   if (lista.length) g.replaceChildren(...lista.map(d => card(d, novos.has(d.asin))));
   else g.innerHTML = '<div class="vazio">Nenhum disco com nota 85 ou mais por enquanto.</div>';
 }
 
+async function carregar() {
+  const r = await fetch("dados.json?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error("não consegui abrir os dados (" + r.status + ")");
+  dados = await r.json();
+  mostrar();
+}
+
+$("ordem").addEventListener("change", mostrar);
 carregar().catch(e => { $("status").textContent = e.message; $("status").classList.add("erro"); });
 </script>
 </body>

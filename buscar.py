@@ -151,12 +151,17 @@ def coletar():
     return achados
 
 
-def anotar(discos, achados):
-    """Junta a nota do Metacritic a cada disco que tiver uma."""
+def anotar(discos, achados, vistos):
+    """Junta a cada disco quando ele apareceu e, se tiver, a nota do Metacritic e o Bandcamp."""
     for d in discos:
+        d["visto"] = vistos[d["asin"]]
         if d["asin"] in achados:
-            d["nota"] = achados[d["asin"]]["nota"]
-            d["nota_url"] = achados[d["asin"]]["url"]
+            n = achados[d["asin"]]
+            d["nota"] = n["nota"]
+            d["nota_url"] = n["url"]
+            d["nota_desde"] = n["quando"]
+            if n.get("bandcamp"):
+                d["bandcamp"] = n["bandcamp"]
 
 
 class Falhou(Exception):
@@ -180,7 +185,7 @@ def buscar():
         vistos.setdefault(asin, agora)
     discos = sorted(achados.values(), key=lambda d: d["preco"])
     novos = [] if primeira else [d for d in discos if vistos[d["asin"]] == agora]
-    anotar(discos, notas.atualizar(discos, mostrar=lambda m: avisar(m, "notice")))
+    anotar(discos, notas.atualizar(discos, mostrar=lambda m: avisar(m, "notice")), vistos)
 
     VISTOS.write_text(json.dumps(vistos, indent=0, sort_keys=True) + "\n")
     DADOS.write_text(json.dumps({
