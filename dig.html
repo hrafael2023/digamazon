@@ -1,32 +1,36 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dig! Records · DigAmazon</title>
+<title>Dig! Discover · DigAmazon</title>
 <meta name="theme-color" content="#16130f">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%2316130f'/%3E%3Ccircle cx='24' cy='24' r='8' fill='%23f08a00'/%3E%3Ccircle cx='24' cy='24' r='2' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=1.4">
+<link rel="stylesheet" href="estilo.css?v=1.5">
 </head>
 <body>
 <header class="topo">
   <div class="linha">
     <div>
-      <h1>Dig! <span>Records</span></h1>
-      <div class="sub" id="sub">nota 85 ou mais no Metacritic</div>
+      <h1><a href="./" class="logo">Dig<span>Amazon</span></a></h1>
+      <div class="sub" id="sub"></div>
     </div>
-    <nav class="acoes-topo"><a class="link-topo" href="./">← DigAmazon</a></nav>
+    <nav class="acoes-topo">
+      <a class="link-topo" href="dig.html" aria-current="page">Dig! Discover</a>
+      <button id="pesquisar" type="button"><span class="gira"></span><span id="rotulo">Pesquisar</span></button>
+    </nav>
   </div>
   <div id="status" role="status"></div>
 </header>
 
 <main>
-  <h2>Os mais bem avaliados <span class="conta" id="conta"></span></h2>
-  <p class="nota">Vinis abaixo de R$ 150 com nota da crítica de 85 ou mais.</p>
+  <h2>Dig! Discover <span class="conta" id="conta"></span></h2>
+  <p class="nota">Vinis abaixo de R$ 150 com nota da crítica de 85 ou mais no Metacritic.</p>
   <div class="filtros">
+    <input id="filtro" type="search" placeholder="Filtrar por disco ou artista" autocomplete="off">
     <select id="ordem" aria-label="Ordenar">
-      <option value="entrada">Por ordem de entrada</option>
+      <option value="entrada">Por ordem</option>
       <option value="score">Por score</option>
       <option value="preco">Por preço</option>
     </select>
@@ -34,13 +38,11 @@
   <div class="grade" id="discos"></div>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.4</footer>
+<footer class="rodape">DigAmazon · versão 1.5</footer>
 
+<script src="comum.js?v=1.5"></script>
 <script>
-const DIG = 85;  // o mesmo corte do selo na página principal
-const $ = id => document.getElementById(id);
 const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
-const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
 // O cartão leva à Amazon; o Escutar abre o disco no Bandcamp (ou a busca, se não foi achado lá).
 function card(d, novo) {
@@ -50,7 +52,7 @@ function card(d, novo) {
   a.href = "https://www.amazon.com.br/dp/" + d.asin;
   a.target = "_blank"; a.rel = "noopener";
   const capa = document.createElement("div"); capa.className = "capa";
-  if (d.foto) { const img = document.createElement("img"); img.src = d.foto.replace(/\._AC_[^.]*_\./, "._AC_SL400_."); img.alt = ""; img.loading = "lazy"; capa.append(img); }
+  if (d.foto) { const img = document.createElement("img"); img.src = capaGrande(d.foto); img.alt = ""; img.loading = "lazy"; capa.append(img); }
   const info = document.createElement("div"); info.className = "info";
   const t = document.createElement("div"); t.className = "titulo"; t.textContent = d.titulo;
   const ar = document.createElement("div"); ar.className = "artista"; ar.textContent = [d.artista, d.ano].filter(Boolean).join(" · ");
@@ -65,33 +67,27 @@ function card(d, novo) {
   return caixa;
 }
 
-// Entrou no Dig! Records quando o disco apareceu na faixa de preço ou ganhou a nota, o que veio depois.
+// Entrou no Dig! Discover quando o disco apareceu na faixa de preço ou ganhou a nota, o que veio depois.
 const entrada = d => [d.visto, d.nota_desde].filter(Boolean).map(q => q.slice(0, 16)).sort().pop() || "";
 const ORDENS = {
   entrada: (a, b) => entrada(b).localeCompare(entrada(a)) || b.nota - a.nota,
   score: (a, b) => b.nota - a.nota || a.preco - b.preco,
   preco: (a, b) => a.preco - b.preco,
 };
-let dados = null;
-
 function mostrar() {
   const novos = new Set(dados.novos);
-  const lista = dados.discos.filter(d => d.nota >= DIG).sort(ORDENS[$("ordem").value]);
-  $("conta").textContent = lista.length;
+  const q = $("filtro").value.trim().toLowerCase();
+  const dig = dados.discos.filter(d => d.nota >= DIG);
+  const lista = dig.filter(d => !q || (d.titulo + " " + d.artista).toLowerCase().includes(q)).sort(ORDENS[$("ordem").value]);
+  $("conta").textContent = q ? `${lista.length} de ${dig.length}` : `${dig.length}`;
   const g = $("discos");
   if (lista.length) g.replaceChildren(...lista.map(d => card(d, novos.has(d.asin))));
-  else g.innerHTML = '<div class="vazio">Nenhum disco com nota 85 ou mais por enquanto.</div>';
+  else g.innerHTML = `<div class="vazio">${q ? "Nenhum disco com esse nome." : "Nenhum disco com nota 85 ou mais por enquanto."}</div>`;
 }
 
-async function carregar() {
-  const r = await fetch("dados.json?t=" + Date.now(), { cache: "no-store" });
-  if (!r.ok) throw new Error("não consegui abrir os dados (" + r.status + ")");
-  dados = await r.json();
-  mostrar();
-}
-
+$("filtro").addEventListener("input", mostrar);
 $("ordem").addEventListener("change", mostrar);
-carregar().catch(e => { $("status").textContent = e.message; $("status").classList.add("erro"); });
+iniciar();
 </script>
 </body>
 </html>

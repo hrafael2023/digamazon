@@ -11,7 +11,7 @@ A Amazon recusa buscas vindas dos servidores do GitHub, então a busca roda no M
    `vistos.json` (quando cada disco apareceu pela primeira vez) e `estado.json`
    (andamento, que a página acompanha).
 3. Para cada disco novo, `notas.py` procura a nota da crítica no Metacritic (guardada em
-   `notas.json`); com 85 ou mais, a capa ganha o selo **Dig!** e o disco entra na página **Dig! Records** (`dig.html`), com um botão Escutar que abre o álbum no Bandcamp.
+   `notas.json`); com 85 ou mais, a capa ganha o selo **Dig!** e o disco entra na página **Dig! Discover** (`dig.html`), com um botão Escutar que abre o álbum no Bandcamp.
 4. O workflow `publicar.yml` republica a página quando `dados.json` ou `index.html` mudam.
 
 Para o Mac começar a conferir os pedidos: `./instalar-agendamento.sh`

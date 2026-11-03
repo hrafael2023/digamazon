@@ -7,17 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=1.4">
+<link rel="stylesheet" href="estilo.css?v=1.5">
 </head>
 <body>
 <header class="topo">
   <div class="linha">
     <div>
-      <h1>Dig<span>Amazon</span></h1>
-      <div class="sub" id="sub">vinis até R$ 150</div>
+      <h1><a href="./" class="logo">Dig<span>Amazon</span></a></h1>
+      <div class="sub" id="sub"></div>
     </div>
     <nav class="acoes-topo">
-      <a class="link-topo" href="dig.html">Dig! Records</a>
+      <a class="link-topo" href="dig.html">Dig! Discover</a>
       <button id="pesquisar" type="button"><span class="gira"></span><span id="rotulo">Pesquisar</span></button>
     </nav>
   </div>
@@ -43,48 +43,12 @@
   <div class="grade" id="todos"></div>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.4</footer>
+<footer class="rodape">DigAmazon · versão 1.5</footer>
 
-<dialog id="dlg-token">
-  <h3>Liberar a pesquisa por este celular</h3>
-  <p class="nota" style="margin:0">O botão deixa um pedido no GitHub, que o Mac atende. Para isso, crie uma chave uma única vez:</p>
-  <ol>
-    <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
-    <li>Em <b>Repository access</b>, escolha <b>Only select repositories</b> → <b>digamazon</b></li>
-    <li>Em <b>Permissions</b>, dê <b>Actions: Read and write</b> e <b>Contents: Read-only</b></li>
-    <li>Gere e cole a chave aqui</li>
-  </ol>
-  <input id="token" type="password" placeholder="github_pat_…" autocomplete="off">
-  <p class="nota">A chave fica guardada só neste aparelho e só é enviada ao GitHub.</p>
-  <div class="acoes">
-    <button type="button" id="cancelar">Cancelar</button>
-    <button type="button" class="principal" id="salvar">Salvar e pesquisar</button>
-  </div>
-</dialog>
-
+<script src="comum.js?v=1.5"></script>
 <script>
-const REPO = "hrafael2023/digamazon";
-const WORKFLOW = "pedido.yml";
-const PEDIDO = "digamazon.pedido";
-const CHAVE = "digamazon.token";
-const API = "https://api.github.com/repos/" + REPO;
-const $ = id => document.getElementById(id);
-const DIG = 85;  // nota do Metacritic a partir desta ganha o selo "Dig!"
 // Estrela de 10 pontas; gira por trás do texto, que fica parado.
 const ESTRELA = '<svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,0 61.4,14.8 79.4,9.5 79.9,28.3 97.6,34.5 87,50 97.6,65.5 79.9,71.7 79.4,90.5 61.4,85.2 50,100 38.6,85.2 20.6,90.5 20.1,71.7 2.4,65.5 13,50 2.4,34.5 20.1,28.3 20.6,9.5 38.6,14.8"/></svg><b>Dig!</b>';
-const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-let dados = null;
-
-function guardado(k, v) {
-  try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) { return null; }
-}
-
-function status(texto, erro) { $("status").textContent = texto || ""; $("status").classList.toggle("erro", !!erro); }
-
-function quando(iso) {
-  const d = new Date(iso);
-  return d.toLocaleString("pt-BR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
-}
 
 function card(d, novo) {
   const a = document.createElement("a");
@@ -92,7 +56,7 @@ function card(d, novo) {
   a.href = "https://www.amazon.com.br/dp/" + d.asin;
   a.target = "_blank"; a.rel = "noopener";
   const capa = document.createElement("div"); capa.className = "capa";
-  if (d.foto) { const img = document.createElement("img"); img.src = d.foto.replace(/\._AC_[^.]*_\./, "._AC_SL400_."); img.alt = ""; img.loading = "lazy"; capa.append(img); }
+  if (d.foto) { const img = document.createElement("img"); img.src = capaGrande(d.foto); img.alt = ""; img.loading = "lazy"; capa.append(img); }
   if (d.nota >= DIG) {
     const selo = document.createElement("span"); selo.className = "dig"; selo.innerHTML = ESTRELA;
     selo.title = `Metacritic ${d.nota}`; selo.setAttribute("aria-label", `Dig! Nota ${d.nota} no Metacritic`);
@@ -120,7 +84,6 @@ function mostrarTodos() {
 }
 
 function mostrar() {
-  $("sub").innerHTML = `vinis até ${real(dados.limite)}<br>atualizado ${quando(dados.atualizado)}`;
   const porAsin = new Map(dados.discos.map(d => [d.asin, d]));
   const novos = dados.novos.map(a => porAsin.get(a)).filter(Boolean);
   $("conta-novos").textContent = novos.length ? `${novos.length}` : "";
@@ -132,108 +95,9 @@ function mostrar() {
   mostrarTodos();
 }
 
-async function carregar() {
-  const r = await fetch("dados.json?t=" + Date.now(), { cache: "no-store" });
-  if (!r.ok) throw new Error("não consegui abrir os dados (" + r.status + ")");
-  dados = await r.json();
-  mostrar();
-}
-
-function rodando(sim, texto) {
-  $("pesquisar").disabled = sim;
-  $("pesquisar").classList.toggle("rodando", sim);
-  $("rotulo").textContent = sim ? (texto || "Pesquisando") : "Pesquisar";
-}
-
-async function gh(caminho, opcoes = {}) {
-  const r = await fetch(API + caminho, { ...opcoes, headers: {
-    "Accept": "application/vnd.github+json",
-    "Authorization": "Bearer " + guardado(CHAVE),
-    "X-GitHub-Api-Version": "2022-11-28",
-    ...(opcoes.headers || {}) } });
-  if (!r.ok) {
-    const msg = await r.json().then(j => j.message).catch(() => "");
-    const e = new Error(`GitHub respondeu ${r.status}${msg ? ": " + msg : ""}`);
-    e.chave = r.status === 401;  // chave inválida ou expirada; 403/404 costumam ser permissão faltando
-    e.github = true;
-    throw e;
-  }
-  return r.status === 204 ? null : r.json();
-}
-
-const espera = ms => new Promise(r => setTimeout(r, ms));
-
-async function arquivo(nome) {
-  // Lê direto do repositório (o Pages leva um minuto para republicar).
-  const r = await gh(`/contents/${nome}?ref=main&t=${Date.now()}`, { headers: { "Accept": "application/vnd.github.raw+json" } });
-  return r;
-}
-
-async function acompanhar(desde) {
-  // O pedido vira uma execução do workflow; o Mac a atende e conta o andamento em estado.json.
-  let run, inicio = Date.now();
-  for (;;) {
-    run = (await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1&event=workflow_dispatch`)).workflow_runs[0];
-    if (run && new Date(run.created_at) >= desde) break;
-    if (Date.now() - inicio > 60000) throw new Error("o pedido não chegou ao GitHub; tente de novo");
-    await espera(4000);
-  }
-  guardado(PEDIDO, String(run.id));
-  for (;;) {
-    const e = await arquivo("estado.json");
-    const min = Math.floor((Date.now() - new Date(run.created_at)) / 60000);
-    if (e.pedido >= run.id && e.estado === "ok") break;
-    if (e.pedido >= run.id && e.estado === "erro") { guardado(PEDIDO, null); throw new Error("A pesquisa falhou no Mac: " + e.mensagem); }
-    if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 5). Pode fechar a página e voltar depois.`);
-    else status(min < 3
-      ? "Pedido enviado. Esperando o Mac pegar (ele confere a cada 2 minutos)…"
-      : `Esperando o Mac há ${min} min. Ele precisa estar ligado e acordado; o pedido fica guardado até lá.`);
-    await espera(15000);
-  }
-  guardado(PEDIDO, null);
-  dados = await arquivo("dados.json");
-  mostrar();
-  status(dados.novos.length ? `Pronto: ${dados.novos.length} discos novos.` : "Pronto: nenhum disco novo desta vez.");
-}
-
-async function pesquisar() {
-  if (!guardado(CHAVE)) { $("dlg-token").showModal(); return; }
-  rodando(true, "Enviando");
-  try {
-    const desde = new Date(Date.now() - 5000);
-    await gh(`/actions/workflows/${WORKFLOW}/dispatches`, { method: "POST", body: JSON.stringify({ ref: "main" }) });
-    rodando(true);
-    await acompanhar(desde);
-  } catch (e) {
-    if (e.chave) { guardado(CHAVE, null); status("O GitHub recusou a chave. Toque em Pesquisar para cadastrar outra.", true); }
-    else if (e.github) status(e.message + ". Confira se a chave tem Actions: Read and write e Contents: Read-only no repositório digamazon.", true);
-    else status(e.message, true);
-  } finally { rodando(false); }
-}
-
-async function retomar() {
-  // Se a página foi fechada com um pedido em andamento, continua acompanhando.
-  const id = guardado(PEDIDO);
-  if (!guardado(CHAVE) || !id) return;
-  rodando(true);
-  try {
-    const run = await gh(`/actions/runs/${id}`);
-    await acompanhar(new Date(run.created_at));
-  } catch (e) { status(e.message, true); }
-  finally { rodando(false); }
-}
-
-$("pesquisar").addEventListener("click", pesquisar);
 $("filtro").addEventListener("input", mostrarTodos);
 $("ordem").addEventListener("change", mostrarTodos);
-$("cancelar").addEventListener("click", () => $("dlg-token").close());
-$("salvar").addEventListener("click", () => {
-  const t = $("token").value.trim();
-  if (!t) return;
-  guardado(CHAVE, t); $("token").value = ""; $("dlg-token").close(); pesquisar();
-});
-
-carregar().then(retomar).catch(e => status(e.message, true));
+iniciar();
 </script>
 </body>
 </html>
