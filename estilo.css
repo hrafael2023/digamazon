@@ -71,7 +71,7 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .dig b { position: relative; color: #111; font: 900 13px/1 var(--sans); letter-spacing: -.01em; }
 @keyframes girar { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .dig svg { animation: none; } }
-.disco img { width: 100%; height: 100%; object-fit: contain; }
+.disco img { width: 100%; height: 100%; object-fit: cover; }  /* capa fora do quadrado é cortada para caber */
 .disco .info { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
 .disco .titulo { font-weight: 600; font-size: 14px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .disco .artista { color: var(--mut); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

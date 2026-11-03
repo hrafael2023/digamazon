@@ -8,7 +8,8 @@ const API = "https://api.github.com/repos/" + REPO;
 const $ = id => document.getElementById(id);
 const DIG = 85;  // nota do Metacritic a partir desta ganha o selo "Dig!"
 const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-const capaGrande = foto => foto.replace(/\._AC_[^.]*_\./, "._AC_SL400_.");
+// Sem o "_AC_": ele recorta as bordas brancas e deixa algumas capas compridas.
+const capaGrande = foto => foto.replace(/\._AC_[^.]*_\./, "._SL400_.");
 let dados = null;
 
 const PESQUISA = !!$("pesquisar");  // só a página principal tem o botão
