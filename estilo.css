@@ -88,6 +88,12 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .filtros input, .filtros select { font: 15px var(--sans); color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; min-height: 44px; }
 .filtros input { flex: 1; min-width: 0; }
 .filtros select { flex: none; }  /* a busca encolhe; a ordenação mostra o texto inteiro */
+/* Paginação da lista completa */
+.paginas { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 20px 0 0; }
+.paginas:empty { display: none; }
+.paginas button { min-width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--ink); font: 700 15px var(--sans); cursor: pointer; }
+.paginas button[aria-current] { background: var(--btn); color: var(--on-btn); border-color: var(--btn); opacity: 1; }
+.paginas button:disabled:not([aria-current]) { opacity: .35; cursor: default; }
 dialog { border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); max-width: min(440px, calc(100vw - 32px)); padding: 20px; }
 dialog::backdrop { background: rgb(0 0 0 / .45); }
 dialog h3 { margin: 0 0 8px; font-size: 18px; }

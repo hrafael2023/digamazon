@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=1.9">
+<link rel="stylesheet" href="estilo.css?v=1.10">
 </head>
 <body>
 <header class="topo">
@@ -31,7 +31,7 @@
 
   <div class="separador">lista completa</div>
 
-  <h2>Todos abaixo de R$ 150 <span class="conta" id="conta-todos"></span></h2>
+  <h2 id="topo-todos">Todos abaixo de R$ 150 <span class="conta" id="conta-todos"></span></h2>
   <div class="filtros">
     <input id="filtro" type="search" placeholder="Filtrar por disco ou artista" autocomplete="off">
     <select id="ordem" aria-label="Ordenar">
@@ -41,11 +41,12 @@
     </select>
   </div>
   <div class="grade" id="todos"></div>
+  <nav class="paginas" id="paginas" aria-label="Páginas"></nav>
 </main>
 
-<footer class="rodape">DigAmazon · versão 1.9</footer>
+<footer class="rodape">DigAmazon · versão 1.10</footer>
 
-<script src="comum.js?v=1.9"></script>
+<script src="comum.js?v=1.10"></script>
 <script>
 // Estrela de 10 pontas; gira por trás do texto, que fica parado.
 const ESTRELA = '<svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,0 61.4,14.8 79.4,9.5 79.9,28.3 97.6,34.5 87,50 97.6,65.5 79.9,71.7 79.4,90.5 61.4,85.2 50,100 38.6,85.2 20.6,90.5 20.1,71.7 2.4,65.5 13,50 2.4,34.5 20.1,28.3 20.6,9.5 38.6,14.8"/></svg><b>Dig!</b>';
@@ -70,6 +71,9 @@ function card(d, novo) {
   return a;
 }
 
+const POR_PAGINA = 300;
+let pagina = 1;
+
 function mostrarTodos() {
   if (!dados) return;
   const q = $("filtro").value.trim().toLowerCase();
@@ -78,9 +82,35 @@ function mostrarTodos() {
   const ordem = $("ordem").value;
   if (ordem === "preco-desc") lista = lista.slice().sort((a, b) => b.preco - a.preco);
   if (ordem === "nome") lista = lista.slice().sort((a, b) => (a.artista || a.titulo).localeCompare(b.artista || b.titulo, "pt-BR"));
-  const g = $("todos"); g.replaceChildren(...lista.map(d => card(d, novos.has(d.asin))));
+  const total = Math.max(1, Math.ceil(lista.length / POR_PAGINA));
+  pagina = Math.min(pagina, total);
+  const trecho = lista.slice((pagina - 1) * POR_PAGINA, pagina * POR_PAGINA);
+  const g = $("todos"); g.replaceChildren(...trecho.map(d => card(d, novos.has(d.asin))));
   $("conta-todos").textContent = q ? `${lista.length} de ${dados.discos.length}` : `${dados.discos.length}`;
   if (!lista.length) g.innerHTML = '<div class="vazio">Nenhum disco com esse nome.</div>';
+  paginas(total);
+}
+
+function paginas(total) {
+  const nav = $("paginas");
+  nav.replaceChildren();
+  if (total < 2) return;
+  const botao = (rotulo, n, atual) => {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = rotulo;
+    if (atual) b.setAttribute("aria-current", "page");
+    b.disabled = n < 1 || n > total || atual;
+    b.addEventListener("click", () => irPara(n));
+    return b;
+  };
+  nav.append(botao("‹", pagina - 1));
+  for (let n = 1; n <= total; n++) nav.append(botao(String(n), n, n === pagina));
+  nav.append(botao("›", pagina + 1));
+}
+
+function irPara(n) {
+  pagina = n;
+  mostrarTodos();
+  $("topo-todos").scrollIntoView({ behavior: "smooth" });
 }
 
 function mostrar() {
@@ -95,8 +125,9 @@ function mostrar() {
   mostrarTodos();
 }
 
-$("filtro").addEventListener("input", mostrarTodos);
-$("ordem").addEventListener("change", mostrarTodos);
+// Mudou a busca ou a ordem: volta para a primeira página.
+$("filtro").addEventListener("input", () => { pagina = 1; mostrarTodos(); });
+$("ordem").addEventListener("change", () => { pagina = 1; mostrarTodos(); });
 iniciar();
 </script>
 </body>
