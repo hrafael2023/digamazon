@@ -64,14 +64,15 @@ h2 .conta { font-size: 14px; font-weight: 600; color: var(--mut); }
 .separador::before, .separador::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
 .disco { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; text-decoration: none; }
-.disco .capa { position: relative; aspect-ratio: 1; background: #fff; display: flex; align-items: center; justify-content: center; }
+.disco .capa { position: relative; aspect-ratio: 1; overflow: hidden; background: #fff; display: flex; align-items: center; justify-content: center; }
 /* Selo dos discos com crítica de 85 ou mais no Metacritic, no canto do cartão */
 .dig { position: absolute; bottom: 6px; right: 6px; width: 46px; height: 46px; display: grid; place-items: center; filter: drop-shadow(0 1px 2px rgb(0 0 0 / .35)); }
 .dig svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: #13ff00; animation: girar 6s linear infinite; }
 .dig b { position: relative; color: #111; font: 900 13px/1 var(--sans); letter-spacing: -.01em; }
 @keyframes girar { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .dig svg { animation: none; } }
-.disco img { width: 100%; height: 100%; object-fit: cover; }  /* capa fora do quadrado é cortada para caber */
+/* A imagem não define a altura da capa: a que não for quadrada é cortada para caber. */
+.disco img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .disco .info { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
 .disco .titulo { font-weight: 600; font-size: 14px; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .disco .artista { color: var(--mut); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
