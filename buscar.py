@@ -28,6 +28,9 @@ PASTA = Path(__file__).resolve().parent
 DADOS = PASTA / "dados.json"
 # ASIN → quando o disco apareceu pela primeira vez abaixo do limite.
 VISTOS = PASTA / "vistos.json"
+# Progresso de uma busca interrompida, para o próximo Dig continuar dali.
+PARCIAL = PASTA / "logs" / "parcial.json"
+RETOMAR_ATE = dt.timedelta(hours=3)
 LIMITE = 150.0
 MAX_PAGINAS = 150
 URL = ("https://www.amazon.com.br/s?i=popular&rh=n%3A19549018011"
@@ -58,6 +61,9 @@ def baixar(pagina):
         if r.headers.get("Content-Encoding") == "gzip":
             corpo = gzip.decompress(corpo)
     texto = corpo.decode("utf-8", "replace")
+    if "bm-verify" in texto or "/_sec/verify" in texto:
+        guardar_falha(pagina, texto)
+        raise Bloqueado(f"a Amazon pediu uma verificação anti-robô na página {pagina}")
     if "validateCaptcha" in texto:
         guardar_falha(pagina, texto)
         raise Bloqueado(f"captcha na página {pagina}")
@@ -74,9 +80,10 @@ def guardar_falha(pagina, texto):
     (pasta / f"falha-pagina-{pagina}.html").write_text(texto)
 
 
-# A Amazon às vezes devolve páginas vazias por alguns minutos seguidos;
-# esperar cada vez mais (até uns 7 minutos no total) costuma resolver.
-ESPERAS = [15, 30, 60, 120, 180]
+# Quando a Amazon desconfia de robô, devolve uma página de verificação no lugar
+# dos resultados. Não tentamos passar por ela: só esperamos cada vez mais
+# (até uns 12 minutos no total), o que costuma bastar para ela liberar.
+ESPERAS = [30, 60, 120, 240, 300]
 
 
 def baixar_com_paciencia(pagina):
@@ -129,13 +136,18 @@ def extrair(texto):
 
 
 def coletar():
-    achados = {}
-    acima = 0
-    for pagina in range(1, MAX_PAGINAS + 1):
+    """Percorre as páginas; se a última busca parou no meio há pouco tempo, continua de onde parou."""
+    achados, acima, inicio = {}, 0, 1
+    if PARCIAL.exists():
+        p = json.loads(PARCIAL.read_text())
+        if dt.datetime.now(FUSO) - dt.datetime.fromisoformat(p["quando"]) < RETOMAR_ATE:
+            achados, acima, inicio = p["achados"], p["acima"], p["pagina"] + 1
+            print(f"continuando da página {inicio}, com {len(achados)} discos já lidos")
+    for pagina in range(inicio, MAX_PAGINAS + 1):
         try:
             discos = extrair(baixar_com_paciencia(pagina))
         except Exception as e:
-            raise RuntimeError(f"{e} (depois de {len(achados)} discos)") from e
+            raise RuntimeError(f"{e} (depois de {len(achados)} discos; o próximo Dig continua dali)") from e
         if not discos:
             break
         for d in discos:
@@ -145,9 +157,13 @@ def coletar():
         print(f"página {pagina}: {len(discos)} discos, menor R$ {menor:.2f}, total {len(achados)}")
         # A ordenação da Amazon não é exata, então só para depois de duas páginas inteiras acima do limite.
         acima = acima + 1 if menor >= LIMITE else 0
+        PARCIAL.parent.mkdir(exist_ok=True)
+        PARCIAL.write_text(json.dumps({"pagina": pagina, "acima": acima, "achados": achados,
+                                       "quando": dt.datetime.now(FUSO).isoformat(timespec="seconds")}))
         if acima >= 2:
             break
-        time.sleep(random.uniform(2, 4))
+        # Uma página a cada poucos segundos, para não sobrecarregar a Amazon.
+        time.sleep(random.uniform(3, 6))
     return achados
 
 
@@ -188,6 +204,7 @@ def buscar():
     anotar(discos, notas.atualizar(discos, mostrar=lambda m: avisar(m, "notice")), vistos)
 
     VISTOS.write_text(json.dumps(vistos, indent=0, sort_keys=True) + "\n")
+    PARCIAL.unlink(missing_ok=True)
     DADOS.write_text(json.dumps({
         "atualizado": agora,
         "limite": LIMITE,
