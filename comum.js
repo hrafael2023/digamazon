@@ -1,5 +1,5 @@
-// Parte comum às duas páginas: o topo (data da última pesquisa e botão Pesquisar)
-// e a leitura dos discos. Cada página define mostrar(), chamada sempre que os dados mudam.
+// Parte comum às duas páginas: o topo (data da última pesquisa e, na principal, o
+// botão Pesquisar) e a leitura dos discos. Cada página define mostrar(), chamada sempre que os dados mudam.
 const REPO = "hrafael2023/digamazon";
 const WORKFLOW = "pedido.yml";
 const PEDIDO = "digamazon.pedido";
@@ -11,7 +11,9 @@ const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL"
 const capaGrande = foto => foto.replace(/\._AC_[^.]*_\./, "._AC_SL400_.");
 let dados = null;
 
-document.body.insertAdjacentHTML("beforeend", `
+const PESQUISA = !!$("pesquisar");  // só a página principal tem o botão
+
+if (PESQUISA) document.body.insertAdjacentHTML("beforeend", `
 <dialog id="dlg-token">
   <h3>Liberar a pesquisa por este celular</h3>
   <p class="nota" style="margin:0">O botão deixa um pedido no GitHub, que o Mac atende. Para isso, crie uma chave uma única vez:</p>
@@ -134,13 +136,15 @@ async function retomar() {
   finally { rodando(false); }
 }
 
-$("pesquisar").addEventListener("click", pesquisar);
-$("cancelar").addEventListener("click", () => $("dlg-token").close());
-$("salvar").addEventListener("click", () => {
-  const t = $("token").value.trim();
-  if (!t) return;
-  guardado(CHAVE, t); $("token").value = ""; $("dlg-token").close(); pesquisar();
-});
+if (PESQUISA) {
+  $("pesquisar").addEventListener("click", pesquisar);
+  $("cancelar").addEventListener("click", () => $("dlg-token").close());
+  $("salvar").addEventListener("click", () => {
+    const t = $("token").value.trim();
+    if (!t) return;
+    guardado(CHAVE, t); $("token").value = ""; $("dlg-token").close(); pesquisar();
+  });
+}
 
 // Chamada pela página depois de definir mostrar().
-function iniciar() { carregar().then(retomar).catch(e => status(e.message, true)); }
+function iniciar() { carregar().then(() => PESQUISA && retomar()).catch(e => status(e.message, true)); }
