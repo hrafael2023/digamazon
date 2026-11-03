@@ -40,7 +40,7 @@ h1 span { color: var(--accent); }
 #pesquisar {
   flex: none; border: 0; border-radius: 999px; padding: 12px 18px;
   background: var(--btn); color: var(--on-btn); font: 700 15px var(--sans); cursor: pointer;
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; min-width: 96px;  /* "Dig" é curto; largura mínima para o toque */
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; min-width: 76px;  /* "Dig" é curto; largura mínima para o toque */
 }
 #pesquisar:disabled { opacity: .6; cursor: default; }
 #pesquisar .gira { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: none; animation: g 0.8s linear infinite; }
