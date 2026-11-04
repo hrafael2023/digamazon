@@ -1,10 +1,81 @@
 {
-"atualizado": "2026-11-04T10:07-03:00",
+"atualizado": "2026-11-04T10:20-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
-"novos": [],
+"novos": [
+"B014X9YXF6",
+"B0HB71SB7G",
+"B07GTGKM9F",
+"B0H736389Q",
+"B005HYCV56",
+"B07KYFC8NP",
+"B01MZWI6FU"
+],
 "discos": [
+{
+"asin": "B014X9YXF6",
+"titulo": "Titas - Nheengatu - Ao Vivo [CD]",
+"artista": "Titas",
+"ano": "2015",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/41XkGIjXwAL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
+{
+"asin": "B0HB71SB7G",
+"titulo": "CD - LEVAGUIA TERE - VITOR ARAUJO",
+"artista": "",
+"ano": "",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/41O0XURH8oL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
+{
+"asin": "B07GTGKM9F",
+"titulo": "BUENA VISTA SOCIAL CLUB - T.S.O (DVD",
+"artista": "",
+"ano": "",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/71ErrYWZYkL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
+{
+"asin": "B0H736389Q",
+"titulo": "CD - ARNALDO BRANDÃO - PSICOPOP",
+"artista": "",
+"ano": "",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/21HeLCTbUHL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
+{
+"asin": "B005HYCV56",
+"titulo": "CASSIANE E JAIRINHO - O AMOR E MAIS",
+"artista": "Cassiane E Jairinho",
+"ano": "",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/71RQvcADVpL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
+{
+"asin": "B07KYFC8NP",
+"titulo": "Viola Perfumosa",
+"artista": "Ceumar, Paulo Freire e Lui Coimbra",
+"ano": "2018",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/61z3B0+jwcL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
+{
+"asin": "B01MZWI6FU",
+"titulo": "Lulu Santos - Lulu & Nelsinho [CD]",
+"artista": "Lulu Santos",
+"ano": "2016",
+"preco": 30.0,
+"foto": "https://m.media-amazon.com/images/I/61HiQ2czuXL._AC_UY218_.jpg",
+"visto": "2026-11-04T10:20-03:00"
+},
 {
 "asin": "B01M4PGVA1",
 "titulo": "Compacto Assim Começa A Bebedeira",
@@ -7425,156 +7496,6 @@
 "ano": "2023",
 "preco": 136.51,
 "foto": "https://m.media-amazon.com/images/I/41WBwSneKgL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0DPR54V4P",
-"titulo": "Fata Morgana: Dawn",
-"artista": "St. Lucia",
-"ano": "2025",
-"preco": 136.58,
-"foto": "https://m.media-amazon.com/images/I/51RfiAmRX+L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0948JTFGS",
-"titulo": "KIDZ BOP 1 (20th Birthday Edition) [Blue LP]",
-"artista": "KIDZ BOP Kids",
-"ano": "2021",
-"preco": 136.58,
-"foto": "https://m.media-amazon.com/images/I/61XfTY7+-ZL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07PBD8LRL",
-"titulo": "Ridin' High Again",
-"artista": "Jack Ingram",
-"ano": "2025",
-"preco": 136.7,
-"foto": "https://m.media-amazon.com/images/I/81BBlNk8WGL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BTJ8BWMS",
-"titulo": "STAR EATERS DELIGHT (GOLD VINYL)",
-"artista": "Lael Neale",
-"ano": "2025",
-"preco": 136.73,
-"foto": "https://m.media-amazon.com/images/I/51VTOWr9UuL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 81,
-"nota_url": "https://www.metacritic.com/music/star-eaters-delight/lael-neale/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
-},
-{
-"asin": "B07JJ64GHY",
-"titulo": "1981 Extended Play",
-"artista": "I DONT KNOW HOW BUT THEY FOUND ME",
-"ano": "2017",
-"preco": 136.79,
-"foto": "https://m.media-amazon.com/images/I/61iz6QAPFTL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0D4F1JTJX",
-"titulo": "Everything Is Connected: The Best Of Blancmange 1979-2024 (Colored Vinyl, Black)",
-"artista": "",
-"ano": "2025",
-"preco": 136.83,
-"foto": "https://m.media-amazon.com/images/I/71DtWNVE0cL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B06XGFP17C",
-"titulo": "Tropical Odds",
-"artista": "",
-"ano": "2025",
-"preco": 136.95,
-"foto": "https://m.media-amazon.com/images/I/61pXeCCSylL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0D6L1B6H4",
-"titulo": "SERVANT (PURPLE VINYL)",
-"artista": "Errorr",
-"ano": "2024",
-"preco": 136.99,
-"foto": "https://m.media-amazon.com/images/I/91kGy0KvYRL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CH7ZFVRM",
-"titulo": "That Holiday Feeling! (Remastered) (GREEN VINYL)",
-"artista": "Steve Lawrence & Eydie Gorme",
-"ano": "2023",
-"preco": 137.0,
-"foto": "https://m.media-amazon.com/images/I/71XxIjqx1IL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B00CF0QKL6",
-"titulo": "Brand New Bangarang",
-"artista": "",
-"ano": "2025",
-"preco": 137.0,
-"foto": "https://m.media-amazon.com/images/I/512e6olXWFL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0C7LFBWZR",
-"titulo": "Twenty On High",
-"artista": "Drayton Farley",
-"ano": "2025",
-"preco": 137.03,
-"foto": "https://m.media-amazon.com/images/I/81ZmQjaOo5L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0718ZF4XP",
-"titulo": "Through Fire - Breathe",
-"artista": "Through Fire",
-"ano": "2017",
-"preco": 137.1,
-"foto": "https://m.media-amazon.com/images/I/71wG5fCqekL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0D9R8D8DF",
-"titulo": "We Already Won",
-"artista": "Zauntee",
-"ano": "2024",
-"preco": 137.11,
-"foto": "https://m.media-amazon.com/images/I/61k9GBaS4RL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0DHW6PDKB",
-"titulo": "Global [Vinilo]",
-"artista": "Todd Rundgren",
-"ano": "2024",
-"preco": 137.12,
-"foto": "https://m.media-amazon.com/images/I/81ZSRodvgiL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 57,
-"nota_url": "https://www.metacritic.com/music/global/todd-rundgren/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
-},
-{
-"asin": "B0CZTQQJYT",
-"titulo": "GUESTS OF honour (RED VINYL)",
-"artista": "Engelbert Humperdinck",
-"ano": "2024",
-"preco": 137.15,
-"foto": "https://m.media-amazon.com/images/I/81SEh+0vvNL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CGB35D4F",
-"titulo": "STARVATION BOX (RED MARBLE VINYL)",
-"artista": "Dale Watson",
-"ano": "2023",
-"preco": 137.17,
-"foto": "https://m.media-amazon.com/images/I/81MSP-aQr5L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
