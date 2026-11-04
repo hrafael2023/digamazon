@@ -1,9 +1,11 @@
 {
-"atualizado": "2026-11-04T18:55-03:00",
+"atualizado": "2026-11-04T20:36-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 71,
-"novos": [],
+"paginas": 72,
+"novos": [
+"B01N7VDTSK"
+],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -55,7 +57,7 @@
 "titulo": "The Fuck Song",
 "artista": "LILLEY,CHRIS",
 "ano": "2025",
-"preco": 58.52,
+"preco": 58.51,
 "foto": "https://m.media-amazon.com/images/I/91FmzRlOasL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -73,7 +75,7 @@
 "titulo": "Christmas With A K",
 "artista": "Ktrevor Wilson",
 "ano": "2020",
-"preco": 62.85,
+"preco": 62.84,
 "foto": "https://m.media-amazon.com/images/I/61fNygpsvzL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -228,15 +230,6 @@
 "ano": "2025",
 "preco": 73.37,
 "foto": "https://m.media-amazon.com/images/I/61be2pyjO5L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CXSKGYDG",
-"titulo": "Baby J",
-"artista": "John Mulaney",
-"ano": "2024",
-"preco": 73.8,
-"foto": "https://m.media-amazon.com/images/I/71n7nBtBnpL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -523,7 +516,7 @@
 "titulo": "See Now and Know",
 "artista": "",
 "ano": "2025",
-"preco": 85.12,
+"preco": 85.11,
 "foto": "https://m.media-amazon.com/images/I/A1dte085A3L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -649,7 +642,7 @@
 "titulo": "Moody Motorcycle [Digital Download Coupon]",
 "artista": "",
 "ano": "2025",
-"preco": 86.93,
+"preco": 86.92,
 "foto": "https://m.media-amazon.com/images/I/51iyEXK4qSL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -658,7 +651,7 @@
 "titulo": "HOW IT ENDS",
 "artista": "TOLEDO",
 "ano": "2025",
-"preco": 86.96,
+"preco": 86.97,
 "foto": "https://m.media-amazon.com/images/I/A1FTB-fD8VL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -908,7 +901,7 @@
 "titulo": "Grass Roots",
 "artista": "Leftover Salmon",
 "ano": "2025",
-"preco": 91.54,
+"preco": 91.53,
 "foto": "https://m.media-amazon.com/images/I/81eysWaFzeL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1055,7 +1048,7 @@
 "titulo": "BRAND NEW DISTANCE",
 "artista": "Cimarron 615",
 "ano": "2025",
-"preco": 93.62,
+"preco": 93.61,
 "foto": "https://m.media-amazon.com/images/I/91vw5cS+JUL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1091,7 +1084,7 @@
 "titulo": "She Won't Make Sense",
 "artista": "The Harmaleighs",
 "ano": "2025",
-"preco": 94.69,
+"preco": 94.68,
 "foto": "https://m.media-amazon.com/images/I/81sFJwgk7wL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1109,7 +1102,7 @@
 "titulo": "New Music and Big Pop (Coke Bottle Green Vinyl)",
 "artista": "Another Michael",
 "ano": "2021",
-"preco": 94.82,
+"preco": 94.81,
 "foto": "https://m.media-amazon.com/images/I/81kjj5D-O9L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1127,7 +1120,7 @@
 "titulo": "Rarest Of Birds",
 "artista": "",
 "ano": "2025",
-"preco": 95.05,
+"preco": 95.04,
 "foto": "https://m.media-amazon.com/images/I/A1ZWvCE6F8L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1189,21 +1182,21 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
+"asin": "B0C3MW9GS9",
+"titulo": "WANNABE",
+"artista": "Martin Frawley",
+"ano": "2025",
+"preco": 95.61,
+"foto": "https://m.media-amazon.com/images/I/819N0BRNA-L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B08TSLZWP5",
 "titulo": "The Ghost and the Wall",
 "artista": "Joshua Radin",
 "ano": "2025",
 "preco": 95.61,
 "foto": "https://m.media-amazon.com/images/I/81KKWg5RdgL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0C3MW9GS9",
-"titulo": "WANNABE",
-"artista": "Martin Frawley",
-"ano": "2025",
-"preco": 95.62,
-"foto": "https://m.media-amazon.com/images/I/819N0BRNA-L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -1247,7 +1240,7 @@
 "titulo": "Endless Skyways [LP]",
 "artista": "",
 "ano": "2025",
-"preco": 95.99,
+"preco": 95.98,
 "foto": "https://m.media-amazon.com/images/I/81AebJ2G6eL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1337,7 +1330,7 @@
 "titulo": "VOLUME 1",
 "artista": "Craig Owens",
 "ano": "2025",
-"preco": 97.1,
+"preco": 97.09,
 "foto": "https://m.media-amazon.com/images/I/9168-wnKODL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1520,7 +1513,7 @@
 "titulo": "Wishes To Fulfill - Yellow",
 "artista": "Another Michael",
 "ano": "2025",
-"preco": 98.7,
+"preco": 98.69,
 "foto": "https://m.media-amazon.com/images/I/919H7k4wLbL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1610,7 +1603,7 @@
 "titulo": "Love at Low Speed",
 "artista": "",
 "ano": "2025",
-"preco": 99.51,
+"preco": 99.5,
 "foto": "https://m.media-amazon.com/images/I/81qd2TUv0FL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1655,7 +1648,7 @@
 "titulo": "Small Town Hymns",
 "artista": "American Aquarium",
 "ano": "2025",
-"preco": 100.03,
+"preco": 100.02,
 "foto": "https://m.media-amazon.com/images/I/81koKJaOQ+L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -1842,7 +1835,7 @@
 "titulo": "GLOW - Coke Bottle Clear",
 "artista": "Wesley Joseph",
 "ano": "2025",
-"preco": 101.41,
+"preco": 101.4,
 "foto": "https://m.media-amazon.com/images/I/61N5X+BdztL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2001,7 +1994,7 @@
 "titulo": "CATSPEAK",
 "artista": "",
 "ano": "",
-"preco": 102.68,
+"preco": 102.67,
 "foto": "https://m.media-amazon.com/images/I/91u+TW7EUcL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2019,7 +2012,7 @@
 "titulo": "Oh No",
 "artista": "Same Side",
 "ano": "2025",
-"preco": 102.87,
+"preco": 102.86,
 "foto": "https://m.media-amazon.com/images/I/71A96e7sfML._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2042,21 +2035,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BPWLQ926",
+"titulo": "Appear To Fade",
+"artista": "",
+"ano": "2025",
+"preco": 103.05,
+"foto": "https://m.media-amazon.com/images/I/71ln1ihOUFL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B07CPMYR7M",
 "titulo": "All The Things That I Did And All The Things That I Didn't Do",
 "artista": "",
 "ano": "2025",
 "preco": 103.05,
 "foto": "https://m.media-amazon.com/images/I/A1iSMfiLabL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BPWLQ926",
-"titulo": "Appear To Fade",
-"artista": "",
-"ano": "2025",
-"preco": 103.06,
-"foto": "https://m.media-amazon.com/images/I/71ln1ihOUFL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -2091,7 +2084,7 @@
 "titulo": "ARE YOU HAPPY EP",
 "artista": "",
 "ano": "2025",
-"preco": 103.28,
+"preco": 103.27,
 "foto": "https://m.media-amazon.com/images/I/71uOzaTHYYL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2166,7 +2159,7 @@
 "titulo": "Yellow Coat",
 "artista": "Matt Costa",
 "ano": "2020",
-"preco": 103.71,
+"preco": 103.7,
 "foto": "https://m.media-amazon.com/images/I/911pRH3p80L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2202,7 +2195,7 @@
 "titulo": "Conduit",
 "artista": "The Spill Canvas",
 "ano": "2025",
-"preco": 103.96,
+"preco": 103.95,
 "foto": "https://m.media-amazon.com/images/I/71GZBWcldkL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2220,7 +2213,7 @@
 "titulo": "High Desert Daydream",
 "artista": "Noelle & the Deserters",
 "ano": "2024",
-"preco": 104.09,
+"preco": 104.08,
 "foto": "https://m.media-amazon.com/images/I/61emCEySpqL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2355,7 +2348,7 @@
 "titulo": "NOTHING ELSE MATTERS",
 "artista": "Phoebe Hunt",
 "ano": "2025",
-"preco": 105.09,
+"preco": 105.08,
 "foto": "https://m.media-amazon.com/images/I/71I55F+wgQL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2382,7 +2375,7 @@
 "titulo": "Trust Your Gut",
 "artista": "Worriers",
 "ano": "2025",
-"preco": 105.29,
+"preco": 105.28,
 "foto": "https://m.media-amazon.com/images/I/81quOGrrMZL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2439,7 +2432,7 @@
 "titulo": "Somebody",
 "artista": "",
 "ano": "2025",
-"preco": 105.63,
+"preco": 105.62,
 "foto": "https://m.media-amazon.com/images/I/61oBwEHMeGL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2688,7 +2681,7 @@
 "titulo": "ON BANJO (GREEN VINYL)",
 "artista": "",
 "ano": "2025",
-"preco": 107.11,
+"preco": 107.1,
 "foto": "https://m.media-amazon.com/images/I/61+j9FnXXJL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3218,15 +3211,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B01N25TIRZ",
-"titulo": "Impasse",
-"artista": "",
-"ano": "",
-"preco": 111.0,
-"foto": "https://m.media-amazon.com/images/I/51lieu6nRjL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B084DGNLNV",
 "titulo": "Fuck You Bitch: All-Time Greatest Hits",
 "artista": "Wheeler Walker Jr.",
@@ -3258,7 +3242,7 @@
 "titulo": "Unusual",
 "artista": "Marian Hill",
 "ano": "",
-"preco": 111.09,
+"preco": 111.08,
 "foto": "https://m.media-amazon.com/images/I/61y2hbKvdbL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3267,7 +3251,7 @@
 "titulo": "SLOW DOWN",
 "artista": "Henkel",
 "ano": "2024",
-"preco": 111.16,
+"preco": 111.15,
 "foto": "https://m.media-amazon.com/images/I/71XkL-lzUQL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3364,7 +3348,7 @@
 "titulo": "Lyle Lovett & His Large Band",
 "artista": "Lyle Lovett",
 "ano": "",
-"preco": 111.74,
+"preco": 111.73,
 "foto": "https://m.media-amazon.com/images/I/713zXv1YrdL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3541,7 +3525,7 @@
 "titulo": "Skeletal Lightning",
 "artista": "",
 "ano": "2025",
-"preco": 112.53,
+"preco": 112.51,
 "foto": "https://m.media-amazon.com/images/I/811DpWD+0JL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3550,7 +3534,7 @@
 "titulo": "SEASONS (CLEAR AMBER VINYL)",
 "artista": "Pete Jolly",
 "ano": "2025",
-"preco": 112.54,
+"preco": 112.52,
 "foto": "https://m.media-amazon.com/images/I/912chJ0fMXL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3586,7 +3570,7 @@
 "titulo": "Of Kings & Angels",
 "artista": "Mediaeval Baebes",
 "ano": "2025",
-"preco": 112.72,
+"preco": 112.7,
 "foto": "https://m.media-amazon.com/images/I/81QP2XbUWxL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3799,7 +3783,7 @@
 "titulo": "Three Colors: Red",
 "artista": "",
 "ano": "2025",
-"preco": 114.03,
+"preco": 114.01,
 "foto": "https://m.media-amazon.com/images/I/61bjp8YPCeL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3808,7 +3792,7 @@
 "titulo": "New Roses",
 "artista": "Ben de la Cour",
 "ano": "2025",
-"preco": 114.08,
+"preco": 114.06,
 "foto": "https://m.media-amazon.com/images/I/81gu6nvTaTL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3817,7 +3801,7 @@
 "titulo": "DRUNK ON A FIGHT",
 "artista": "",
 "ano": "",
-"preco": 114.11,
+"preco": 114.09,
 "foto": "https://m.media-amazon.com/images/I/71KAg2qs8vL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -3843,21 +3827,21 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
+"asin": "B07X5FYMV2",
+"titulo": "Table Of Context",
+"artista": "Cautious Clay",
+"ano": "2025",
+"preco": 114.19,
+"foto": "https://m.media-amazon.com/images/I/916CoYektGL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0BYM1CTTS",
 "titulo": "Il Viaggio",
 "artista": "Melanie De Biasio",
 "ano": "2025",
 "preco": 114.21,
 "foto": "https://m.media-amazon.com/images/I/81L2IaLTWpL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07X5FYMV2",
-"titulo": "Table Of Context",
-"artista": "Cautious Clay",
-"ano": "2025",
-"preco": 114.21,
-"foto": "https://m.media-amazon.com/images/I/916CoYektGL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4003,8 +3987,17 @@
 "titulo": "Arone Dyer X S T a R G a Z E",
 "artista": "Arone Dyer & Stargaze",
 "ano": "2025",
-"preco": 115.52,
+"preco": 115.5,
 "foto": "https://m.media-amazon.com/images/I/91-Bsk4e1pL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B08LS1129H",
+"titulo": "MACHINE IN THE GHOST",
+"artista": "",
+"ano": "2025",
+"preco": 115.65,
+"foto": "https://m.media-amazon.com/images/I/81IxBUPIhrL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4014,15 +4007,6 @@
 "ano": "2025",
 "preco": 115.66,
 "foto": "https://m.media-amazon.com/images/I/61Nd6Mhf+YL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B08LS1129H",
-"titulo": "MACHINE IN THE GHOST",
-"artista": "",
-"ano": "2025",
-"preco": 115.67,
-"foto": "https://m.media-amazon.com/images/I/81IxBUPIhrL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4071,6 +4055,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B07G1YKPSF",
+"titulo": "This Remedy",
+"artista": "Larry and His Flask",
+"ano": "2025",
+"preco": 116.2,
+"foto": "https://m.media-amazon.com/images/I/91HVpliBedL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B01C3ILMZI",
 "titulo": "Juarez",
 "artista": "Terry Allen",
@@ -4081,15 +4074,6 @@
 "nota": 84,
 "nota_url": "https://www.metacritic.com/music/juarez-reissue/terry-allen/critic-reviews/",
 "nota_desde": "2026-11-02T17:21"
-},
-{
-"asin": "B07G1YKPSF",
-"titulo": "This Remedy",
-"artista": "Larry and His Flask",
-"ano": "2025",
-"preco": 116.22,
-"foto": "https://m.media-amazon.com/images/I/91HVpliBedL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B0B53S2SQY",
@@ -4137,21 +4121,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B083XVGVVR",
+"titulo": "Jettison",
+"artista": "And So I Watch You From Afar",
+"ano": "2024",
+"preco": 116.87,
+"foto": "https://m.media-amazon.com/images/I/516coD2ghVL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0BFFR55KH",
 "titulo": "SUN STILL SEEMS TO MOVE (COKE BOTTLE CLEAR VINYL)",
 "artista": "Shannen Moser",
 "ano": "2025",
 "preco": 116.89,
 "foto": "https://m.media-amazon.com/images/I/91E+sLsOPcL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B083XVGVVR",
-"titulo": "Jettison",
-"artista": "And So I Watch You From Afar",
-"ano": "2024",
-"preco": 116.89,
-"foto": "https://m.media-amazon.com/images/I/516coD2ghVL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4275,21 +4259,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CHTTN3PX",
+"titulo": "Lambent Material (Anniversary Edition)",
+"artista": "",
+"ano": "2025",
+"preco": 117.85,
+"foto": "https://m.media-amazon.com/images/I/81J+BahQZLL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B07F44ZYJD",
 "titulo": "Great America",
 "artista": "",
 "ano": "",
 "preco": 117.85,
 "foto": "https://m.media-amazon.com/images/I/81LMWLSqnzL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CHTTN3PX",
-"titulo": "Lambent Material (Anniversary Edition)",
-"artista": "",
-"ano": "2025",
-"preco": 117.87,
-"foto": "https://m.media-amazon.com/images/I/81J+BahQZLL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4369,21 +4353,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BCX4FLGP",
+"titulo": "BAD LUCK & LOVE",
+"artista": "",
+"ano": "2025",
+"preco": 118.27,
+"foto": "https://m.media-amazon.com/images/I/912GqyH9TwL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0CYQJ3V17",
 "titulo": "NATA MONTANA (2LP)",
 "artista": "Natanael Cano",
 "ano": "2024",
 "preco": 118.28,
 "foto": "https://m.media-amazon.com/images/I/91WZpWhK4LL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BCX4FLGP",
-"titulo": "BAD LUCK & LOVE",
-"artista": "",
-"ano": "2025",
-"preco": 118.29,
-"foto": "https://m.media-amazon.com/images/I/912GqyH9TwL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4421,7 +4405,7 @@
 "titulo": "Roots Rock Rebel",
 "artista": "",
 "ano": "2025",
-"preco": 118.38,
+"preco": 118.36,
 "foto": "https://m.media-amazon.com/images/I/A1zEgXx-DEL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4430,7 +4414,7 @@
 "titulo": "Beautiful Illusions",
 "artista": "Lundvall Tor",
 "ano": "2021",
-"preco": 118.38,
+"preco": 118.36,
 "foto": "https://m.media-amazon.com/images/I/91JTXkEPZUL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4448,7 +4432,7 @@
 "titulo": "Hyper Relevisation",
 "artista": "",
 "ano": "2025",
-"preco": 118.43,
+"preco": 118.41,
 "foto": "https://m.media-amazon.com/images/I/81ZqBk2xatL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4475,7 +4459,7 @@
 "titulo": "Impermanence",
 "artista": "",
 "ano": "2025",
-"preco": 118.48,
+"preco": 118.46,
 "foto": "https://m.media-amazon.com/images/I/61WqNrAEL2L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4538,7 +4522,7 @@
 "titulo": "Million And One",
 "artista": "My Brightest Diamond",
 "ano": "2018",
-"preco": 119.02,
+"preco": 119.0,
 "foto": "https://m.media-amazon.com/images/I/71Zv8qaTyfL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4690,6 +4674,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B071LFWM3M",
+"titulo": "Mendelssohn: A Midsummer Night's Dream",
+"artista": "",
+"ano": "2025",
+"preco": 120.06,
+"foto": "https://m.media-amazon.com/images/I/717Tt8qpRBL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0B5B5RFW9",
 "titulo": "Please Have A Seat",
 "artista": "NNAMDI",
@@ -4708,15 +4701,6 @@
 "ano": "2025",
 "preco": 120.08,
 "foto": "https://m.media-amazon.com/images/I/813J0A3-3TL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B071LFWM3M",
-"titulo": "Mendelssohn: A Midsummer Night's Dream",
-"artista": "",
-"ano": "2025",
-"preco": 120.08,
-"foto": "https://m.media-amazon.com/images/I/717Tt8qpRBL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -4814,7 +4798,7 @@
 "titulo": "Discovered & Covered (Various Artists)",
 "artista": "Various Artists",
 "ano": "2023",
-"preco": 120.89,
+"preco": 120.87,
 "foto": "https://m.media-amazon.com/images/I/A1QdYe7+7WL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4859,7 +4843,7 @@
 "titulo": "The Best Of Tanya Tucker",
 "artista": "Tanya Tucker",
 "ano": "2025",
-"preco": 121.12,
+"preco": 121.1,
 "foto": "https://m.media-amazon.com/images/I/51-3U8Uc45L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4904,7 +4888,7 @@
 "titulo": "Up Rooted [VINYL]",
 "artista": "Roots Round Up",
 "ano": "2024",
-"preco": 121.33,
+"preco": 121.31,
 "foto": "https://m.media-amazon.com/images/I/81y8+3XnmkL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -4934,7 +4918,7 @@
 "titulo": "Amazones Power",
 "artista": "Les Amazones D'Afrique",
 "ano": "2025",
-"preco": 121.66,
+"preco": 121.64,
 "foto": "https://m.media-amazon.com/images/I/71CdVaAdDIL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00",
 "nota": 85,
@@ -4968,7 +4952,7 @@
 "titulo": "Santa Baby",
 "artista": "Sweet Megg",
 "ano": "2023",
-"preco": 121.97,
+"preco": 121.95,
 "foto": "https://m.media-amazon.com/images/I/81HsST3PjML._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -5049,7 +5033,7 @@
 "titulo": "ALWAYS & ALWAYS (PINK VINYL)",
 "artista": "",
 "ano": "2025",
-"preco": 122.38,
+"preco": 122.36,
 "foto": "https://m.media-amazon.com/images/I/61w-HRpIh2L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -5165,21 +5149,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B09MKTZ4LT",
-"titulo": "Righteous Babe",
-"artista": "",
-"ano": "",
-"preco": 123.1,
-"foto": "https://m.media-amazon.com/images/I/81OSxow-jAL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B00IQ8TQU8",
 "titulo": "Obsessed",
 "artista": "",
 "ano": "",
 "preco": 123.11,
 "foto": "https://m.media-amazon.com/images/I/71MGj7vJe8L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B09MKTZ4LT",
+"titulo": "Righteous Babe",
+"artista": "",
+"ano": "",
+"preco": 123.12,
+"foto": "https://m.media-amazon.com/images/I/81OSxow-jAL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -5210,21 +5194,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0C9SH88SV",
+"titulo": "HILLBILLIES IN HELL: WAKE ME UP BRIMSTONE & BEAUTY FROM THE NASHVILLE PULPIT (1952-1974)",
+"artista": "Various Artists",
+"ano": "2025",
+"preco": 123.36,
+"foto": "https://m.media-amazon.com/images/I/71Xzy8MUSlL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B07XW7DCXB",
 "titulo": "Squad Up/Instrumental",
 "artista": "",
 "ano": "2025",
 "preco": 123.37,
 "foto": "https://m.media-amazon.com/images/I/61M-3Sf6LyL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0C9SH88SV",
-"titulo": "HILLBILLIES IN HELL: WAKE ME UP BRIMSTONE & BEAUTY FROM THE NASHVILLE PULPIT (1952-1974)",
-"artista": "Various Artists",
-"ano": "2025",
-"preco": 123.38,
-"foto": "https://m.media-amazon.com/images/I/71Xzy8MUSlL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -5285,6 +5269,18 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
+"asin": "B0BNLL8CVF",
+"titulo": "SLICK DOGS & PONIES (TRANSLUCENT GREEN VINYL/180G)",
+"artista": "Louis XIV",
+"ano": "2025",
+"preco": 123.66,
+"foto": "https://m.media-amazon.com/images/I/71lcfgA1XOL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00",
+"nota": 37,
+"nota_url": "https://www.metacritic.com/music/slick-dogs-and-ponies/louis-xiv/critic-reviews/",
+"nota_desde": "2026-11-02T17:21"
+},
+{
 "asin": "B07CCFSCKY",
 "titulo": "Have Mercy",
 "artista": "Paul Cauthen",
@@ -5292,18 +5288,6 @@
 "preco": 123.67,
 "foto": "https://m.media-amazon.com/images/I/71Zq-7gBHHL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BNLL8CVF",
-"titulo": "SLICK DOGS & PONIES (TRANSLUCENT GREEN VINYL/180G)",
-"artista": "Louis XIV",
-"ano": "2025",
-"preco": 123.68,
-"foto": "https://m.media-amazon.com/images/I/71lcfgA1XOL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 37,
-"nota_url": "https://www.metacritic.com/music/slick-dogs-and-ponies/louis-xiv/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
 },
 {
 "asin": "B0CJPD5RQP",
@@ -5319,7 +5303,7 @@
 "titulo": "Fake Synthetic Music",
 "artista": "",
 "ano": "2025",
-"preco": 123.81,
+"preco": 123.79,
 "foto": "https://m.media-amazon.com/images/I/41A3yq7zI6L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -5381,6 +5365,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CS3XG4LM",
+"titulo": "Shackamaxon Concert",
+"artista": "Elkhorn & Gangloff, Mike",
+"ano": "2025",
+"preco": 124.17,
+"foto": "https://m.media-amazon.com/images/I/71Psm2I0ftL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0D5N2G9PZ",
 "titulo": "Peter Dean In Fun City [VINYL]",
 "artista": "Peter Dean",
@@ -5390,30 +5383,12 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0CS3XG4LM",
-"titulo": "Shackamaxon Concert",
-"artista": "Elkhorn & Gangloff, Mike",
-"ano": "2025",
-"preco": 124.19,
-"foto": "https://m.media-amazon.com/images/I/71Psm2I0ftL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0CTBP2DT9",
 "titulo": "WORLD WIDE WHACK (X) (SILVER VINYL)",
 "artista": "Tierra Whack",
 "ano": "2024",
 "preco": 124.22,
 "foto": "https://m.media-amazon.com/images/I/614NGfLaX5L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B094RSP7L3",
-"titulo": "Native Speaker (10 Year Anniversary) (Green & Yellow Vinyl)",
-"artista": "Braids",
-"ano": "2025",
-"preco": 124.36,
-"foto": "https://m.media-amazon.com/images/I/81x5-QG7qPL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -5430,7 +5405,7 @@
 "titulo": "The Price of Progress",
 "artista": "The Hold Steady",
 "ano": "2023",
-"preco": 124.49,
+"preco": 124.47,
 "foto": "https://m.media-amazon.com/images/I/817lBUgbXoL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00",
 "nota": 79,
@@ -5553,7 +5528,7 @@
 "titulo": "If",
 "artista": "",
 "ano": "2025",
-"preco": 125.16,
+"preco": 125.14,
 "foto": "https://m.media-amazon.com/images/I/71S+jbATtlL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -5644,7 +5619,7 @@
 "artista": "Miguel Bose",
 "ano": "2024",
 "preco": 125.95,
-"foto": "https://m.media-amazon.com/images/I/51whsReYFPL._AC_UY218_.jpg",
+"foto": "https://m.media-amazon.com/images/I/51Gk+Cwd0eL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -5652,7 +5627,7 @@
 "titulo": "The Sand Castle Tapes",
 "artista": "Balthazar",
 "ano": "2025",
-"preco": 126.0,
+"preco": 125.98,
 "foto": "https://m.media-amazon.com/images/I/611+Xywr3ZL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -5765,6 +5740,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CWVP2CDH",
+"titulo": "The Afternoon of Our Lives",
+"artista": "Olivier Rocabois",
+"ano": "2024",
+"preco": 126.58,
+"foto": "https://m.media-amazon.com/images/I/61nVyi+82bL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0BMW3BJBY",
 "titulo": "FACTORIES, FARMS & AMPHETAMINES",
 "artista": "",
@@ -5780,15 +5764,6 @@
 "ano": "2024",
 "preco": 126.6,
 "foto": "https://m.media-amazon.com/images/I/91zb8bH8ZGL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CWVP2CDH",
-"titulo": "The Afternoon of Our Lives",
-"artista": "Olivier Rocabois",
-"ano": "2024",
-"preco": 126.6,
-"foto": "https://m.media-amazon.com/images/I/61nVyi+82bL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -5907,7 +5882,7 @@
 "titulo": "MTV Unplugged - 140gm Vinyl [Import] (140 Gram Vinyl, Spain - Import)",
 "artista": "",
 "ano": "2025",
-"preco": 127.45,
+"preco": 127.43,
 "foto": "https://m.media-amazon.com/images/I/61lvuw5vgKL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6222,7 +6197,7 @@
 "titulo": "Miss Show Business",
 "artista": "",
 "ano": "2025",
-"preco": 129.21,
+"preco": 129.19,
 "foto": "https://m.media-amazon.com/images/I/613waHj+QoS._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6279,7 +6254,7 @@
 "titulo": "FIRE IN THE SKY",
 "artista": "Absolva",
 "ano": "2025",
-"preco": 129.52,
+"preco": 129.5,
 "foto": "https://m.media-amazon.com/images/I/51X+vIzi3IL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6413,6 +6388,18 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
+"asin": "B0C6NRKPKJ",
+"titulo": "Leisureland",
+"artista": "Wreckless Eric",
+"ano": "2023",
+"preco": 130.39,
+"foto": "https://m.media-amazon.com/images/I/71f7q6LNtXL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/leisureland/wreckless-eric/critic-reviews/",
+"nota_desde": "2026-11-02T17:21"
+},
+{
 "asin": "B01LDIMHHG",
 "titulo": "In Orbit",
 "artista": "Kurt Baker Combo",
@@ -6420,18 +6407,6 @@
 "preco": 130.4,
 "foto": "https://m.media-amazon.com/images/I/61OJGz-EehL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0C6NRKPKJ",
-"titulo": "Leisureland",
-"artista": "Wreckless Eric",
-"ano": "2023",
-"preco": 130.41,
-"foto": "https://m.media-amazon.com/images/I/71f7q6LNtXL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 81,
-"nota_url": "https://www.metacritic.com/music/leisureland/wreckless-eric/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
 },
 {
 "asin": "B01IB6Q1BG",
@@ -6447,7 +6422,7 @@
 "titulo": "Mélodie de Nelson: A Pop Anthology",
 "artista": "Nelson Bragg",
 "ano": "2025",
-"preco": 130.55,
+"preco": 130.53,
 "foto": "https://m.media-amazon.com/images/I/91QZFh5sTXL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6513,7 +6488,7 @@
 "titulo": "WISH I MISSED U",
 "artista": "Concrete Castles",
 "ano": "2022",
-"preco": 130.84,
+"preco": 130.82,
 "foto": "https://m.media-amazon.com/images/I/81kwJTy0sbL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6657,7 +6632,7 @@
 "titulo": "Christmas Grass: The Best Of (Green LP)",
 "artista": "Various Artists",
 "ano": "2025",
-"preco": 131.89,
+"preco": 131.87,
 "foto": "https://m.media-amazon.com/images/I/81VRxCDIImL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6729,7 +6704,7 @@
 "titulo": "RIVERS IN OUR VEINS",
 "artista": "Allison Miller",
 "ano": "2025",
-"preco": 132.55,
+"preco": 132.53,
 "foto": "https://m.media-amazon.com/images/I/91JXAU3qmuL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6840,7 +6815,7 @@
 "titulo": "Launch, Fly, Land",
 "artista": "DREAMERS",
 "ano": "",
-"preco": 133.19,
+"preco": 133.17,
 "foto": "https://m.media-amazon.com/images/I/91t+o4sESfL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6894,7 +6869,7 @@
 "titulo": "Cusp",
 "artista": "",
 "ano": "2025",
-"preco": 133.64,
+"preco": 133.62,
 "foto": "https://m.media-amazon.com/images/I/71WGdb59Q0L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -6971,6 +6946,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0DN8HS9QL",
+"titulo": "El Roi",
+"artista": "Sultan Stevenson",
+"ano": "2025",
+"preco": 134.18,
+"foto": "https://m.media-amazon.com/images/I/71ZOHmD9a9L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B07VGTWBTP",
 "titulo": "Wire Mountain",
 "artista": "",
@@ -6992,15 +6976,6 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
-"asin": "B0DN8HS9QL",
-"titulo": "El Roi",
-"artista": "Sultan Stevenson",
-"ano": "2025",
-"preco": 134.2,
-"foto": "https://m.media-amazon.com/images/I/71ZOHmD9a9L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0BC24DWC3",
 "titulo": "If I Were A Butterfly [Clear LP]",
 "artista": "",
@@ -7014,7 +6989,7 @@
 "titulo": "KAMEREON",
 "artista": "Susan Wong",
 "ano": "2024",
-"preco": 134.25,
+"preco": 134.23,
 "foto": "https://m.media-amazon.com/images/I/61iPWVsBCeL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -7055,21 +7030,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0D7ZBHWP5",
+"titulo": "Wither Wing",
+"artista": "Browbeats",
+"ano": "2024",
+"preco": 134.54,
+"foto": "https://m.media-amazon.com/images/I/81yXvq8Y4yL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B09N9S5T2T",
 "titulo": "789577785816",
 "artista": "",
 "ano": "2025",
 "preco": 134.54,
 "foto": "https://m.media-amazon.com/images/I/81kKzI6i3zL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0D7ZBHWP5",
-"titulo": "Wither Wing",
-"artista": "Browbeats",
-"ano": "2024",
-"preco": 134.56,
-"foto": "https://m.media-amazon.com/images/I/81yXvq8Y4yL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7157,21 +7132,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B09TTC1B72",
+"titulo": "Inside Out",
+"artista": "",
+"ano": "",
+"preco": 135.2,
+"foto": "https://m.media-amazon.com/images/I/91xxeckffSL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0C2CJNR44",
 "titulo": "Currency Castration",
 "artista": "Geld",
 "ano": "2025",
 "preco": 135.21,
 "foto": "https://m.media-amazon.com/images/I/91+Iw-JqbeL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09TTC1B72",
-"titulo": "Inside Out",
-"artista": "",
-"ano": "",
-"preco": 135.22,
-"foto": "https://m.media-amazon.com/images/I/91xxeckffSL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7188,7 +7163,7 @@
 "titulo": "What Tomorrow Brings",
 "artista": "Arms and Sleepers",
 "ano": "2025",
-"preco": 135.26,
+"preco": 135.24,
 "foto": "https://m.media-amazon.com/images/I/91jH8HS7orL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -7197,7 +7172,7 @@
 "titulo": "Strawberry Fields [Vinyl]",
 "artista": "Candy Flip",
 "ano": "",
-"preco": 135.37,
+"preco": 135.35,
 "foto": "https://m.media-amazon.com/images/I/8128LUPhBSL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -7340,20 +7315,11 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B09K1T6LQY",
-"titulo": "Olly Olly",
-"artista": "Penny & Sparrow",
-"ano": "2022",
-"preco": 136.18,
-"foto": "https://m.media-amazon.com/images/I/81vviBbhc8L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B08J8YJJ4G",
 "titulo": "Heaven Is Over (Crystal Clear Vinyl)",
 "artista": "BULLION",
 "ano": "2025",
-"preco": 136.19,
+"preco": 136.17,
 "foto": "https://m.media-amazon.com/images/I/71FxjwK52HL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -7362,8 +7328,17 @@
 "titulo": "Adult Contemporary",
 "artista": "Milo Greene",
 "ano": "2025",
-"preco": 136.19,
+"preco": 136.17,
 "foto": "https://m.media-amazon.com/images/I/B1EtiyIOwLS._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B09K1T6LQY",
+"titulo": "Olly Olly",
+"artista": "Penny & Sparrow",
+"ano": "2022",
+"preco": 136.18,
+"foto": "https://m.media-amazon.com/images/I/81vviBbhc8L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7459,8 +7434,17 @@
 "titulo": "Tropical Odds",
 "artista": "",
 "ano": "2025",
-"preco": 136.95,
+"preco": 136.93,
 "foto": "https://m.media-amazon.com/images/I/61pXeCCSylL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B0D6L1B6H4",
+"titulo": "SERVANT (PURPLE VINYL)",
+"artista": "Errorr",
+"ano": "2024",
+"preco": 136.97,
+"foto": "https://m.media-amazon.com/images/I/91kGy0KvYRL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7479,15 +7463,6 @@
 "ano": "2025",
 "preco": 136.98,
 "foto": "https://m.media-amazon.com/images/I/512e6olXWFL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0D6L1B6H4",
-"titulo": "SERVANT (PURPLE VINYL)",
-"artista": "Errorr",
-"ano": "2024",
-"preco": 136.99,
-"foto": "https://m.media-amazon.com/images/I/91kGy0KvYRL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7717,7 +7692,7 @@
 "titulo": "Mr. Luck & Ms. Doom (DESERT HARDSCAPE VINYL)",
 "artista": "The Delines",
 "ano": "2025",
-"preco": 138.41,
+"preco": 138.39,
 "foto": "https://m.media-amazon.com/images/I/81QwD+xRU3L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00",
 "nota": 88,
@@ -7760,7 +7735,7 @@
 "titulo": "LIVE AT THE TALK OF THE TOWN (WHITE VINYL)",
 "artista": "Petula Clark",
 "ano": "2025",
-"preco": 138.61,
+"preco": 138.59,
 "foto": "https://m.media-amazon.com/images/I/61LVagLJbFL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8090,7 +8065,7 @@
 "titulo": "New Space (Colored Vinyl)",
 "artista": "",
 "ano": "2025",
-"preco": 140.7,
+"preco": 140.68,
 "foto": "https://m.media-amazon.com/images/I/91XunRxP0jL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8108,7 +8083,7 @@
 "titulo": "Drifts and Surfaces",
 "artista": "Elori Saxl",
 "ano": "2024",
-"preco": 140.75,
+"preco": 140.73,
 "foto": "https://m.media-amazon.com/images/I/81lafN4pRNL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8177,8 +8152,17 @@
 "titulo": "IMPOSSIBLE BIRD (REMASTERED/DL CARD)",
 "artista": "Nick Lowe",
 "ano": "2022",
-"preco": 141.17,
+"preco": 141.15,
 "foto": "https://m.media-amazon.com/images/I/71y9r5jsMrL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B06X3WMFBH",
+"titulo": "Willie Mitchell'S Driving Beat",
+"artista": "",
+"ano": "",
+"preco": 141.22,
+"foto": "https://m.media-amazon.com/images/I/81TVkYy6s9L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -8193,15 +8177,6 @@
 "nota_url": "https://www.metacritic.com/music/seeking-new-gods/gruff-rhys/critic-reviews/",
 "nota_desde": "2026-11-02T17:21",
 "bandcamp": "https://gruffrhys.bandcamp.com/album/seeking-new-gods"
-},
-{
-"asin": "B06X3WMFBH",
-"titulo": "Willie Mitchell'S Driving Beat",
-"artista": "",
-"ano": "",
-"preco": 141.24,
-"foto": "https://m.media-amazon.com/images/I/81TVkYy6s9L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B0C5Y66M1M",
@@ -8266,7 +8241,7 @@
 "titulo": "DEEP",
 "artista": "Glasslands",
 "ano": "2025",
-"preco": 141.52,
+"preco": 141.5,
 "foto": "https://m.media-amazon.com/images/I/71ilSpLqEvL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8289,21 +8264,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B094L6WQ5R",
+"titulo": "Mood Ring",
+"artista": "Kississippi",
+"ano": "2021",
+"preco": 141.62,
+"foto": "https://m.media-amazon.com/images/I/71o6T8RakaS._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B076HC6D7S",
 "titulo": "I Only Listen To The Mountain Goats: Hail West Texas",
 "artista": "I Only Listen to the Mountain Goats: All Hail West Texas",
 "ano": "2025",
 "preco": 141.63,
 "foto": "https://m.media-amazon.com/images/I/81ejjDF13pL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B094L6WQ5R",
-"titulo": "Mood Ring",
-"artista": "Kississippi",
-"ano": "2021",
-"preco": 141.64,
-"foto": "https://m.media-amazon.com/images/I/71o6T8RakaS._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -8499,6 +8474,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CPVX98LR",
+"titulo": "Oath of Midnight Ashes",
+"artista": "Luciferian Rites",
+"ano": "2025",
+"preco": 142.49,
+"foto": "https://m.media-amazon.com/images/I/71KOZrkE9KL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B00FVX62ZS",
 "titulo": "Gind a-prins",
 "artista": "Negura Bunget",
@@ -8517,15 +8501,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0CPVX98LR",
-"titulo": "Oath of Midnight Ashes",
-"artista": "Luciferian Rites",
-"ano": "2025",
-"preco": 142.51,
-"foto": "https://m.media-amazon.com/images/I/71KOZrkE9KL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0CB6X5X4Y",
 "titulo": "CONSIDER THE LILIES (2LP)",
 "artista": "Tabernacle Choir at Temple Square",
@@ -8539,7 +8514,7 @@
 "titulo": "Join The Ritual / Various (Glowing Orb Vinyl)",
 "artista": "Various",
 "ano": "2025",
-"preco": 142.62,
+"preco": 142.6,
 "foto": "https://m.media-amazon.com/images/I/91u8YjrUkXL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8548,7 +8523,7 @@
 "titulo": "ENCORE! (CHARTREUSE VINYL)",
 "artista": "Jill Barber",
 "ano": "2024",
-"preco": 143.0,
+"preco": 142.98,
 "foto": "https://m.media-amazon.com/images/I/71dVxBLO65L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8605,7 +8580,7 @@
 "titulo": "Squares",
 "artista": "",
 "ano": "",
-"preco": 143.19,
+"preco": 143.17,
 "foto": "https://m.media-amazon.com/images/I/81vzuw2OmjL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8646,21 +8621,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B07TCCC3NZ",
+"titulo": "Clemens - Den Anden Verden",
+"artista": "Clemens",
+"ano": "2018",
+"preco": 143.39,
+"foto": "https://m.media-amazon.com/images/I/513g0CK+--L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0CP23VY4L",
 "titulo": "Coney Island Kid",
 "artista": "The Mommyheads",
 "ano": "2024",
 "preco": 143.4,
 "foto": "https://m.media-amazon.com/images/I/81A5y5At0fL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07TCCC3NZ",
-"titulo": "Clemens - Den Anden Verden",
-"artista": "Clemens",
-"ano": "2018",
-"preco": 143.4,
-"foto": "https://m.media-amazon.com/images/I/513g0CK+--L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -8677,7 +8652,7 @@
 "titulo": "Old Wow",
 "artista": "Sam Lee",
 "ano": "2020",
-"preco": 143.44,
+"preco": 143.42,
 "foto": "https://m.media-amazon.com/images/I/916koBCPaOL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00",
 "nota": 82,
@@ -8908,7 +8883,7 @@
 "titulo": "Anon.",
 "artista": "HANDS LIKE HOUSES",
 "ano": "",
-"preco": 144.32,
+"preco": 144.3,
 "foto": "https://m.media-amazon.com/images/I/517pSLkMjRL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -8949,6 +8924,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0DHWJKCGH",
+"titulo": "Ephemera",
+"artista": "Ben Quad",
+"ano": "2024",
+"preco": 144.71,
+"foto": "https://m.media-amazon.com/images/I/81dpPWx29YL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0F4P818XJ",
 "titulo": "Se Amaba Así",
 "artista": "Buscabulla",
@@ -8958,12 +8942,12 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0DHWJKCGH",
-"titulo": "Ephemera",
-"artista": "Ben Quad",
-"ano": "2024",
-"preco": 144.73,
-"foto": "https://m.media-amazon.com/images/I/81dpPWx29YL._AC_UY218_.jpg",
+"asin": "B09YQ4WDH6",
+"titulo": "CHERRY TREES ARE STILL IN BLOSSOM - BABY PINK",
+"artista": "Lekman Jens",
+"ano": "2025",
+"preco": 144.78,
+"foto": "https://m.media-amazon.com/images/I/81aMkWshUqL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -8982,15 +8966,6 @@
 "ano": "2025",
 "preco": 144.79,
 "foto": "https://m.media-amazon.com/images/I/81oTQ6TfTWL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09YQ4WDH6",
-"titulo": "CHERRY TREES ARE STILL IN BLOSSOM - BABY PINK",
-"artista": "Lekman Jens",
-"ano": "2025",
-"preco": 144.8,
-"foto": "https://m.media-amazon.com/images/I/81aMkWshUqL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9216,21 +9191,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BZK732BK",
+"titulo": "Bladadah",
+"artista": "Mozzy",
+"ano": "2025",
+"preco": 145.87,
+"foto": "https://m.media-amazon.com/images/I/81GaHhJAuYL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0CLHMWSKY",
 "titulo": "Safe On The Other Side",
 "artista": "High Spirits",
 "ano": "2023",
 "preco": 145.88,
 "foto": "https://m.media-amazon.com/images/I/71gNRgSt20L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BZK732BK",
-"titulo": "Bladadah",
-"artista": "Mozzy",
-"ano": "2025",
-"preco": 145.89,
-"foto": "https://m.media-amazon.com/images/I/81GaHhJAuYL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9510,6 +9485,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CHMZX8DX",
+"titulo": "Bluebeat Holiday",
+"artista": "Jesse Wagner, Western Standard Time Ska Orchestra",
+"ano": "2025",
+"preco": 147.71,
+"foto": "https://m.media-amazon.com/images/I/81Eoj+A0Q-L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0CKFNR6V4",
 "titulo": "CHRISTMAS ALBUM (CLEAR RED VINYL)",
 "artista": "Bright Eyes",
@@ -9517,15 +9501,6 @@
 "preco": 147.73,
 "foto": "https://m.media-amazon.com/images/I/51c09faQ2xL._AC_UY218_.jpg",
 "visto": "2026-11-03T20:14-03:00"
-},
-{
-"asin": "B0CHMZX8DX",
-"titulo": "Bluebeat Holiday",
-"artista": "Jesse Wagner, Western Standard Time Ska Orchestra",
-"ano": "2025",
-"preco": 147.73,
-"foto": "https://m.media-amazon.com/images/I/81Eoj+A0Q-L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B0CM9NZPRX",
@@ -9537,6 +9512,18 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B07GW7NY18",
+"titulo": "Tides Of A Teardrop (standard Edition)",
+"artista": "Mandolin Orange",
+"ano": "2019",
+"preco": 147.87,
+"foto": "https://m.media-amazon.com/images/I/71h32+rLICL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00",
+"nota": 82,
+"nota_url": "https://www.metacritic.com/music/tides-of-a-teardrop/mandolin-orange/critic-reviews/",
+"nota_desde": "2026-11-02T17:21"
+},
+{
 "asin": "B0C2W52744",
 "titulo": "Spinning Gold",
 "artista": "Various Artists",
@@ -9544,18 +9531,6 @@
 "preco": 147.88,
 "foto": "https://m.media-amazon.com/images/I/81HznRI6siL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07GW7NY18",
-"titulo": "Tides Of A Teardrop (standard Edition)",
-"artista": "Mandolin Orange",
-"ano": "2019",
-"preco": 147.89,
-"foto": "https://m.media-amazon.com/images/I/71h32+rLICL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 82,
-"nota_url": "https://www.metacritic.com/music/tides-of-a-teardrop/mandolin-orange/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
 },
 {
 "asin": "B09WLCJHKK",
@@ -9567,21 +9542,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0C4RXZT4B",
+"titulo": "PEOPLE'S KEY: A COMPANION (OPAQUE GOLD VINYL)",
+"artista": "Bright Eyes",
+"ano": "2025",
+"preco": 148.01,
+"foto": "https://m.media-amazon.com/images/I/91SRcfCFHQL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0CJT79W1C",
 "titulo": "Mozart y Mambo - la Bella Cubana",
 "artista": "Stefan Schweigert",
 "ano": "2023",
 "preco": 148.02,
 "foto": "https://m.media-amazon.com/images/I/91b1RYsp2hL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0C4RXZT4B",
-"titulo": "PEOPLE'S KEY: A COMPANION (OPAQUE GOLD VINYL)",
-"artista": "Bright Eyes",
-"ano": "2025",
-"preco": 148.03,
-"foto": "https://m.media-amazon.com/images/I/91SRcfCFHQL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9598,7 +9573,7 @@
 "titulo": "BARATO & ROMANTICO",
 "artista": "Maximiliano Calvo",
 "ano": "2024",
-"preco": 148.12,
+"preco": 148.1,
 "foto": "https://m.media-amazon.com/images/I/61wD9MdhfgL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -9607,7 +9582,7 @@
 "titulo": "Love.Jones - Black/Orange/Red/Brown",
 "artista": "The They",
 "ano": "2025",
-"preco": 148.15,
+"preco": 148.13,
 "foto": "https://m.media-amazon.com/images/I/A1064SGycmL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -9670,7 +9645,7 @@
 "titulo": "Live at the Tennessee Theatre",
 "artista": "Drew Holcomb & The Neighbors",
 "ano": "2020",
-"preco": 148.45,
+"preco": 148.43,
 "foto": "https://m.media-amazon.com/images/I/81WSXpuf3nL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -9682,6 +9657,15 @@
 "preco": 148.52,
 "foto": "https://m.media-amazon.com/images/I/B1rP0DdIGxL._AC_UY218_.jpg",
 "visto": "2026-11-02T16:00-03:00"
+},
+{
+"asin": "B07DVGQJQM",
+"titulo": "Prati Bagnati Del Monte Analogo",
+"artista": "LOVISONI,RAUL / FRANCESCO MESSINA",
+"ano": "2025",
+"preco": 148.52,
+"foto": "https://m.media-amazon.com/images/I/81avGHVJGyL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B07CZTSNZN",
@@ -9702,15 +9686,6 @@
 "ano": "2025",
 "preco": 148.53,
 "foto": "https://m.media-amazon.com/images/I/61AhaQlCj8L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07DVGQJQM",
-"titulo": "Prati Bagnati Del Monte Analogo",
-"artista": "LOVISONI,RAUL / FRANCESCO MESSINA",
-"ano": "2025",
-"preco": 148.54,
-"foto": "https://m.media-amazon.com/images/I/81avGHVJGyL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9748,6 +9723,15 @@
 "preco": 148.84,
 "foto": "https://m.media-amazon.com/images/I/81tdxjUwx6L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B01N7VDTSK",
+"titulo": "2016 Atomized",
+"artista": "",
+"ano": "",
+"preco": 148.91,
+"foto": "https://m.media-amazon.com/images/I/61zTeNGIU8L._AC_UY218_.jpg",
+"visto": "2026-11-04T20:36-03:00"
 },
 {
 "asin": "B073VS3GSC",
@@ -9865,7 +9849,7 @@
 "titulo": "Kenneth Whalum",
 "artista": "",
 "ano": "",
-"preco": 149.35,
+"preco": 149.33,
 "foto": "https://m.media-amazon.com/images/I/81NIiaHdOTL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -9949,21 +9933,21 @@
 "bandcamp": "https://allisonrussell.bandcamp.com/album/the-returner"
 },
 {
+"asin": "B0CG8T58PK",
+"titulo": "The Darkest Night of the Year",
+"artista": "Over the Rhine",
+"ano": "2023",
+"preco": 149.68,
+"foto": "https://m.media-amazon.com/images/I/91QxNTkFXSL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B079BF4GDS",
 "titulo": "Love Sleeps Deep",
 "artista": "",
 "ano": "2025",
 "preco": 149.69,
 "foto": "https://m.media-amazon.com/images/I/81igcxjNdJL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CG8T58PK",
-"titulo": "The Darkest Night of the Year",
-"artista": "Over the Rhine",
-"ano": "2023",
-"preco": 149.7,
-"foto": "https://m.media-amazon.com/images/I/91QxNTkFXSL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
