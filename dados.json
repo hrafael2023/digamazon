@@ -1,10 +1,10 @@
 {
-"atualizado": "2026-11-04T11:36-03:00",
+"atualizado": "2026-11-04T14:09-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
 "novos": [
-"B0CCXPBQQC"
+"B07CN4NQFV"
 ],
 "discos": [
 {
@@ -2188,6 +2188,15 @@
 "ano": "2025",
 "preco": 103.8,
 "foto": "https://m.media-amazon.com/images/I/81nvVJgbzGL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B07X27V9PH",
+"titulo": "Holly & Ivy [LP]",
+"artista": "Natalie Cole",
+"ano": "2025",
+"preco": 103.88,
+"foto": "https://m.media-amazon.com/images/I/71nZ3SM42DL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7448,15 +7457,6 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
-"asin": "B07JJ64GHY",
-"titulo": "1981 Extended Play",
-"artista": "I DONT KNOW HOW BUT THEY FOUND ME",
-"ano": "2017",
-"preco": 136.79,
-"foto": "https://m.media-amazon.com/images/I/61iz6QAPFTL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0D4F1JTJX",
 "titulo": "Everything Is Connected: The Best Of Blancmange 1979-2024 (Colored Vinyl, Black)",
 "artista": "",
@@ -7726,6 +7726,15 @@
 "nota_url": "https://www.metacritic.com/music/mr-luck-ms-doom/the-delines/critic-reviews/",
 "nota_desde": "2026-11-02T17:21",
 "bandcamp": "https://thedelines.bandcamp.com/album/mr-luck-and-ms-doom"
+},
+{
+"asin": "B07CN4NQFV",
+"titulo": "Dylan & The Dead",
+"artista": "Bob Dylan And The Grateful Dead",
+"ano": "2018",
+"preco": 138.49,
+"foto": "https://m.media-amazon.com/images/I/91-H-lFOBNL._AC_UY218_.jpg",
+"visto": "2026-11-04T14:09-03:00"
 },
 {
 "asin": "B0BPMN15P2",
