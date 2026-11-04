@@ -1,11 +1,11 @@
 {
  "pedido": 41872071799,
  "estado": "buscando",
- "mensagem": "HTTP Error 500: Internal Server Error",
- "quando": "2026-11-04T13:56:31-03:00",
- "etapa": "esperando",
+ "mensagem": "",
+ "quando": "2026-11-04T13:57:04-03:00",
+ "etapa": "buscando",
  "pagina": 21,
  "previstas": 71,
- "discos": 0,
+ "discos": 335,
  "inicio": "2026-11-04T13:54:33-03:00"
 }
