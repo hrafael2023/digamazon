@@ -1,26 +1,8 @@
 {
-"atualizado": "2026-11-03T20:14-03:00",
+"atualizado": "2026-11-03T21:07-03:00",
 "limite": 150.0,
 "primeira": false,
-"novos": [
-"B0D6DJLTYT",
-"B0BPPRMZDV",
-"B07X27TXLG",
-"B09VFFM462",
-"B0CYFJWBRV",
-"B00MXEJL9W",
-"B0CHM6P3V1",
-"B01MRXQP8M",
-"B0CXMCH5TN",
-"B0BV35BFM5",
-"B0BDMPPLJX",
-"B09CRLTRN1",
-"B0D6FGLVNG",
-"B09Q6GLB2D",
-"B0CKFNR6V4",
-"B0CX5QH4CT",
-"B09HR26L8K"
-],
+"novos": [],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -1050,15 +1032,6 @@
 "ano": "2025",
 "preco": 92.5,
 "foto": "https://m.media-amazon.com/images/I/71SL2p4D6dL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09PRQ8J8Q",
-"titulo": "NEON BLUE",
-"artista": "",
-"ano": "",
-"preco": 92.88,
-"foto": "https://m.media-amazon.com/images/I/71JVsfELzBL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -5293,21 +5266,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0BM4S3ZMN",
-"titulo": "Hidden Youth [LP]",
-"artista": "",
-"ano": "",
-"preco": 123.38,
-"foto": "https://m.media-amazon.com/images/I/91Hpj48eL6L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0C9SH88SV",
 "titulo": "HILLBILLIES IN HELL: WAKE ME UP BRIMSTONE & BEAUTY FROM THE NASHVILLE PULPIT (1952-1974)",
 "artista": "Various Artists",
 "ano": "2025",
 "preco": 123.38,
 "foto": "https://m.media-amazon.com/images/I/71Xzy8MUSlL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B0BM4S3ZMN",
+"titulo": "Hidden Youth [LP]",
+"artista": "",
+"ano": "",
+"preco": 123.38,
+"foto": "https://m.media-amazon.com/images/I/91Hpj48eL6L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -7439,19 +7412,6 @@
 "preco": 136.19,
 "foto": "https://m.media-amazon.com/images/I/B1EtiyIOwLS._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B00KY44OOK",
-"titulo": "Go Down in History",
-"artista": "Four Year Strong",
-"ano": "2025",
-"preco": 136.33,
-"foto": "https://m.media-amazon.com/images/I/91uVNB+331L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 87,
-"nota_url": "https://www.metacritic.com/music/go-down-in-history-ep/four-year-strong/critic-reviews/",
-"nota_desde": "2026-11-02T17:21",
-"bandcamp": "https://fouryearstrong.bandcamp.com/album/go-down-in-history"
 },
 {
 "asin": "B0DHYQJKTR",
