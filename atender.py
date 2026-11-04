@@ -153,6 +153,16 @@ def main():
 
     resumo = f"{total} discos, {novos} novos"
     log(f"pedido {pedido}: {resumo}")
+    # Quem tocou em Dig enquanto esta busca rodava já recebe este resultado,
+    # em vez de esperar outra busca inteira na fila.
+    try:
+        mais_novo = ultimo_pedido()
+    except OSError:
+        mais_novo = pedido
+    if mais_novo > pedido:
+        log(f"pedido {mais_novo} chegou durante a busca; atendido junto")
+        pedido = mais_novo
+        ULTIMO.write_text(str(pedido))
     marcar(pedido, "ok", resumo)
     enviar(["dados.json", "vistos.json", "notas.json", "estado.json"],
            f"Atualiza os discos ({dt.datetime.now(buscar.FUSO):%d/%m %H:%M}): {resumo}")

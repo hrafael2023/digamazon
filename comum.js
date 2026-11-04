@@ -142,7 +142,10 @@ async function acompanhar(desde) {
     const min = Math.floor((Date.now() - new Date(run.created_at)) / 60000);
     if (e.pedido >= run.id && e.estado === "ok") break;
     if (e.pedido >= run.id && e.estado === "erro") { fimProgresso(); guardado(PEDIDO, null); throw new Error("A pesquisa falhou no Mac: " + e.mensagem); }
-    if (e.pedido >= run.id && e.etapa) progresso(e);
+    // Um pedido anterior ainda está rodando: este é atendido junto quando ele terminar.
+    const rodandoAgora = e.etapa && e.estado === "buscando";
+    if (!rodandoAgora && andamento) fimProgresso();
+    if (rodandoAgora) progresso(e);
     else if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 7). Pode fechar a página e voltar depois.`);
     else status(min < 3
       ? "Pedido enviado. Esperando o Mac pegar (ele confere a cada 2 minutos)…"
