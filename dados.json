@@ -1,8 +1,8 @@
 {
-"atualizado": "2026-11-03T21:20-03:00",
+"atualizado": "2026-11-04T00:43-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 72,
+"paginas": 71,
 "novos": [],
 "discos": [
 {
@@ -7897,15 +7897,6 @@
 "nota_desde": "2026-11-02T17:21"
 },
 {
-"asin": "B09XKLY4FB",
-"titulo": "Never Slept Better - ELECTRIC BLUE [Explicit Content] (Parental Advisory Explicit Lyrics, Colored Vinyl, Blue)",
-"artista": "",
-"ano": "2025",
-"preco": 139.18,
-"foto": "https://m.media-amazon.com/images/I/61UROzh1+bL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B081WQY6LR",
 "titulo": "The Natural (Original Soundtrack)",
 "artista": "NEWMAN,RANDY",
@@ -7921,6 +7912,15 @@
 "ano": "2025",
 "preco": 139.26,
 "foto": "https://m.media-amazon.com/images/I/A1yuawh1UbL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B09XKLY4FB",
+"titulo": "Never Slept Better - ELECTRIC BLUE [Explicit Content] (Parental Advisory Explicit Lyrics, Colored Vinyl, Blue)",
+"artista": "",
+"ano": "2025",
+"preco": 139.3,
+"foto": "https://m.media-amazon.com/images/I/61UROzh1+bL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9069,18 +9069,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B008SVRU1A",
-"titulo": "Mount Moriah",
-"artista": "Mount Moriah",
-"ano": "2025",
-"preco": 145.04,
-"foto": "https://m.media-amazon.com/images/I/71IFNUkHTZL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 76,
-"nota_url": "https://www.metacritic.com/music/mount-moriah/mount-moriah/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
-},
-{
 "asin": "B0DHDBHXTK",
 "titulo": "Fe",
 "artista": "Las Palabras",
@@ -9679,18 +9667,6 @@
 "preco": 148.23,
 "foto": "https://m.media-amazon.com/images/I/91X8biuIcTL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0CX5QH4CT",
-"titulo": "Lived Here for a While",
-"artista": "Good Looks",
-"ano": "2024",
-"preco": 148.31,
-"foto": "https://m.media-amazon.com/images/I/91Bn6UaVoBL._AC_UY218_.jpg",
-"visto": "2026-11-03T20:14-03:00",
-"nota": 81,
-"nota_url": "https://www.metacritic.com/music/lived-here-for-a-while/good-looks/critic-reviews/",
-"nota_desde": "2026-11-03T20:14"
 },
 {
 "asin": "B07CQKKFVB",
