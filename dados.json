@@ -1,5 +1,5 @@
 {
-"atualizado": "2026-11-04T01:51-03:00",
+"atualizado": "2026-11-04T10:07-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
@@ -3918,15 +3918,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B07363DFBH",
-"titulo": "Seismic",
-"artista": "",
-"ano": "2025",
-"preco": 114.49,
-"foto": "https://m.media-amazon.com/images/I/61NdzetI3qL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0CGF522GC",
 "titulo": "Merry Christmas From José James[LP]",
 "artista": "José James",
@@ -4018,15 +4009,6 @@
 "nota": 75,
 "nota_url": "https://www.metacritic.com/music/to-be-still/alela-diane/critic-reviews/",
 "nota_desde": "2026-11-02T17:21"
-},
-{
-"asin": "B0742VZSMV",
-"titulo": "Wide Open",
-"artista": "Michael MCDonald",
-"ano": "2017",
-"preco": 115.31,
-"foto": "https://m.media-amazon.com/images/I/71qCuiaACJL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B0B53KZPDH",
@@ -6620,21 +6602,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BZWNJDC3",
+"titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
+"artista": "Joy Division",
+"ano": "2023",
+"preco": 131.55,
+"foto": "https://m.media-amazon.com/images/I/71Uy2RRjDRL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B095GS5HH9",
 "titulo": "Life In The Pond",
 "artista": "Roger Chapman",
 "ano": "2025",
 "preco": 131.56,
 "foto": "https://m.media-amazon.com/images/I/91pMHbeOKRL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BZWNJDC3",
-"titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
-"artista": "Joy Division",
-"ano": "2023",
-"preco": 131.57,
-"foto": "https://m.media-amazon.com/images/I/71Uy2RRjDRL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -8574,15 +8556,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0BDMPPLJX",
-"titulo": "Can I Take My Hounds To Heaven? [Vinyl] Tyler Childers",
-"artista": "Tyler Childers",
-"ano": "2022",
-"preco": 142.88,
-"foto": "https://m.media-amazon.com/images/I/817OPGu20BL._AC_UY218_.jpg",
-"visto": "2026-11-03T20:14-03:00"
-},
-{
 "asin": "B0CY99M193",
 "titulo": "ENCORE! (CHARTREUSE VINYL)",
 "artista": "Jill Barber",
@@ -9429,6 +9402,15 @@
 "ano": "2025",
 "preco": 146.96,
 "foto": "https://m.media-amazon.com/images/I/7153iAOjvfL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B07PWJXXJ4",
+"titulo": "Mother Earth's Plantasia",
+"artista": "",
+"ano": "",
+"preco": 146.98,
+"foto": "https://m.media-amazon.com/images/I/71v0MTgT6lL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
