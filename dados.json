@@ -1,7 +1,8 @@
 {
-"atualizado": "2026-11-03T21:07-03:00",
+"atualizado": "2026-11-03T21:20-03:00",
 "limite": 150.0,
 "primeira": false,
+"paginas": 72,
 "novos": [],
 "discos": [
 {
@@ -850,15 +851,6 @@
 "preco": 90.25,
 "foto": "https://m.media-amazon.com/images/I/71p1m9en3rL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BPPRMZDV",
-"titulo": "Fat Cat Ii",
-"artista": "Pure Adult",
-"ano": "2025",
-"preco": 90.37,
-"foto": "https://m.media-amazon.com/images/I/91Y0w7U74gL._AC_UY218_.jpg",
-"visto": "2026-11-03T20:14-03:00"
 },
 {
 "asin": "B095T48J4R",
@@ -7412,6 +7404,19 @@
 "preco": 136.19,
 "foto": "https://m.media-amazon.com/images/I/B1EtiyIOwLS._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B00KY44OOK",
+"titulo": "Go Down in History",
+"artista": "Four Year Strong",
+"ano": "2025",
+"preco": 136.33,
+"foto": "https://m.media-amazon.com/images/I/91uVNB+331L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00",
+"nota": 87,
+"nota_url": "https://www.metacritic.com/music/go-down-in-history-ep/four-year-strong/critic-reviews/",
+"nota_desde": "2026-11-02T17:21",
+"bandcamp": "https://fouryearstrong.bandcamp.com/album/go-down-in-history"
 },
 {
 "asin": "B0DHYQJKTR",
