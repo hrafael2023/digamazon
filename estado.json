@@ -1,6 +1,11 @@
 {
- "pedido": 41834248299,
- "estado": "ok",
- "mensagem": "1073 discos, 7 novos",
- "quando": "2026-11-04T10:20:45-03:00"
+ "pedido": 41846347655,
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-04T11:20:05-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 71,
+ "discos": 0,
+ "inicio": "2026-11-04T11:20:05-03:00"
 }
