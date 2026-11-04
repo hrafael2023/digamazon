@@ -2,9 +2,9 @@
  "pedido": 41888307822,
  "estado": "buscando",
  "mensagem": "",
- "quando": "2026-11-04T15:43:17-03:00",
- "etapa": "buscando",
- "pagina": 70,
+ "quando": "2026-11-04T15:43:24-03:00",
+ "etapa": "notas",
+ "pagina": 0,
  "previstas": 71,
  "discos": 1065,
  "inicio": "2026-11-04T15:35:06-03:00"
