@@ -80,13 +80,45 @@ def pendente():
         return False
 
 
-def marcar(pedido, estado, mensagem=""):
+def marcar(pedido, estado, mensagem="", **progresso):
     ESTADO.write_text(json.dumps({
         "pedido": pedido,
         "estado": estado,
         "mensagem": mensagem,
         "quando": dt.datetime.now(buscar.FUSO).isoformat(timespec="seconds"),
+        **progresso,
     }, ensure_ascii=False, indent=1) + "\n")
+
+
+# A cada tantas páginas o Mac conta à página como vai a busca. Cada aviso é um
+# commit de estado.json, por isso não a cada página.
+AVISAR_A_CADA = 10
+
+
+def acompanhante(pedido):
+    """Devolve a função que buscar.buscar() chama a cada passo, e que avisa a página."""
+    try:
+        previstas = json.loads(buscar.DADOS.read_text()).get("paginas") or 75
+    except (OSError, ValueError):
+        previstas = 75
+    inicio = dt.datetime.now(buscar.FUSO).isoformat(timespec="seconds")
+
+    ultima = {"etapa": None}
+
+    def progresso(etapa, pagina=0, discos=0, mensagem=""):
+        # Depois de uma espera, avisa logo que voltou a andar.
+        if etapa == "buscando" and pagina % AVISAR_A_CADA and ultima["etapa"] != "esperando":
+            return
+        ultima["etapa"] = etapa
+        marcar(pedido, "buscando", mensagem, etapa=etapa, pagina=pagina, previstas=max(previstas, pagina),
+               discos=discos, inicio=inicio)
+        try:
+            git("add", "estado.json")
+            git("commit", "-q", "-m", f"Pesquisa em andamento: página {pagina} de ~{previstas}")
+            git("push", "-q", "origin", "main")
+        except RuntimeError as e:
+            log(str(e))  # o aviso é só para acompanhar; a busca segue mesmo sem ele
+    return progresso
 
 
 def main():
@@ -109,11 +141,10 @@ def main():
     log(f"pedido {pedido}: pesquisando")
     ULTIMO.write_text(str(pedido))
     git("pull", "-q", "--rebase", "origin", "main")
-    marcar(pedido, "buscando")
-    enviar(["estado.json"], "Pesquisa em andamento")
-
+    progresso = acompanhante(pedido)
+    progresso("buscando")
     try:
-        total, novos = buscar.buscar()
+        total, novos = buscar.buscar(progresso)
     except buscar.Falhou as e:
         log(f"pedido {pedido}: {e}")
         marcar(pedido, "erro", str(e))

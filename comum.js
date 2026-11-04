@@ -84,6 +84,49 @@ async function arquivo(nome) {
   return gh(`/contents/${nome}?ref=main&t=${Date.now()}`, { headers: { "Accept": "application/vnd.github.raw+json" } });
 }
 
+// Barra de progresso da busca, logo abaixo do topo. O Mac conta a página a cada
+// 10; entre um aviso e outro a barra anda sozinha, no ritmo medido até ali.
+const SEG_POR_PAGINA = 5.5;  // ritmo esperado antes do primeiro aviso
+let andamento = null, relogio = null;
+
+function progresso(e) {
+  andamento = e;
+  if (!$("progresso")) $("status").insertAdjacentHTML("beforebegin",
+    '<div id="progresso" class="progresso" role="progressbar" aria-label="Andamento da busca" aria-valuemin="0" aria-valuemax="100"><i></i></div>');
+  if (!relogio) relogio = setInterval(desenharProgresso, 1000);
+  desenharProgresso();
+}
+
+function fimProgresso() {
+  clearInterval(relogio); relogio = null; andamento = null;
+  $("progresso")?.remove();
+}
+
+function desenharProgresso() {
+  const e = andamento;
+  if (!e) return;
+  const agora = Date.now(), quando = new Date(e.quando).getTime();
+  const previstas = e.previstas || 75, pagina = e.pagina || 0;
+  const ritmo = pagina > 0 ? Math.max(3, (quando - new Date(e.inicio).getTime()) / 1000 / pagina) : SEG_POR_PAGINA;
+  let atual = pagina, texto;
+  if (e.etapa === "notas") {
+    atual = previstas;
+    texto = "Quase lá: procurando as notas da crítica dos discos novos…";
+  } else if (e.etapa === "esperando") {
+    texto = `A Amazon pediu uma verificação na página ${pagina}. Esperando ela liberar (pode levar até 12 min)…`;
+  } else {
+    atual = Math.min(pagina + (agora - quando) / 1000 / ritmo, pagina + 10, previstas - 1);
+    const faltam = Math.max(1, Math.round(((previstas - atual) * ritmo + 20) / 60));
+    texto = `Página ${Math.floor(atual)} de ~${previstas} · faltam uns ${faltam} min. Pode fechar a página e voltar depois.`;
+  }
+  const pct = Math.round(Math.min(98, Math.max(2, atual / previstas * 95 + (e.etapa === "notas" ? 3 : 0))));
+  const barra = $("progresso");
+  barra.style.setProperty("--pct", pct + "%");
+  barra.classList.toggle("parado", e.etapa === "esperando");
+  barra.setAttribute("aria-valuenow", pct);
+  status(texto);
+}
+
 async function acompanhar(desde) {
   // O pedido vira uma execução do workflow; o Mac a atende e conta o andamento em estado.json.
   let run, inicio = Date.now();
@@ -98,13 +141,15 @@ async function acompanhar(desde) {
     const e = await arquivo("estado.json");
     const min = Math.floor((Date.now() - new Date(run.created_at)) / 60000);
     if (e.pedido >= run.id && e.estado === "ok") break;
-    if (e.pedido >= run.id && e.estado === "erro") { guardado(PEDIDO, null); throw new Error("A pesquisa falhou no Mac: " + e.mensagem); }
-    if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 7). Pode fechar a página e voltar depois.`);
+    if (e.pedido >= run.id && e.estado === "erro") { fimProgresso(); guardado(PEDIDO, null); throw new Error("A pesquisa falhou no Mac: " + e.mensagem); }
+    if (e.pedido >= run.id && e.etapa) progresso(e);
+    else if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 7). Pode fechar a página e voltar depois.`);
     else status(min < 3
       ? "Pedido enviado. Esperando o Mac pegar (ele confere a cada 2 minutos)…"
       : `Esperando o Mac há ${min} min. Ele precisa estar ligado e acordado; o pedido fica guardado até lá.`);
     await espera(15000);
   }
+  fimProgresso();
   guardado(PEDIDO, null);
   exibir(await arquivo("dados.json"));
   status(dados.novos.length ? `Pronto: ${dados.novos.length} discos novos.` : "Pronto: nenhum disco novo desta vez.");

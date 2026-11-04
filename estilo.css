@@ -57,6 +57,12 @@ h1 span { color: var(--accent); }
 .link-topo:hover { text-decoration: underline; text-underline-offset: 3px; }
 #status { max-width: 1100px; margin: 8px auto 0; font-size: 13px; color: var(--mut); }
 #status:empty { display: none; }
+/* Barra de progresso da busca: linha limão sobre o fio do topo */
+.progresso { max-width: 1100px; height: 6px; margin: 10px auto 0; background: var(--line); overflow: hidden; }
+.progresso i { display: block; height: 100%; width: var(--pct, 2%); background: var(--btn); transition: width 1s linear; }
+.progresso.parado i { background: repeating-linear-gradient(-45deg, var(--btn) 0 6px, var(--mut) 6px 12px); background-size: 17px 100%; animation: listras 1s linear infinite; }
+@keyframes listras { to { background-position: 17px 0; } }
+@media (prefers-reduced-motion: reduce) { .progresso i { transition: none; } .progresso.parado i { animation: none; } }
 #status.erro { color: #c0392b; }
 main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 24px; }
 /* A versão sobe a cada mudança no código, para conferir se o navegador já pegou a nova. */

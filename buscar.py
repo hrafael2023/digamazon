@@ -86,14 +86,16 @@ def guardar_falha(pagina, texto):
 ESPERAS = [30, 60, 120, 240, 300]
 
 
-def baixar_com_paciencia(pagina):
-    for espera in ESPERAS + [None]:
+def baixar_com_paciencia(pagina, progresso=None):
+    for n, espera in enumerate(ESPERAS + [None]):
         try:
             return baixar(pagina)
         except (Bloqueado, OSError) as e:
             if espera is None:
                 raise
             avisar(f"{e}; tentando de novo em {espera}s")
+            if progresso and n == 0:
+                progresso("esperando", pagina=pagina, mensagem=str(e))
             time.sleep(espera)
 
 
@@ -135,9 +137,10 @@ def extrair(texto):
     return discos
 
 
-def coletar():
+def coletar(progresso=None):
     """Percorre as páginas; se a última busca parou no meio há pouco tempo, continua de onde parou."""
     achados, acima, inicio = {}, 0, 1
+    ultima = 0
     if PARCIAL.exists():
         p = json.loads(PARCIAL.read_text())
         if dt.datetime.now(FUSO) - dt.datetime.fromisoformat(p["quando"]) < RETOMAR_ATE:
@@ -145,11 +148,12 @@ def coletar():
             print(f"continuando da página {inicio}, com {len(achados)} discos já lidos")
     for pagina in range(inicio, MAX_PAGINAS + 1):
         try:
-            discos = extrair(baixar_com_paciencia(pagina))
+            discos = extrair(baixar_com_paciencia(pagina, progresso))
         except Exception as e:
             raise RuntimeError(f"{e} (depois de {len(achados)} discos; o próximo Dig continua dali)") from e
         if not discos:
             break
+        ultima = pagina
         for d in discos:
             if d["preco"] < LIMITE and d["asin"] not in achados:
                 achados[d["asin"]] = d
@@ -162,8 +166,11 @@ def coletar():
                                        "quando": dt.datetime.now(FUSO).isoformat(timespec="seconds")}))
         if acima >= 2:
             break
+        if progresso:
+            progresso("buscando", pagina=pagina, discos=len(achados))
         # Uma página a cada poucos segundos, para não sobrecarregar a Amazon.
         time.sleep(random.uniform(3, 6))
+    coletar.paginas = ultima
     return achados
 
 
@@ -184,13 +191,16 @@ class Falhou(Exception):
     pass
 
 
-def buscar():
-    """Faz a busca e grava os arquivos; devolve (discos, novos) ou levanta Falhou."""
+def buscar(progresso=None):
+    """Faz a busca e grava os arquivos; devolve (discos, novos) ou levanta Falhou.
+
+    progresso(etapa, **detalhes), se dado, é chamado a cada página e quando a
+    Amazon pede verificação, para quem acompanha saber em que pé está."""
     vistos = json.loads(VISTOS.read_text()) if VISTOS.exists() else {}
     primeira = not vistos
 
     try:
-        achados = coletar()
+        achados = coletar(progresso)
     except Exception as e:
         raise Falhou(f"busca interrompida: {e}") from e
     if len(achados) < 50:
@@ -201,6 +211,8 @@ def buscar():
         vistos.setdefault(asin, agora)
     discos = sorted(achados.values(), key=lambda d: d["preco"])
     novos = [] if primeira else [d for d in discos if vistos[d["asin"]] == agora]
+    if progresso:
+        progresso("notas", discos=len(discos))
     anotar(discos, notas.atualizar(discos, mostrar=lambda m: avisar(m, "notice")), vistos)
 
     VISTOS.write_text(json.dumps(vistos, indent=0, sort_keys=True) + "\n")
@@ -209,6 +221,7 @@ def buscar():
         "atualizado": agora,
         "limite": LIMITE,
         "primeira": primeira,
+        "paginas": getattr(coletar, "paginas", 0),
         "novos": [d["asin"] for d in novos],
         "discos": discos,
     }, ensure_ascii=False, indent=0) + "\n")
