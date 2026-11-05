@@ -1,6 +1,11 @@
 {
- "pedido": 41961763106,
- "estado": "erro",
- "mensagem": "busca interrompida: a Amazon pediu uma verificação anti-robô na página 49 (depois de 761 discos; o próximo Dig continua dali)",
- "quando": "2026-11-05T01:04:39-03:00"
+ "pedido": 42041040270,
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-05T11:02:07-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 71,
+ "discos": 0,
+ "inicio": "2026-11-05T11:02:07-03:00"
 }
