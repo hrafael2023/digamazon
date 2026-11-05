@@ -1,11 +1,9 @@
 {
-"atualizado": "2026-11-04T20:36-03:00",
+"atualizado": "2026-11-04T21:30-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 72,
-"novos": [
-"B01N7VDTSK"
-],
+"paginas": 71,
+"novos": [],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -3208,6 +3206,15 @@
 "ano": "2019",
 "preco": 110.96,
 "foto": "https://m.media-amazon.com/images/I/813ggBcQ54L._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B01N25TIRZ",
+"titulo": "Impasse",
+"artista": "",
+"ano": "",
+"preco": 111.0,
+"foto": "https://m.media-amazon.com/images/I/51lieu6nRjL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9329,6 +9336,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BX79KGN2",
+"titulo": "ENDLESS COLOURED WAYS: THE SONGS OF NICK DRAKE - ROAD / NORTHERN SKY",
+"artista": "",
+"ano": "2025",
+"preco": 146.58,
+"foto": "https://m.media-amazon.com/images/I/714TLELYapL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B01EU0HCEC",
 "titulo": "Lonesome On'ry and Mean: A Tribute To Waylon Jennings",
 "artista": "",
@@ -9443,15 +9459,6 @@
 "ano": "",
 "preco": 147.3,
 "foto": "https://m.media-amazon.com/images/I/81Fuvs9v7nL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B01K68F57I",
-"titulo": "Best of Silvio Rodriguez: Cuba Classics 1",
-"artista": "RODRIGUEZ,SILVIO",
-"ano": "",
-"preco": 147.32,
-"foto": "https://m.media-amazon.com/images/I/71-TFOvENJL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9890,15 +9897,6 @@
 "ano": "2024",
 "preco": 149.47,
 "foto": "https://m.media-amazon.com/images/I/81z1PWTwjfL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BX79KGN2",
-"titulo": "ENDLESS COLOURED WAYS: THE SONGS OF NICK DRAKE - ROAD / NORTHERN SKY",
-"artista": "",
-"ano": "2025",
-"preco": 149.53,
-"foto": "https://m.media-amazon.com/images/I/714TLELYapL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
