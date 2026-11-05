@@ -1,38 +1,9 @@
 {
-"atualizado": "2026-11-05T11:22-03:00",
+"atualizado": "2026-11-05T12:46-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
-"novos": [
-"B0CFD4WMSM",
-"B0028R1LXI",
-"B0988RCV7Q",
-"B076DQZ3SR",
-"B01ENEIL7W",
-"B0CHZ1174F",
-"B0CVR49H46",
-"B0C9W71NZT",
-"B08FP459QH",
-"B09PP8VX42",
-"B08XXSLY6S",
-"B0BPMQRS74",
-"B07VFQMF81",
-"B0CBQX21S6",
-"B09H4SJTW8",
-"B00WBJSN5W",
-"B09NRJWC2L",
-"B076KG8GXH",
-"B07Z31972W",
-"B0CVN24F19",
-"B0788XQ1BZ",
-"B08H5BXT84",
-"B0C5JCR499",
-"B0DVBD6HL3",
-"B08XKVX14V",
-"B0BP3LCHGG",
-"B0CPJQDF4Z",
-"B0D9KZNGDH"
-],
+"novos": [],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -6642,21 +6613,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BZWNJDC3",
+"titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
+"artista": "Joy Division",
+"ano": "2023",
+"preco": 131.54,
+"foto": "https://m.media-amazon.com/images/I/71Uy2RRjDRL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B095GS5HH9",
 "titulo": "Life In The Pond",
 "artista": "Roger Chapman",
 "ano": "2025",
 "preco": 131.54,
 "foto": "https://m.media-amazon.com/images/I/91pMHbeOKRL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BZWNJDC3",
-"titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
-"artista": "Joy Division",
-"ano": "2023",
-"preco": 131.55,
-"foto": "https://m.media-amazon.com/images/I/71Uy2RRjDRL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
