@@ -2,10 +2,10 @@
  "pedido": 42041040270,
  "estado": "buscando",
  "mensagem": "",
- "quando": "2026-11-05T11:15:38-03:00",
+ "quando": "2026-11-05T11:16:29-03:00",
  "etapa": "buscando",
- "pagina": 42,
+ "pagina": 50,
  "previstas": 71,
- "discos": 667,
+ "discos": 792,
  "inicio": "2026-11-05T11:02:07-03:00"
 }
