@@ -1,12 +1,10 @@
 {
-"atualizado": "2026-11-06T09:10-03:00",
+"atualizado": "2026-11-06T11:16-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 71,
+"paginas": 70,
 "novos": [
-"B0B833M61S",
-"B077HKJXTG",
-"B0CY18F8WT"
+"B01GU5U6NY"
 ],
 "discos": [
 {
@@ -1786,18 +1784,6 @@
 "preco": 101.08,
 "foto": "https://m.media-amazon.com/images/I/81ziP0oVVGL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B08W7SQNKF",
-"titulo": "Quietly Blowing It",
-"artista": "Hiss Golden Messenger",
-"ano": "2021",
-"preco": 101.22,
-"foto": "https://m.media-amazon.com/images/I/81JK9Ff5zIL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 80,
-"nota_url": "https://www.metacritic.com/music/quietly-blowing-it/hiss-golden-messenger/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
 },
 {
 "asin": "B0BM3YFYM3",
@@ -5087,15 +5073,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0CHZ1174F",
-"titulo": "The Wheel",
-"artista": "Rosanne Cash",
-"ano": "2025",
-"preco": 122.76,
-"foto": "https://m.media-amazon.com/images/I/81RmHEk+DkL._AC_UY218_.jpg",
-"visto": "2026-11-05T11:22-03:00"
-},
-{
 "asin": "B0BMSKP5TY",
 "titulo": "I Came From Love",
 "artista": "Dave Okumu",
@@ -7955,15 +7932,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0718ZF4XP",
-"titulo": "Through Fire - Breathe",
-"artista": "Through Fire",
-"ano": "2017",
-"preco": 139.95,
-"foto": "https://m.media-amazon.com/images/I/71wG5fCqekL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B074WK3HBY",
 "titulo": "Red Arrow",
 "artista": "",
@@ -8357,6 +8325,18 @@
 "preco": 141.71,
 "foto": "https://m.media-amazon.com/images/I/71rmDWbV8hL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B01GU5U6NY",
+"titulo": "Beulah",
+"artista": "John Paul White",
+"ano": "2025",
+"preco": 141.72,
+"foto": "https://m.media-amazon.com/images/I/A1vvt5+dG-L._AC_UY218_.jpg",
+"visto": "2026-11-06T11:16-03:00",
+"nota": 74,
+"nota_url": "https://www.metacritic.com/music/beulah/john-paul-white/critic-reviews/",
+"nota_desde": "2026-11-06T11:16"
 },
 {
 "asin": "B07SNNN48N",
@@ -8921,15 +8901,6 @@
 "preco": 144.29,
 "foto": "https://m.media-amazon.com/images/I/81gF4PEtSCL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B08XKVX14V",
-"titulo": "Break Our Fall",
-"artista": "Dispatch",
-"ano": "2021",
-"preco": 144.31,
-"foto": "https://m.media-amazon.com/images/I/A1fOg9GiHZL._AC_UY218_.jpg",
-"visto": "2026-11-05T11:22-03:00"
 },
 {
 "asin": "B0BP3LCHGG",
@@ -9586,6 +9557,15 @@
 "ano": "2023",
 "preco": 148.19,
 "foto": "https://m.media-amazon.com/images/I/71fZEsVUQWL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B0D3RD3SV5",
+"titulo": "Connection Anxiety",
+"artista": "Thotcrime",
+"ano": "2024",
+"preco": 148.2,
+"foto": "https://m.media-amazon.com/images/I/91X8biuIcTL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
