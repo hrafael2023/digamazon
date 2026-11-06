@@ -1,15 +1,11 @@
 {
-"atualizado": "2026-11-06T17:12-03:00",
+"atualizado": "2026-11-06T18:16-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
 "novos": [
-"B0CXL87Y6Y",
-"B07VGTXZVW",
-"B084DH5MY5",
-"B00KJNAJFY",
-"B08GBCWWPQ",
-"B010CGPTCK"
+"B0BPCYYNZZ",
+"B075M6QZ3N"
 ],
 "discos": [
 {
@@ -2499,15 +2495,6 @@
 "ano": "2025",
 "preco": 106.38,
 "foto": "https://m.media-amazon.com/images/I/91jbPGU6oQL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09BY7XHV5",
-"titulo": "Welcome to Paradise Lost (Red Vinyl)",
-"artista": "Taraka",
-"ano": "2025",
-"preco": 106.49,
-"foto": "https://m.media-amazon.com/images/I/71mxPHiyu6L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9379,6 +9366,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0BPCYYNZZ",
+"titulo": "NEW AGE (CLEAR 18cm /REISSUE)",
+"artista": "Blitz",
+"ano": "2023",
+"preco": 146.42,
+"foto": "https://m.media-amazon.com/images/I/81w7qxUMxiL._AC_UY218_.jpg",
+"visto": "2026-11-06T18:16-03:00"
+},
+{
 "asin": "B091WGBDM7",
 "titulo": "Love Drips And Gathers",
 "artista": "Piroshka",
@@ -9632,6 +9628,15 @@
 "preco": 148.2,
 "foto": "https://m.media-amazon.com/images/I/91X8biuIcTL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B075M6QZ3N",
+"titulo": "Scratch Practice",
+"artista": "DJ T-KUT",
+"ano": "",
+"preco": 148.22,
+"foto": "https://m.media-amazon.com/images/I/81gMV761WFL._AC_UY218_.jpg",
+"visto": "2026-11-06T18:16-03:00"
 },
 {
 "asin": "B07CQKKFVB",
