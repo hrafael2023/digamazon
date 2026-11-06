@@ -1,10 +1,10 @@
 {
-"atualizado": "2026-11-06T12:21-03:00",
+"atualizado": "2026-11-06T14:35-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 71,
+"paginas": 70,
 "novos": [
-"B01N7LQ19I"
+"B089TWSBB8"
 ],
 "discos": [
 {
@@ -510,6 +510,15 @@
 "preco": 85.26,
 "foto": "https://m.media-amazon.com/images/I/91OLlqj5HbL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B089TWSBB8",
+"titulo": "Emotions",
+"artista": "Mariah Carey",
+"ano": "2020",
+"preco": 85.31,
+"foto": "https://m.media-amazon.com/images/I/819cd1IlX+L._AC_UY218_.jpg",
+"visto": "2026-11-06T14:35-03:00"
 },
 {
 "asin": "B09V5CZN5L",
@@ -5904,6 +5913,18 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B07PYJ3XVF",
+"titulo": "Weezer (teal Album)",
+"artista": "Weezer",
+"ano": "",
+"preco": 127.43,
+"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00",
+"nota": 58,
+"nota_url": "https://www.metacritic.com/music/weezer-teal-album/weezer/critic-reviews/",
+"nota_desde": "2026-11-02T18:15"
+},
+{
 "asin": "B0BWNK6495",
 "titulo": "Damn Love [2 LP]",
 "artista": "Kip Moore",
@@ -5977,15 +5998,6 @@
 "preco": 128.0,
 "foto": "https://m.media-amazon.com/images/I/71yxT+u33bL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B01N7LQ19I",
-"titulo": "Innocence",
-"artista": "",
-"ano": "",
-"preco": 128.02,
-"foto": "https://m.media-amazon.com/images/I/81SSZy996KL._AC_UY218_.jpg",
-"visto": "2026-11-06T12:21-03:00"
 },
 {
 "asin": "B07MC26XFN",
@@ -8037,15 +8049,6 @@
 "ano": "2025",
 "preco": 140.22,
 "foto": "https://m.media-amazon.com/images/I/811ckJMujTL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0B3Y35W1V",
-"titulo": "ALPENGLOW",
-"artista": "TRAMPLED BY TURTLES",
-"ano": "2022",
-"preco": 140.28,
-"foto": "https://m.media-amazon.com/images/I/A12Ausn05DL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
