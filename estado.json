@@ -1,11 +1,11 @@
 {
  "pedido": 42240875743,
  "estado": "buscando",
- "mensagem": "a Amazon pediu uma verificação anti-robô na página 58",
- "quando": "2026-11-06T12:19:21-03:00",
- "etapa": "esperando",
+ "mensagem": "",
+ "quando": "2026-11-06T12:19:54-03:00",
+ "etapa": "buscando",
  "pagina": 58,
  "previstas": 70,
- "discos": 0,
+ "discos": 916,
  "inicio": "2026-11-06T12:13:59-03:00"
 }
