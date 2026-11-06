@@ -1,10 +1,10 @@
 {
-"atualizado": "2026-11-06T11:16-03:00",
+"atualizado": "2026-11-06T12:21-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 70,
+"paginas": 71,
 "novos": [
-"B01GU5U6NY"
+"B01N7LQ19I"
 ],
 "discos": [
 {
@@ -5913,6 +5913,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CHZ21XHM",
+"titulo": "WHEEL (30TH ANNIVERSARY/REMASTERED)",
+"artista": "Rosanne Cash",
+"ano": "2025",
+"preco": 127.67,
+"foto": "https://m.media-amazon.com/images/I/716vl921CyL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B08SPKR4BK",
 "titulo": "Thembi / Gwinytshe",
 "artista": "Toreadors",
@@ -5968,6 +5977,15 @@
 "preco": 128.0,
 "foto": "https://m.media-amazon.com/images/I/71yxT+u33bL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B01N7LQ19I",
+"titulo": "Innocence",
+"artista": "",
+"ano": "",
+"preco": 128.02,
+"foto": "https://m.media-amazon.com/images/I/81SSZy996KL._AC_UY218_.jpg",
+"visto": "2026-11-06T12:21-03:00"
 },
 {
 "asin": "B07MC26XFN",
@@ -7821,6 +7839,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B09CC4JC91",
+"titulo": "Blind Willie McTell",
+"artista": "",
+"ano": "2025",
+"preco": 138.86,
+"foto": "https://m.media-amazon.com/images/I/61u-nymL-oL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B096LMTHWM",
 "titulo": "December [Barn Board LP]",
 "artista": "Page McConnell/Trey Anastasio",
@@ -7992,15 +8019,6 @@
 "ano": "2025",
 "preco": 140.15,
 "foto": "https://m.media-amazon.com/images/I/71FceGSedeL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09CC4JC91",
-"titulo": "Blind Willie McTell",
-"artista": "",
-"ano": "2025",
-"preco": 140.2,
-"foto": "https://m.media-amazon.com/images/I/61u-nymL-oL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
