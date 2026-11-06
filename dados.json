@@ -1,10 +1,15 @@
 {
-"atualizado": "2026-11-06T14:35-03:00",
+"atualizado": "2026-11-06T17:12-03:00",
 "limite": 150.0,
 "primeira": false,
-"paginas": 70,
+"paginas": 71,
 "novos": [
-"B089TWSBB8"
+"B0CXL87Y6Y",
+"B07VGTXZVW",
+"B084DH5MY5",
+"B00KJNAJFY",
+"B08GBCWWPQ",
+"B010CGPTCK"
 ],
 "discos": [
 {
@@ -510,15 +515,6 @@
 "preco": 85.26,
 "foto": "https://m.media-amazon.com/images/I/91OLlqj5HbL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B089TWSBB8",
-"titulo": "Emotions",
-"artista": "Mariah Carey",
-"ano": "2020",
-"preco": 85.31,
-"foto": "https://m.media-amazon.com/images/I/819cd1IlX+L._AC_UY218_.jpg",
-"visto": "2026-11-06T14:35-03:00"
 },
 {
 "asin": "B09V5CZN5L",
@@ -2308,15 +2304,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B099ZPJFZ4",
-"titulo": "The Shimmer",
-"artista": "Oscar & the Wolf",
-"ano": "2025",
-"preco": 105.17,
-"foto": "https://m.media-amazon.com/images/I/716csEs+V4L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B098M9GJ3B",
 "titulo": "The Old Magic (10th Anniversary Edition - GREEN VINYL)",
 "artista": "Lowe, Nick",
@@ -3037,6 +3024,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B0CXL87Y6Y",
+"titulo": "Low Sun / Los Chicos Tristes (El Michels Affair Remix) [7\" Single]",
+"artista": "Hermanos Gutiérrez",
+"ano": "2024",
+"preco": 109.72,
+"foto": "https://m.media-amazon.com/images/I/81Wz+ZmzRkL._AC_UY218_.jpg",
+"visto": "2026-11-06T17:12-03:00"
+},
+{
 "asin": "B0CFWT7ZCJ",
 "titulo": "Spectre",
 "artista": "Pauline Anna Strom",
@@ -3653,6 +3649,15 @@
 "preco": 113.41,
 "foto": "https://m.media-amazon.com/images/I/51Dcu005eGL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B07VGTXZVW",
+"titulo": "When Love Met Destruction",
+"artista": "Motionless In White",
+"ano": "",
+"preco": 113.43,
+"foto": "https://m.media-amazon.com/images/I/61svUMj5skL._AC_UY218_.jpg",
+"visto": "2026-11-06T17:12-03:00"
 },
 {
 "asin": "B07XKJTZ92",
@@ -7562,6 +7567,18 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B084DH5MY5",
+"titulo": "Lamb of God",
+"artista": "Lamb of God",
+"ano": "2020",
+"preco": 137.2,
+"foto": "https://m.media-amazon.com/images/I/81-zq7mpp3L._AC_UY218_.jpg",
+"visto": "2026-11-06T17:12-03:00",
+"nota": 81,
+"nota_url": "https://www.metacritic.com/music/lamb-of-god/lamb-of-god/critic-reviews/",
+"nota_desde": "2026-11-06T17:12"
+},
+{
 "asin": "B0CKBWS786",
 "titulo": "NORTH WIND",
 "artista": "Spencer Burton",
@@ -7716,6 +7733,15 @@
 "preco": 138.12,
 "foto": "https://m.media-amazon.com/images/I/61IoOGrLaeL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B00KJNAJFY",
+"titulo": "Holiday",
+"artista": "Magnetic Fields",
+"ano": "2026",
+"preco": 138.23,
+"foto": "https://m.media-amazon.com/images/I/615mhtx8dOL._AC_UY218_.jpg",
+"visto": "2026-11-06T17:12-03:00"
 },
 {
 "asin": "B0D3RHWXC1",
@@ -8924,6 +8950,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B08GBCWWPQ",
+"titulo": "Black Mirror: San Junipero (Original Score) Trans Purple Vinyl",
+"artista": "Clint Mansell",
+"ano": "2020",
+"preco": 144.32,
+"foto": "https://m.media-amazon.com/images/I/81R4XVLNNZL._AC_UY218_.jpg",
+"visto": "2026-11-06T17:12-03:00"
+},
+{
 "asin": "B0BP3LCHGG",
 "titulo": "ENFANTS D'HIVER",
 "artista": "Jane Birkin",
@@ -8937,7 +8972,7 @@
 "titulo": "Live In Amsterdam",
 "artista": "Lettuce",
 "ano": "2024",
-"preco": 144.35,
+"preco": 144.34,
 "foto": "https://m.media-amazon.com/images/I/51xWwazx28L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -9459,6 +9494,15 @@
 "preco": 147.3,
 "foto": "https://m.media-amazon.com/images/I/81Fuvs9v7nL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B010CGPTCK",
+"titulo": "Tangled (Songs From the Motion Picture)",
+"artista": "Various Artists",
+"ano": "",
+"preco": 147.33,
+"foto": "https://m.media-amazon.com/images/I/71tQe8-vECL._AC_UY218_.jpg",
+"visto": "2026-11-06T17:12-03:00"
 },
 {
 "asin": "B0DY1WZGPD",
