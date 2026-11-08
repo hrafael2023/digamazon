@@ -1,6 +1,11 @@
 {
- "pedido": 42503608709,
- "estado": "erro",
- "mensagem": "busca interrompida: HTTP Error 503: Service Unavailable (depois de 64 discos; o próximo Dig continua dali)",
- "quando": "2026-11-08T14:23:51-03:00"
+ "pedido": 42504857976,
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-08T14:25:56-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 71,
+ "discos": 0,
+ "inicio": "2026-11-08T14:25:56-03:00"
 }
