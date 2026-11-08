@@ -30,7 +30,7 @@ DADOS = PASTA / "dados.json"
 VISTOS = PASTA / "vistos.json"
 # Progresso de uma busca interrompida, para o próximo Dig continuar dali.
 PARCIAL = PASTA / "logs" / "parcial.json"
-RETOMAR_ATE = dt.timedelta(hours=3)
+RETOMAR_ATE = dt.timedelta(hours=6)
 LIMITE = 150.0
 MAX_PAGINAS = 150
 URL = ("https://www.amazon.com.br/s?i=popular&rh=n%3A19549018011"
@@ -82,8 +82,8 @@ def guardar_falha(pagina, texto):
 
 # Quando a Amazon desconfia de robô, devolve uma página de verificação no lugar
 # dos resultados. Não tentamos passar por ela: só esperamos cada vez mais
-# (até uns 12 minutos no total), o que costuma bastar para ela liberar.
-ESPERAS = [30, 60, 120, 240, 300]
+# (até uns 35 minutos no total), o que costuma bastar para ela liberar.
+ESPERAS = [60, 180, 300, 600, 900]
 
 
 def baixar_com_paciencia(pagina, progresso=None):
@@ -168,8 +168,8 @@ def coletar(progresso=None):
             break
         if progresso:
             progresso("buscando", pagina=pagina, discos=len(achados))
-        # Uma página a cada poucos segundos, para não sobrecarregar a Amazon.
-        time.sleep(random.uniform(3, 6))
+        # Uma página a cada 9 a 16 segundos: mais devagar, a Amazon pede menos verificações.
+        time.sleep(random.uniform(9, 16))
     coletar.paginas = ultima
     return achados
 

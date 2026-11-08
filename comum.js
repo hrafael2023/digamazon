@@ -86,7 +86,7 @@ async function arquivo(nome) {
 
 // Barra de progresso da busca, logo abaixo do topo. O Mac conta a página a cada
 // 10; entre um aviso e outro a barra anda sozinha, no ritmo medido até ali.
-const SEG_POR_PAGINA = 5.5;  // ritmo esperado antes do primeiro aviso
+const SEG_POR_PAGINA = 13.5;  // ritmo esperado antes do primeiro aviso
 let andamento = null, relogio = null;
 
 function progresso(e) {
@@ -113,7 +113,7 @@ function desenharProgresso() {
     atual = previstas;
     texto = "Quase lá: procurando as notas da crítica dos discos novos…";
   } else if (e.etapa === "esperando") {
-    texto = `A Amazon pediu uma verificação na página ${pagina}. Esperando ela liberar (pode levar até 12 min)…`;
+    texto = `A Amazon pediu uma verificação na página ${pagina}. Esperando ela liberar (pode levar até 35 min)…`;
   } else {
     atual = Math.min(pagina + (agora - quando) / 1000 / ritmo, pagina + 10, previstas - 1);
     const faltam = Math.max(1, Math.round(((previstas - atual) * ritmo + 20) / 60));
@@ -146,7 +146,7 @@ async function acompanhar(desde) {
     const rodandoAgora = e.etapa && e.estado === "buscando";
     if (!rodandoAgora && andamento) fimProgresso();
     if (rodandoAgora) progresso(e);
-    else if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 7). Pode fechar a página e voltar depois.`);
+    else if (e.pedido >= run.id) status(`O Mac está pesquisando na Amazon… ${min} min (leva uns 15). Pode fechar a página e voltar depois.`);
     else status(min < 3
       ? "Pedido enviado. Esperando o Mac pegar (ele confere a cada 2 minutos)…"
       : `Esperando o Mac há ${min} min. Ele precisa estar ligado e acordado; o pedido fica guardado até lá.`);
