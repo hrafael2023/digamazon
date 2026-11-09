@@ -1,14 +1,9 @@
 {
-"atualizado": "2026-11-08T16:28-03:00",
+"atualizado": "2026-11-09T00:44-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
-"novos": [
-"B0D4R9TYGJ",
-"B00F2HW3NI",
-"B0997ZKGQ6",
-"B0DGNTVHX6"
-],
+"novos": [],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -191,15 +186,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0CCG53L8M",
-"titulo": "15 ANOS BALADAS EXITOS (2LP)",
-"artista": "Juan Gabriel",
-"ano": "2023",
-"preco": 73.11,
-"foto": "https://m.media-amazon.com/images/I/71p1m9en3rL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B07C5DXNQ3",
 "titulo": "Blackrock \"yeah Yeah]2018-04-11]2018-04-11]2018-03",
 "artista": "Blackrock",
@@ -323,15 +309,6 @@
 "ano": "2024",
 "preco": 78.46,
 "foto": "https://m.media-amazon.com/images/I/711VKIY+swL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B00FG0LUIK",
-"titulo": "New Hovering Dog",
-"artista": "Cole, Bj",
-"ano": "2025",
-"preco": 79.02,
-"foto": "https://m.media-amazon.com/images/I/71IMpTn-pXL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -461,78 +438,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0BV13ZXRL",
-"titulo": "5K EP",
-"artista": "",
-"ano": "2025",
-"preco": 83.58,
-"foto": "https://m.media-amazon.com/images/I/610Q+cYXL4L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07NBCMW7W",
-"titulo": "Ground Trouble Jaw / Walt Wolfman",
-"artista": "SWIFT,RICHARD",
-"ano": "2025",
-"preco": 83.92,
-"foto": "https://m.media-amazon.com/images/I/81yHuVBREjL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09ZBLWDX2",
-"titulo": "SPELL/BOUND (COKE BOTTLE GREEN VINYL)",
-"artista": "",
-"ano": "2025",
-"preco": 83.99,
-"foto": "https://m.media-amazon.com/images/I/81uccLfCgAL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0988SR79Z",
-"titulo": "Due North",
-"artista": "KAZAR,LIAM",
-"ano": "2025",
-"preco": 84.49,
-"foto": "https://m.media-amazon.com/images/I/51F+-horX-L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B079ZV4P3G",
-"titulo": "Room to Run",
-"artista": "",
-"ano": "",
-"preco": 84.81,
-"foto": "https://m.media-amazon.com/images/I/51NqqSo7btL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07MBHQZ51",
-"titulo": "See Now and Know",
-"artista": "",
-"ano": "2025",
-"preco": 85.07,
-"foto": "https://m.media-amazon.com/images/I/A1dte085A3L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0BSCCN818",
-"titulo": "DEAD MAN",
-"artista": "Channing Wilson",
-"ano": "2025",
-"preco": 85.1,
-"foto": "https://m.media-amazon.com/images/I/61SxEzLKG9L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0D9SQB1DR",
-"titulo": "Color Green",
-"artista": "The Color Green",
-"ano": "2024",
-"preco": 85.23,
-"foto": "https://m.media-amazon.com/images/I/91OLlqj5HbL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B09V5CZN5L",
 "titulo": "OUT THE BAG EP",
 "artista": "TUXEDO CATS",
@@ -548,15 +453,6 @@
 "ano": "2020",
 "preco": 85.35,
 "foto": "https://m.media-amazon.com/images/I/81TgwAf63VL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07TNVXJJM",
-"titulo": "White Noise / White Lines",
-"artista": "",
-"ano": "2025",
-"preco": 85.46,
-"foto": "https://m.media-amazon.com/images/I/81qJ2p7-FQL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -584,6 +480,15 @@
 "ano": "2025",
 "preco": 86.23,
 "foto": "https://m.media-amazon.com/images/I/91X-zW-+JJL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B09RM5XDCJ",
+"titulo": "New Waves (live Recordings '19-'21)",
+"artista": "Leif Vollebekk",
+"ano": "2025",
+"preco": 86.38,
+"foto": "https://m.media-amazon.com/images/I/71ip9H8k3LL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -2731,15 +2636,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0BG8XK1DR",
-"titulo": "Bruce Cockburn",
-"artista": "",
-"ano": "2025",
-"preco": 107.74,
-"foto": "https://m.media-amazon.com/images/I/71gmovdnsbL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0B3RSVKTH",
 "titulo": "Electromagnetic Reality",
 "artista": "",
@@ -3550,15 +3446,6 @@
 "ano": "2023",
 "preco": 112.55,
 "foto": "https://m.media-amazon.com/images/I/A1ws+P5hqdL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B084QLMQRK",
-"titulo": "Sleepless",
-"artista": "Nite",
-"ano": "2020",
-"preco": 112.55,
-"foto": "https://m.media-amazon.com/images/I/81JToeNk+NL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -6739,15 +6626,6 @@
 "visto": "2026-11-05T11:22-03:00"
 },
 {
-"asin": "B0B14PLH87",
-"titulo": "DINA OGON",
-"artista": "Dina Ogon",
-"ano": "2025",
-"preco": 131.95,
-"foto": "https://m.media-amazon.com/images/I/719ggSm-C8L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0165YBECW",
 "titulo": "Burn the Plan",
 "artista": "Good Lovelies",
@@ -7929,21 +7807,21 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B09XKLY4FB",
+"titulo": "Never Slept Better - ELECTRIC BLUE [Explicit Content] (Parental Advisory Explicit Lyrics, Colored Vinyl, Blue)",
+"artista": "",
+"ano": "2025",
+"preco": 139.43,
+"foto": "https://m.media-amazon.com/images/I/61UROzh1+bL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B0CQMFXWK8",
 "titulo": "SHADOWBOXING",
 "artista": "Joe Harrison",
 "ano": "2025",
 "preco": 139.47,
 "foto": "https://m.media-amazon.com/images/I/71dPg5FyVjL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09XKLY4FB",
-"titulo": "Never Slept Better - ELECTRIC BLUE [Explicit Content] (Parental Advisory Explicit Lyrics, Colored Vinyl, Blue)",
-"artista": "",
-"ano": "2025",
-"preco": 139.61,
-"foto": "https://m.media-amazon.com/images/I/61UROzh1+bL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -9957,6 +9835,15 @@
 "preco": 149.51,
 "foto": "https://m.media-amazon.com/images/I/91SpSsUk3QL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B0B1HB729M",
+"titulo": "Close To Home [LP]",
+"artista": "",
+"ano": "2025",
+"preco": 149.52,
+"foto": "https://m.media-amazon.com/images/I/B1rP0DdIGxL._AC_UY218_.jpg",
+"visto": "2026-11-02T16:00-03:00"
 },
 {
 "asin": "B01N4PQKMQ",
