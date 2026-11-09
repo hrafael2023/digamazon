@@ -1,19 +1,9 @@
 {
-"atualizado": "2026-11-09T09:49-03:00",
+"atualizado": "2026-11-09T14:41-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 71,
-"novos": [
-"B0BJSK29HR",
-"B077G46HDY",
-"B0CRVKQ1XF",
-"B0BXMWVNF4",
-"B09LZVBR9N",
-"B09S3WSL5B",
-"B09WHQCZ76",
-"B09JCLHKPS",
-"B0F193S99J"
-],
+"novos": [],
 "discos": [
 {
 "asin": "B01M4PGVA1",
@@ -1029,7 +1019,7 @@
 "titulo": "Ultimate Zydeco / Various",
 "artista": "",
 "ano": "2025",
-"preco": 93.54,
+"preco": 93.53,
 "foto": "https://m.media-amazon.com/images/I/81HbDdL6YIL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -2947,15 +2937,6 @@
 "preco": 108.93,
 "foto": "https://m.media-amazon.com/images/I/81LA-PD8oML._AC_UY218_.jpg",
 "visto": "2026-11-03T20:14-03:00"
-},
-{
-"asin": "B09N9S5T2T",
-"titulo": "789577785816",
-"artista": "",
-"ano": "2025",
-"preco": 109.0,
-"foto": "https://m.media-amazon.com/images/I/81kKzI6i3zL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B00HAWRLEY",
@@ -4932,18 +4913,6 @@
 "nota_url": "https://www.metacritic.com/music/amazones-power/les-amazones-dafrique/critic-reviews/",
 "nota_desde": "2026-11-02T17:21",
 "bandcamp": "https://lesamazonesdafrique.bandcamp.com/album/amazones-power"
-},
-{
-"asin": "B00J8JQ6NE",
-"titulo": "Metamodern Sounds in Country Music",
-"artista": "Sturgill Simpson",
-"ano": "2014",
-"preco": 121.62,
-"foto": "https://m.media-amazon.com/images/I/81CirDqTGgL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 81,
-"nota_url": "https://www.metacritic.com/music/metamodern-sounds-in-country-music/sturgill-simpson/critic-reviews/",
-"nota_desde": "2026-11-02T17:21"
 },
 {
 "asin": "B08L3NW8R5",
@@ -7161,15 +7130,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0BJSK29HR",
-"titulo": "MOON IS",
-"artista": "Heavy Blanket",
-"ano": "2023",
-"preco": 135.13,
-"foto": "https://m.media-amazon.com/images/I/81OLgKkuJKL._AC_UY218_.jpg",
-"visto": "2026-11-09T09:49-03:00"
-},
-{
 "asin": "B09TTC1B72",
 "titulo": "Inside Out",
 "artista": "",
@@ -7341,19 +7301,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B00KY44OOK",
-"titulo": "Go Down in History",
-"artista": "Four Year Strong",
-"ano": "2025",
-"preco": 136.33,
-"foto": "https://m.media-amazon.com/images/I/91uVNB+331L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 87,
-"nota_url": "https://www.metacritic.com/music/go-down-in-history-ep/four-year-strong/critic-reviews/",
-"nota_desde": "2026-11-02T17:21",
-"bandcamp": "https://fouryearstrong.bandcamp.com/album/go-down-in-history"
-},
-{
 "asin": "B0BZDVML4Z",
 "titulo": "VOID ETERNAL",
 "artista": "nothing,nowhere.",
@@ -7444,15 +7391,6 @@
 "ano": "2023",
 "preco": 136.92,
 "foto": "https://m.media-amazon.com/images/I/71XxIjqx1IL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B00CF0QKL6",
-"titulo": "Brand New Bangarang",
-"artista": "",
-"ano": "2025",
-"preco": 136.92,
-"foto": "https://m.media-amazon.com/images/I/512e6olXWFL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -8243,6 +8181,18 @@
 "preco": 141.57,
 "foto": "https://m.media-amazon.com/images/I/81ejjDF13pL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B01GU5U6NY",
+"titulo": "Beulah",
+"artista": "John Paul White",
+"ano": "2025",
+"preco": 141.57,
+"foto": "https://m.media-amazon.com/images/I/A1vvt5+dG-L._AC_UY218_.jpg",
+"visto": "2026-11-06T11:16-03:00",
+"nota": 74,
+"nota_url": "https://www.metacritic.com/music/beulah/john-paul-white/critic-reviews/",
+"nota_desde": "2026-11-06T11:16"
 },
 {
 "asin": "B0CTKYT7VN",
@@ -9501,6 +9451,15 @@
 "preco": 147.65,
 "foto": "https://m.media-amazon.com/images/I/81Eoj+A0Q-L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B072Q2KZXN",
+"titulo": "50,000,000 Elvis Fans Can't Be Wrong",
+"artista": "",
+"ano": "2025",
+"preco": 147.74,
+"foto": "https://m.media-amazon.com/images/I/71e+SE343eL._AC_UY218_.jpg",
+"visto": "2026-11-07T22:34-03:00"
 },
 {
 "asin": "B0CM9NZPRX",
