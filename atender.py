@@ -121,6 +121,28 @@ def acompanhante(pedido):
     return progresso
 
 
+def interrompido():
+    """Pedido cuja busca parou sem terminar (o Mac reiniciou ou desligou no meio), ou None.
+
+    O macOS não roda este script duas vezes ao mesmo tempo, então se estado.json
+    ainda diz "buscando" quando ele começa, aquela busca morreu. Se faz pouco
+    tempo, ela é retomada; se faz muito, a página passa a mostrar o erro.
+    """
+    try:
+        e = json.loads(ESTADO.read_text())
+    except (OSError, ValueError):
+        return None
+    if e.get("estado") != "buscando":
+        return None
+    parado = dt.datetime.now(buscar.FUSO) - dt.datetime.fromisoformat(e["quando"])
+    if parado < buscar.RETOMAR_ATE:
+        return e["pedido"]
+    log(f"pedido {e['pedido']}: a busca parou no meio há mais de {buscar.RETOMAR_ATE}")
+    marcar(e["pedido"], "erro", "a busca parou no meio (o Mac desligou ou reiniciou). Toque em Dig para tentar de novo.")
+    enviar(["estado.json"], "Pesquisa interrompida")
+    return None
+
+
 def main():
     if pendente():
         log("enviando resultado que tinha ficado sem chegar ao GitHub")
@@ -136,10 +158,13 @@ def main():
         log(f"começando a partir do pedido {pedido}")
         return
     if pedido <= int(ULTIMO.read_text() or 0):
-        return
-
-    log(f"pedido {pedido}: pesquisando")
-    ULTIMO.write_text(str(pedido))
+        pedido = interrompido()
+        if not pedido:
+            return
+        log(f"pedido {pedido}: a busca tinha parado no meio (o Mac desligou ou reiniciou); retomando")
+    else:
+        log(f"pedido {pedido}: pesquisando")
+        ULTIMO.write_text(str(pedido))
     git("pull", "-q", "--rebase", "origin", "main")
     progresso = acompanhante(pedido)
     progresso("buscando")
