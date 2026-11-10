@@ -1,6 +1,11 @@
 {
- "pedido": 42731784357,
- "estado": "erro",
- "mensagem": "busca interrompida: <urlopen error [Errno 8] nodename nor servname provided, or not known> (depois de 32 discos; o próximo Dig continua dali)",
- "quando": "2026-11-09T23:07:48-03:00"
+ "pedido": 42819906432,
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-10T09:56:01-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 71,
+ "discos": 0,
+ "inicio": "2026-11-10T09:56:01-03:00"
 }
