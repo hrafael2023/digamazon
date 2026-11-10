@@ -1,11 +1,6 @@
 {
  "pedido": 42883812450,
- "estado": "buscando",
- "mensagem": "HTTP Error 503: Service Unavailable",
- "quando": "2026-11-10T16:18:40-03:00",
- "etapa": "esperando",
- "pagina": 1,
- "previstas": 71,
- "discos": 0,
- "inicio": "2026-11-10T16:18:38-03:00"
+ "estado": "erro",
+ "mensagem": "busca cancelada a seu pedido. Tente de novo amanhã.",
+ "quando": "2026-11-10T16:19:01-03:00"
 }
