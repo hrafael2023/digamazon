@@ -1,11 +1,11 @@
 {
  "pedido": 42731784357,
  "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-09T22:28:34-03:00",
- "etapa": "buscando",
- "pagina": 1,
+ "mensagem": "HTTP Error 503: Service Unavailable",
+ "quando": "2026-11-09T22:28:48-03:00",
+ "etapa": "esperando",
+ "pagina": 2,
  "previstas": 71,
- "discos": 16,
+ "discos": 0,
  "inicio": "2026-11-09T21:54:21-03:00"
 }
