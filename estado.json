@@ -1,6 +1,11 @@
 {
- "pedido": 42883812450,
- "estado": "erro",
- "mensagem": "busca cancelada a seu pedido. Tente de novo amanhã.",
- "quando": "2026-11-10T16:19:01-03:00"
+ "pedido": 42949445708,
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-10T23:58:59-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 71,
+ "discos": 0,
+ "inicio": "2026-11-10T23:58:59-03:00"
 }
