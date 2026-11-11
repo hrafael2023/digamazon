@@ -39,16 +39,7 @@ h1 span { color: var(--accent); }
 .sub { color: var(--mut); font-size: 12px; margin-top: 4px; }
 .logo b { font-weight: inherit; }
 .sub .data { white-space: nowrap; }
-#pesquisar {
-  flex: none; border: 0; border-radius: 0; padding: 12px 18px;
-  background: var(--btn); color: var(--on-btn); font: 700 15px var(--sans); letter-spacing: -.01em; cursor: pointer;
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; min-width: 76px;  /* "Dig" é curto; largura mínima para o toque */
-}
-#pesquisar:disabled { opacity: .6; cursor: default; }
-#pesquisar .gira { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: none; animation: g 0.8s linear infinite; }
-#pesquisar.rodando .gira { display: inline-block; }
-@keyframes g { to { transform: rotate(360deg); } }
-/* Link para a outra página, ao lado do botão */
+/* Link para a outra página, no canto do topo */
 .acoes-topo { margin-left: auto; display: flex; align-items: center; gap: 16px; flex: none; }
 .link-topo { color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 600; white-space: nowrap; }
 .topo .logo { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 9px; }
@@ -130,6 +121,5 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
   .grade { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 23px; }
   h2 { font-size: 21px; }
-  #pesquisar { padding: 11px 14px; }
   .acoes-topo { gap: 12px; }
 }

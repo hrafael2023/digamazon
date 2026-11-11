@@ -28,7 +28,7 @@ PASTA = Path(__file__).resolve().parent
 DADOS = PASTA / "dados.json"
 # ASIN → quando o disco apareceu pela primeira vez abaixo do limite.
 VISTOS = PASTA / "vistos.json"
-# Progresso de uma busca interrompida, para o próximo Dig continuar dali.
+# Progresso de uma busca interrompida, para a próxima tentativa continuar dali.
 PARCIAL = PASTA / "logs" / "parcial.json"
 RETOMAR_ATE = dt.timedelta(hours=6)
 LIMITE = 150.0
@@ -150,7 +150,7 @@ def coletar(progresso=None):
         try:
             discos = extrair(baixar_com_paciencia(pagina, progresso))
         except Exception as e:
-            raise RuntimeError(f"{e} (depois de {len(achados)} discos; o próximo Dig continua dali)") from e
+            raise RuntimeError(f"{e} (depois de {len(achados)} discos)") from e
         if not discos:
             break
         ultima = pagina

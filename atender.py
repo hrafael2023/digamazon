@@ -1,36 +1,43 @@
 #!/usr/bin/env python3
-"""Atende os pedidos do botão Dig, rodando a busca neste Mac.
+"""Roda a busca automática do DigAmazon uma vez por dia, de madrugada, neste Mac.
 
-O botão da página dispara o workflow pedido.yml no GitHub. Este script
-(chamado a cada 2 minutos pelo agendamento do macOS) confere se há pedido
-novo; se houver, roda buscar.py e envia dados.json para o repositório, o
-que republica a página. estado.json conta para a página em que pé está.
+O agendamento do macOS chama este script a cada 2 minutos. Ele só busca a
+partir das 5h e só uma vez por dia; se a Amazon bloquear, tenta de novo mais
+tarde (até TENTATIVAS vezes, com HORAS_ENTRE horas de intervalo). Ao terminar,
+envia dados.json ao repositório, o que republica a página. estado.json conta à
+página em que pé está a busca.
 
 Uso:
-    python3 atender.py          # confere e atende um pedido pendente
+    python3 atender.py          # busca, se for hora
     ./instalar-agendamento.sh   # deixa conferindo a cada 2 minutos
 """
 
 import datetime as dt
 import json
+import os
 import subprocess
 import sys
 import time
-import urllib.request
 from pathlib import Path
 
 import buscar
 
 PASTA = Path(__file__).resolve().parent
 ESTADO = PASTA / "estado.json"
-# Último pedido atendido; fica só neste Mac.
-ULTIMO = PASTA / ".ultimo-pedido"
-PEDIDOS = ("https://api.github.com/repos/hrafael2023/digamazon/actions/workflows/"
-           "pedido.yml/runs?event=workflow_dispatch&per_page=5")
+# Tentativas do dia; fica só neste Mac.
+TENTATIVAS_ARQ = PASTA / ".tentativas"
+
+HORA = 5            # a busca do dia começa a partir das 5h
+TENTATIVAS = 3      # se falhar: tenta de novo...
+HORAS_ENTRE = 2     # ...depois de 2 horas (por volta das 7h e das 9h)
 
 
 def log(msg):
     print(f"{dt.datetime.now():%d/%m %H:%M:%S} {msg}", flush=True)
+
+
+def agora():
+    return dt.datetime.now(buscar.FUSO)
 
 
 def git(*args):
@@ -38,13 +45,6 @@ def git(*args):
     if r.returncode:
         raise RuntimeError(f"git {args[0]} falhou: {(r.stderr or r.stdout).strip()}")
     return r.stdout
-
-
-def ultimo_pedido():
-    pedido = urllib.request.Request(PEDIDOS, headers={"Accept": "application/vnd.github+json"})
-    with urllib.request.urlopen(pedido, timeout=20) as r:
-        runs = json.load(r)["workflow_runs"]
-    return max((run["id"] for run in runs), default=0)
 
 
 def enviar(arquivos, mensagem):
@@ -80,12 +80,11 @@ def pendente():
         return False
 
 
-def marcar(pedido, estado, mensagem="", **progresso):
+def marcar(estado, mensagem="", **progresso):
     ESTADO.write_text(json.dumps({
-        "pedido": pedido,
         "estado": estado,
         "mensagem": mensagem,
-        "quando": dt.datetime.now(buscar.FUSO).isoformat(timespec="seconds"),
+        "quando": agora().isoformat(timespec="seconds"),
         **progresso,
     }, ensure_ascii=False, indent=1) + "\n")
 
@@ -95,14 +94,12 @@ def marcar(pedido, estado, mensagem="", **progresso):
 AVISAR_A_CADA = 10
 
 
-def acompanhante(pedido):
+def acompanhante(inicio):
     """Devolve a função que buscar.buscar() chama a cada passo, e que avisa a página."""
     try:
         previstas = json.loads(buscar.DADOS.read_text()).get("paginas") or 75
     except (OSError, ValueError):
         previstas = 75
-    inicio = dt.datetime.now(buscar.FUSO).isoformat(timespec="seconds")
-
     ultima = {"etapa": None}
 
     def progresso(etapa, pagina=0, discos=0, mensagem=""):
@@ -110,7 +107,7 @@ def acompanhante(pedido):
         if etapa == "buscando" and pagina % AVISAR_A_CADA and ultima["etapa"] != "esperando":
             return
         ultima["etapa"] = etapa
-        marcar(pedido, "buscando", mensagem, etapa=etapa, pagina=pagina, previstas=max(previstas, pagina),
+        marcar("buscando", mensagem, etapa=etapa, pagina=pagina, previstas=max(previstas, pagina),
                discos=discos, inicio=inicio)
         try:
             git("add", "estado.json")
@@ -121,76 +118,106 @@ def acompanhante(pedido):
     return progresso
 
 
-def interrompido():
-    """Pedido cuja busca parou sem terminar (o Mac reiniciou ou desligou no meio), ou None.
+def ler(arquivo):
+    try:
+        return json.loads(arquivo.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def interrompida():
+    """Início da busca que parou sem terminar (o Mac reiniciou ou desligou no meio), ou None.
 
     O macOS não roda este script duas vezes ao mesmo tempo, então se estado.json
     ainda diz "buscando" quando ele começa, aquela busca morreu. Se faz pouco
     tempo, ela é retomada; se faz muito, a página passa a mostrar o erro.
     """
-    try:
-        e = json.loads(ESTADO.read_text())
-    except (OSError, ValueError):
-        return None
+    e = ler(ESTADO)
     if e.get("estado") != "buscando":
         return None
-    parado = dt.datetime.now(buscar.FUSO) - dt.datetime.fromisoformat(e["quando"])
-    if parado < buscar.RETOMAR_ATE:
-        return e["pedido"]
-    log(f"pedido {e['pedido']}: a busca parou no meio há mais de {buscar.RETOMAR_ATE}")
-    marcar(e["pedido"], "erro", "a busca parou no meio (o Mac desligou ou reiniciou). Toque em Dig para tentar de novo.")
+    if agora() - dt.datetime.fromisoformat(e["quando"]) < buscar.RETOMAR_ATE:
+        return e.get("inicio") or e["quando"]
+    log("a busca parou no meio há muitas horas")
+    marcar("erro", "a busca parou no meio (o Mac desligou ou reiniciou)")
     enviar(["estado.json"], "Pesquisa interrompida")
     return None
+
+
+def hora_de_buscar():
+    """Já passou das 5h e a busca de hoje ainda não deu certo nem esgotou as tentativas?"""
+    hoje = agora().date().isoformat()
+    t = ler(TENTATIVAS_ARQ)
+    if not t:
+        # Primeira vez: começa amanhã, sem buscar já.
+        TENTATIVAS_ARQ.write_text(json.dumps({"dia": hoje, "vezes": TENTATIVAS, "ok": True}))
+        log("busca automática ligada; a primeira é amanhã a partir das 5h")
+        return False
+    if agora().hour < HORA:
+        return False
+    if t.get("dia") != hoje:
+        return True
+    if t.get("ok") or t.get("vezes", 0) >= TENTATIVAS:
+        return False
+    ultima = dt.datetime.fromisoformat(t["ultima"])
+    return agora() - ultima >= dt.timedelta(hours=HORAS_ENTRE)
+
+
+def contar_tentativa(ok=False):
+    hoje = agora().date().isoformat()
+    t = ler(TENTATIVAS_ARQ)
+    if t.get("dia") != hoje:
+        t = {"dia": hoje, "vezes": 0}
+    if ok:
+        t["ok"] = True
+    else:
+        t["vezes"] = t.get("vezes", 0) + 1
+        t["ultima"] = agora().isoformat(timespec="seconds")
+    TENTATIVAS_ARQ.write_text(json.dumps(t))
+    return t
 
 
 def main():
     if pendente():
         log("enviando resultado que tinha ficado sem chegar ao GitHub")
         publicar()
-    try:
-        pedido = ultimo_pedido()
-    except OSError as e:
-        log(f"sem acesso ao GitHub: {e}")
-        return
-    if not ULTIMO.exists():
-        # Primeira vez: começa a contar a partir de agora, sem atender pedidos antigos.
-        ULTIMO.write_text(str(pedido))
-        log(f"começando a partir do pedido {pedido}")
-        return
-    if pedido <= int(ULTIMO.read_text() or 0):
-        pedido = interrompido()
-        if not pedido:
-            return
-        log(f"pedido {pedido}: a busca tinha parado no meio (o Mac desligou ou reiniciou); retomando")
+
+    inicio = interrompida()
+    if inicio:
+        log("a busca tinha parado no meio (o Mac desligou ou reiniciou); retomando")
+    elif hora_de_buscar():
+        inicio = agora().isoformat(timespec="seconds")
+        contar_tentativa()
+        log("busca automática: pesquisando")
     else:
-        log(f"pedido {pedido}: pesquisando")
-        ULTIMO.write_text(str(pedido))
-    git("pull", "-q", "--rebase", "origin", "main")
-    progresso = acompanhante(pedido)
+        return
+
+    # Não deixa o Mac dormir enquanto este script estiver rodando.
+    subprocess.Popen(["caffeinate", "-i", "-w", str(os.getpid())])
+
+    try:
+        git("pull", "-q", "--rebase", "origin", "main")
+    except RuntimeError as e:
+        log(str(e))
+    progresso = acompanhante(inicio)
     progresso("buscando")
     try:
         total, novos = buscar.buscar(progresso)
     except buscar.Falhou as e:
-        log(f"pedido {pedido}: {e}")
-        marcar(pedido, "erro", str(e))
+        t = ler(TENTATIVAS_ARQ)
+        de_novo = t.get("vezes", 0) < TENTATIVAS
+        mensagem = str(e) + (f". O Mac tenta de novo daqui a {HORAS_ENTRE} horas." if de_novo
+                             else ". O Mac tenta de novo amanhã às 5h.")
+        log(mensagem)
+        marcar("erro", mensagem)
         enviar(["estado.json"], "Pesquisa falhou")
         sys.exit(1)
 
+    contar_tentativa(ok=True)
     resumo = f"{total} discos, {novos} novos"
-    log(f"pedido {pedido}: {resumo}")
-    # Quem tocou em Dig enquanto esta busca rodava já recebe este resultado,
-    # em vez de esperar outra busca inteira na fila.
-    try:
-        mais_novo = ultimo_pedido()
-    except OSError:
-        mais_novo = pedido
-    if mais_novo > pedido:
-        log(f"pedido {mais_novo} chegou durante a busca; atendido junto")
-        pedido = mais_novo
-        ULTIMO.write_text(str(pedido))
-    marcar(pedido, "ok", resumo)
+    log(f"busca automática: {resumo}")
+    marcar("ok", resumo)
     enviar(["dados.json", "vistos.json", "notas.json", "estado.json"],
-           f"Atualiza os discos ({dt.datetime.now(buscar.FUSO):%d/%m %H:%M}): {resumo}")
+           f"Atualiza os discos ({agora():%d/%m %H:%M}): {resumo}")
 
 
 if __name__ == "__main__":

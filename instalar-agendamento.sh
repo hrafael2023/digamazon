@@ -1,7 +1,7 @@
 #!/bin/zsh
-# Deixa o Mac conferindo a cada 2 minutos se o botão Pesquisar foi tocado
-# (LaunchAgent do macOS). Só funciona com o Mac ligado e acordado; um pedido
-# feito com ele dormindo é atendido quando ele acordar.
+# Deixa o Mac conferindo a cada 2 minutos se é hora da busca automática do dia
+# (LaunchAgent do macOS). Só funciona com o Mac ligado e acordado; para ele
+# acordar sozinho às 5h, veja o README.
 # Para remover: ./instalar-agendamento.sh --remover
 set -e
 PASTA="${0:A:h}"
@@ -30,4 +30,4 @@ cat > "$PLIST" <<EOF
 </dict></plist>
 EOF
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
-echo "Pronto: o Mac confere os pedidos a cada 2 minutos (log em $PASTA/logs/atender.log)."
+echo "Pronto: o Mac busca os discos todo dia a partir das 5h (log em $PASTA/logs/atender.log)."
