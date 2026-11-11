@@ -1,11 +1,6 @@
 {
  "pedido": 42949445708,
- "estado": "buscando",
- "mensagem": "a Amazon pediu uma verificação anti-robô na página 13",
- "quando": "2026-11-11T00:01:54-03:00",
- "etapa": "esperando",
- "pagina": 13,
- "previstas": 71,
- "discos": 0,
- "inicio": "2026-11-10T23:58:59-03:00"
+ "estado": "erro",
+ "mensagem": "busca interrompida: HTTP Error 503: Service Unavailable (depois de 192 discos; o próximo Dig continua dali)",
+ "quando": "2026-11-11T00:44:46-03:00"
 }
