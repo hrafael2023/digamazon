@@ -1,5 +1,10 @@
 {
- "estado": "pausa",
- "mensagem": "busca automática todo dia às 5h; a primeira é amanhã",
- "quando": "2026-11-11T18:25:40-03:00"
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-12T05:00:57-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 71,
+ "discos": 0,
+ "inicio": "2026-11-12T05:00:56-03:00"
 }
