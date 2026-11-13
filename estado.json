@@ -1,10 +1,5 @@
 {
- "estado": "buscando",
- "mensagem": "HTTP Error 503: Service Unavailable",
- "quando": "2026-11-13T07:02:44-03:00",
- "etapa": "esperando",
- "pagina": 1,
- "previstas": 71,
- "discos": 0,
- "inicio": "2026-11-13T07:02:41-03:00"
+ "estado": "erro",
+ "mensagem": "busca interrompida: HTTP Error 503: Service Unavailable (depois de 0 discos). O Mac tenta de novo daqui a 2 horas.",
+ "quando": "2026-11-13T07:36:57-03:00"
 }
