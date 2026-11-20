@@ -1,10 +1,10 @@
 {
  "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-20T10:05:45-03:00",
- "etapa": "buscando",
- "pagina": 52,
+ "mensagem": "a Amazon pediu uma verificação anti-robô na página 53",
+ "quando": "2026-11-20T10:05:59-03:00",
+ "etapa": "esperando",
+ "pagina": 53,
  "previstas": 67,
- "discos": 823,
+ "discos": 0,
  "inicio": "2026-11-20T06:45:45-03:00"
 }
