@@ -1,10 +1,5 @@
 {
- "estado": "buscando",
- "mensagem": "a Amazon pediu uma verificação anti-robô na página 19",
- "quando": "2026-11-21T13:52:33-03:00",
- "etapa": "esperando",
- "pagina": 19,
- "previstas": 66,
- "discos": 0,
- "inicio": "2026-11-21T13:14:38-03:00"
+ "estado": "erro",
+ "mensagem": "busca interrompida: HTTP Error 503: Service Unavailable (depois de 288 discos). O Mac tenta de novo amanhã às 5h.",
+ "quando": "2026-11-21T14:26:49-03:00"
 }
