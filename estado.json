@@ -1,5 +1,10 @@
 {
- "estado": "ok",
- "mensagem": "994 discos, 8 novos",
- "quando": "2026-11-20T10:18:37-03:00"
+ "estado": "buscando",
+ "mensagem": "",
+ "quando": "2026-11-21T05:33:57-03:00",
+ "etapa": "buscando",
+ "pagina": 0,
+ "previstas": 66,
+ "discos": 0,
+ "inicio": "2026-11-21T05:33:56-03:00"
 }
