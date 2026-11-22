@@ -9,7 +9,7 @@ const real = n => n.toLocaleString("pt-BR", { style: "currency", currency: "BRL"
 const capaGrande = foto => foto.replace(/\._AC_[^.]*_\./, "._SL400_.");
 let dados = null;
 
-// A busca agora é automática, todo dia às 5h; a chave do antigo botão Dig não é mais usada.
+// A busca agora é automática, todo dia às 9h; a chave do antigo botão Dig não é mais usada.
 try { localStorage.removeItem("digamazon.token"); localStorage.removeItem("digamazon.pedido"); } catch (e) {}
 
 function status(texto, erro) { $("status").textContent = texto || ""; $("status").classList.toggle("erro", !!erro); }

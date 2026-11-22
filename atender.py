@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Roda a busca automática do DigAmazon uma vez por dia, de madrugada, neste Mac.
+"""Roda a busca automática do DigAmazon uma vez por dia, de manhã, neste Mac.
 
 O agendamento do macOS chama este script a cada 2 minutos. Ele só busca a
-partir das 5h e só uma vez por dia; se a Amazon bloquear, tenta de novo mais
+partir das 9h e só uma vez por dia; se a Amazon bloquear, tenta de novo mais
 tarde (até TENTATIVAS vezes, com HORAS_ENTRE horas de intervalo). Ao terminar,
 envia dados.json ao repositório, o que republica a página. estado.json conta à
 página em que pé está a busca.
@@ -27,9 +27,9 @@ ESTADO = PASTA / "estado.json"
 # Tentativas do dia; fica só neste Mac.
 TENTATIVAS_ARQ = PASTA / ".tentativas"
 
-HORA = 5            # a busca do dia começa a partir das 5h
+HORA = 9            # a busca do dia começa a partir das 9h
 TENTATIVAS = 3      # se falhar: tenta de novo...
-HORAS_ENTRE = 2     # ...depois de 2 horas (por volta das 7h e das 9h)
+HORAS_ENTRE = 2     # ...depois de 2 horas (se a anterior falhar)
 
 
 def log(msg):
@@ -144,13 +144,13 @@ def interrompida():
 
 
 def hora_de_buscar():
-    """Já passou das 5h e a busca de hoje ainda não deu certo nem esgotou as tentativas?"""
+    """Já passou da HORA e a busca de hoje ainda não deu certo nem esgotou as tentativas?"""
     hoje = agora().date().isoformat()
     t = ler(TENTATIVAS_ARQ)
     if not t:
         # Primeira vez: começa amanhã, sem buscar já.
         TENTATIVAS_ARQ.write_text(json.dumps({"dia": hoje, "vezes": TENTATIVAS, "ok": True}))
-        log("busca automática ligada; a primeira é amanhã a partir das 5h")
+        log(f"busca automática ligada; a primeira é amanhã a partir das {HORA}h")
         return False
     if agora().hour < HORA:
         return False
@@ -210,7 +210,7 @@ def main():
         TENTATIVAS_ARQ.write_text(json.dumps(t))
         de_novo = t.get("vezes", 0) < TENTATIVAS
         mensagem = str(e) + (f". O Mac tenta de novo daqui a {HORAS_ENTRE} horas." if de_novo
-                             else ". O Mac tenta de novo amanhã às 5h.")
+                             else f". O Mac tenta de novo amanhã às {HORA}h.")
         log(mensagem)
         marcar("erro", mensagem)
         enviar(["estado.json"], "Pesquisa falhou")

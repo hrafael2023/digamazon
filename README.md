@@ -6,7 +6,7 @@ https://hrafael2023.github.io/digamazon/
 A Amazon recusa buscas vindas dos servidores do GitHub, então a busca roda no Mac,
 sozinha, uma vez por dia:
 
-1. No Mac, `atender.py` roda a cada 2 minutos e, a partir das 5h, faz a busca do dia.
+1. No Mac, `atender.py` roda a cada 2 minutos e, a partir das 9h, faz a busca do dia.
    Se a Amazon bloquear, tenta de novo 2 horas depois (até 3 vezes no dia).
 2. A busca roda `buscar.py` e envia `dados.json` (lista completa e discos novos na faixa),
    `vistos.json` (quando cada disco apareceu pela primeira vez) e `estado.json`
@@ -18,11 +18,12 @@ sozinha, uma vez por dia:
 Para o Mac começar a buscar sozinho: `./instalar-agendamento.sh`
 (para parar: `./instalar-agendamento.sh --remover`).
 
-Para a busca rodar de madrugada, o Mac precisa acordar às 5h, na tomada e com a tampa
-aberta (a tela pode ficar apagada). Isso se configura uma vez no Terminal:
+Se o Mac costuma estar em uso às 9h, não precisa de mais nada. Para ele acordar sozinho
+às 9h mesmo sem ninguém por perto (na tomada e com a tampa aberta; a tela pode ficar
+apagada), configure uma vez no Terminal:
 
-    sudo pmset repeat wakeorpoweron MTWRFSU 05:00:00
+    sudo pmset repeat wakeorpoweron MTWRFSU 09:00:00
 
 (para desfazer: `sudo pmset repeat cancel`). Enquanto a busca roda, o próprio script
-impede o Mac de voltar a dormir. Se ele estiver desligado às 5h, a busca roda quando
+impede o Mac de voltar a dormir. Se ele estiver desligado às 9h, a busca roda quando
 for ligado.
