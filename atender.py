@@ -203,7 +203,11 @@ def main():
     try:
         total, novos = buscar.buscar(progresso)
     except buscar.Falhou as e:
+        # As 2 horas de pausa contam a partir do fim desta tentativa, que pode ter
+        # levado muito tempo esperando a Amazon; senão a próxima começaria logo.
         t = ler(TENTATIVAS_ARQ)
+        t["ultima"] = agora().isoformat(timespec="seconds")
+        TENTATIVAS_ARQ.write_text(json.dumps(t))
         de_novo = t.get("vezes", 0) < TENTATIVAS
         mensagem = str(e) + (f". O Mac tenta de novo daqui a {HORAS_ENTRE} horas." if de_novo
                              else ". O Mac tenta de novo amanhã às 5h.")
