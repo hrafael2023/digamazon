@@ -1,10 +1,5 @@
 {
- "estado": "buscando",
- "mensagem": "a Amazon pediu uma verificação anti-robô na página 2",
- "quando": "2026-11-23T11:35:25-03:00",
- "etapa": "esperando",
- "pagina": 2,
- "previstas": 76,
- "discos": 0,
- "inicio": "2026-11-23T11:35:23-03:00"
+ "estado": "erro",
+ "mensagem": "busca interrompida: a Amazon pediu uma verificação anti-robô na página 2 (depois de 16 discos). O Mac tenta de novo daqui a 2 horas.",
+ "quando": "2026-11-23T12:09:35-03:00"
 }
