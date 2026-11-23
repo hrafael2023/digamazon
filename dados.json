@@ -1,203 +1,12 @@
 {
-"atualizado": "2026-11-22T19:57-03:00",
+"atualizado": "2026-11-23T15:01-03:00",
 "limite": 150.0,
 "primeira": false,
 "paginas": 76,
 "novos": [
-"B0D5Y49K78",
-"B09J95MXF9",
-"B0CGRVVL5M",
-"B08KHR4J16",
-"B0CC9NZP7W",
-"B0CGMSP3ND",
-"B0CL4C3YYT",
-"B0CL7CYQ6J",
-"B0DMPDW9CF",
-"B0BMM81ZV4",
-"B011Q2B14O",
-"B0B5S4L6MW",
-"B08P8D71WS",
-"B0D2J5HYLD",
-"B0B59SZSCZ",
-"B0CRL9T9P2",
-"B00H51BGDM",
-"B00CZAYP7M",
-"B083XQ1MCB",
-"B0CS9FZ5V9",
-"B0F2FZXX5M",
-"B0DX2TR241",
-"B01L0VLU0Q",
-"B0CWDFG8KH",
-"B0F67G3BZH",
-"B081WVXR1S",
-"B0D7JG7V6Q",
-"B07MW9XSJX",
-"B0CV8KD4TQ",
-"B09762P466",
-"B07K4ZCNNN",
-"B0BJ8MB2LZ",
-"B0CFKX71JZ",
-"B0CDGK7VCP",
-"B07K138V97",
-"B077626DPX",
-"B0CWLRPPBN",
-"B015JQ8SG2",
-"B09Y28WJFD",
-"B0CSJZZ17S",
-"B07T1LHJP7",
-"B094XMGVT4",
-"B0788XRYD6",
-"B09ZQ7V8LW",
-"B0D12FKQWH",
-"B01BTMIZK4",
-"B075VLRSZZ",
-"B0CBPQ7KSC",
-"B0CSJ6PH5D",
-"B0CKWJ7FNT",
-"B086PVQJP3",
-"B015GHYFJS",
-"B08L3XPGWG",
-"B09TWYLVTZ",
-"B0DT6DFGKY",
-"B0CHGHCHNZ",
-"B00VMRNFQQ",
-"B0CRN41147",
-"B0B39MZZ7T",
-"B0CZTVH49B",
-"B01J4RHUKW",
-"B0B2J84671",
-"B08DBTHGGK",
-"B0B1HXV8TG",
-"B0CVF7DP5V",
-"B0C5N1WGTY",
-"B0D6C1S7BM",
-"B000BX34JU",
-"B0CSM22MQH",
-"B09B1J6GZ9",
-"B09R38Q4TY",
-"B09TTSPFZS",
-"B08W7DWQLF",
-"B07KGYVHTH",
-"B0CBND4XPX",
-"B09VWMZRKN",
-"B09ZJ5W7KS",
-"B0D6CP4M57",
-"B094GQN6KG",
-"B0CGVVFYZK",
-"B07PZN49ZB",
-"B09YF9KCSY",
-"B0DZD5MNXC",
-"B08JB4Y7CJ",
-"B01N23RJM5",
-"B0CCW8FRRN",
-"B0CMJP6DFF",
-"B0B5RWKQY1",
-"B07SDKZ2T4",
-"B07NNMNK2N",
-"B096WRY5KL",
-"B0C5Z5WZ5M",
-"B0BLNZTP8L",
-"B09LZ8FRHS",
-"B0F25LP4J5",
-"B0DK7GTMQT",
-"B074JS68BQ",
-"B08VR8M1YH",
-"B006YTLO10",
-"B07FQ3Q5YD",
-"B0CNDB372V",
-"B0DCC4V4HM",
-"B0C5B24Q78",
-"B0DSTCLND3",
-"B0CGXQH6CY",
-"B09RQ34N19",
-"B003GEDLNA",
-"B0DYPJFFX6",
-"B083XX46FX",
-"B07SH9TMVG",
-"B09G6Y97LT",
-"B0CWSJD3KW",
-"B0CG9VMXWQ",
-"B09F1FJCH6",
-"B08D4F8NVW",
-"B018WFD87Q",
-"B0BFQMBDR6",
-"B00065TZSC",
-"B0017HFAV4",
-"B081WPY6C4",
-"B09GXZVG8Z",
-"B0DST653Y4",
-"B0CNBZ41VF",
-"B0DZ2W6DTL",
-"B08DSX6YFQ",
-"B0CTFNJFY3",
-"B0CST6JJ16",
-"B091YZ88ZT",
-"B00JVQ7PL6",
-"B09H5JC7LL",
-"B07YMFVT1M",
-"B0DB8WPXQW",
-"B0DB64QVBC",
-"B0939MR9QL",
-"B07JK2D8PS",
-"B06XXVGKPB",
-"B00H5DNBGU",
-"B0C6H8TFZ2",
-"B08M7JBF5M",
-"B0CBQV44TP",
-"B0DLBXFS8R",
-"B09VQZW4RP",
-"B0DQ9BXLRN",
-"B0B92K4TBF",
-"B0DGQCP5QT",
-"B0DFBQR1WV",
-"B0B7H94B1Z",
-"B0CJ8XJ75T",
-"B09DN18ZNW",
-"B0DT4NXTYD",
-"B0D28YNPVW",
-"B0F79P9K48",
-"B0CW6LGBCH",
-"B0D5J5MBNR",
-"B0CBQPBWQM",
-"B083WB14HM",
-"B09BT5CW9H",
-"B074JQWH6N",
-"B0F5NBTS62",
-"B08WT383MM",
-"B0CPN23H7F",
-"B0CB9H5DD1",
-"B0C6B3HF59",
-"B0C3WHHW86",
-"B0B5F1SV6N",
-"B0BWRKBV55",
-"B0C825B5DJ",
-"B01DPTBXSA",
-"B0CJBDZL6W",
-"B0F6Z1TWMH",
-"B0CGZNNKBH",
-"B008WALSHY",
-"B0DHLGP4CN",
-"B08TFYJFLY",
-"B085KJ74ZW",
-"B087CP8634",
-"B0F1G6WC3R",
-"B0CLS853F8",
-"B0CZTW8D3G",
-"B075MKD26W",
-"B0BM4RW7NT",
-"B0BJQP9B5R",
-"B09VRR4LSH",
-"B083K2LMQG",
-"B0CWB3J8G2",
-"B08N2HGXKN",
-"B0F3V4N2C7",
-"B0BRZ2TQ59",
-"B003RDZ8NQ",
-"B0CF4KLLX5",
-"B07RG2WNTZ",
-"B09DN2Z6L7",
-"B0BW5MYGF5",
-"B07SSDQS6T"
+"B0CRHTVGG4",
+"B0B99832N1",
+"B01J1TDXXQ"
 ],
 "discos": [
 {
@@ -331,7 +140,7 @@
 "titulo": "Anthony Naples Remix / Bookworms Remix",
 "artista": "COPELAND,ERIC / GUS,LARRY",
 "ano": "2025",
-"preco": 68.18,
+"preco": 68.19,
 "foto": "https://m.media-amazon.com/images/I/31+HE-2A3gL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -442,6 +251,15 @@
 "preco": 75.21,
 "foto": "https://m.media-amazon.com/images/I/610Q+cYXL4L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B0CKTR9ZNF",
+"titulo": "WE NEED CHRISTMAS EP (EMERALD GREEN VINYL/45 RPM)",
+"artista": "Maddie & Tae",
+"ano": "2022",
+"preco": 75.73,
+"foto": "https://m.media-amazon.com/images/I/71UY3pLCuKL._AC_UY218_.jpg",
+"visto": "2026-11-10T10:17-03:00"
 },
 {
 "asin": "B0CXSKGYDG",
@@ -673,15 +491,6 @@
 "preco": 82.01,
 "foto": "https://m.media-amazon.com/images/I/61EzjajRDSL._AC_UY218_.jpg",
 "visto": "2026-11-03T20:14-03:00"
-},
-{
-"asin": "B0CKTR9ZNF",
-"titulo": "WE NEED CHRISTMAS EP (EMERALD GREEN VINYL/45 RPM)",
-"artista": "Maddie & Tae",
-"ano": "2022",
-"preco": 82.11,
-"foto": "https://m.media-amazon.com/images/I/71UY3pLCuKL._AC_UY218_.jpg",
-"visto": "2026-11-10T10:17-03:00"
 },
 {
 "asin": "B0BGQC2HMS",
@@ -1117,6 +926,15 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
+"asin": "B01N25TIRZ",
+"titulo": "Impasse",
+"artista": "",
+"ano": "",
+"preco": 89.87,
+"foto": "https://m.media-amazon.com/images/I/51lieu6nRjL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
 "asin": "B08TZMHLL8",
 "titulo": "Stardonas",
 "artista": "Gasp",
@@ -1186,6 +1004,15 @@
 "ano": "2025",
 "preco": 90.7,
 "foto": "https://m.media-amazon.com/images/I/919H7k4wLbL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B07W47GCN6",
+"titulo": "Medicine For Living",
+"artista": "Alexa Rose",
+"ano": "2019",
+"preco": 90.7,
+"foto": "https://m.media-amazon.com/images/I/813ggBcQ54L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -1528,15 +1355,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B08SZ1HXZT",
-"titulo": "Conduit",
-"artista": "The Spill Canvas",
-"ano": "2025",
-"preco": 93.51,
-"foto": "https://m.media-amazon.com/images/I/71GZBWcldkL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B081WPY6BG",
 "titulo": "TORNILLO",
 "artista": "",
@@ -1642,15 +1460,6 @@
 "ano": "2025",
 "preco": 94.33,
 "foto": "https://m.media-amazon.com/images/I/91c4vog7WcL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B09K1T6LQY",
-"titulo": "Olly Olly",
-"artista": "Penny & Sparrow",
-"ano": "2022",
-"preco": 94.37,
-"foto": "https://m.media-amazon.com/images/I/81vviBbhc8L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -2404,24 +2213,6 @@
 "ano": "2026",
 "preco": 99.68,
 "foto": "https://m.media-amazon.com/images/I/81fbpMQ1fuS._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B07W47GCN6",
-"titulo": "Medicine For Living",
-"artista": "Alexa Rose",
-"ano": "2019",
-"preco": 99.82,
-"foto": "https://m.media-amazon.com/images/I/813ggBcQ54L._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B01N25TIRZ",
-"titulo": "Impasse",
-"artista": "",
-"ano": "",
-"preco": 99.85,
-"foto": "https://m.media-amazon.com/images/I/51lieu6nRjL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
 {
@@ -3342,15 +3133,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0CHTTN3PX",
-"titulo": "Lambent Material (Anniversary Edition)",
-"artista": "",
-"ano": "2025",
-"preco": 106.02,
-"foto": "https://m.media-amazon.com/images/I/81J+BahQZLL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B09Y28TK4M",
 "titulo": "It Starts With Love",
 "artista": "",
@@ -3698,6 +3480,15 @@
 "preco": 107.63,
 "foto": "https://m.media-amazon.com/images/I/81ITy1GrSwL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B06XNM1N3P",
+"titulo": "American Epic: The Soundtrack (Various Artists)",
+"artista": "Various",
+"ano": "",
+"preco": 107.79,
+"foto": "https://m.media-amazon.com/images/I/61UcLKD9KQL._AC_UY218_.jpg",
+"visto": "2026-11-17T09:49-03:00"
 },
 {
 "asin": "B09HDRJDGH",
@@ -4791,15 +4582,6 @@
 "preco": 115.04,
 "foto": "https://m.media-amazon.com/images/I/81K5Rh2j6gL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B0C4V6L6LR",
-"titulo": "F.L.M. - Limited Edition Ochre Colored Vinyl",
-"artista": "Mel & Kim",
-"ano": "2025",
-"preco": 115.13,
-"foto": "https://m.media-amazon.com/images/I/71BQyXns+dL._AC_UY218_.jpg",
-"visto": "2026-11-20T10:18-03:00"
 },
 {
 "asin": "B07N9LRN33",
@@ -6309,18 +6091,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B07PYJ3XVF",
-"titulo": "Weezer (teal Album)",
-"artista": "Weezer",
-"ano": "",
-"preco": 126.08,
-"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00",
-"nota": 58,
-"nota_url": "https://www.metacritic.com/music/weezer-teal-album/weezer/critic-reviews/",
-"nota_desde": "2026-11-02T18:15"
-},
-{
 "asin": "B0BVPJXVP4",
 "titulo": "Rare",
 "artista": "NAS",
@@ -6382,6 +6152,18 @@
 "preco": 126.18,
 "foto": "https://m.media-amazon.com/images/I/61kcWW6DDEL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
+},
+{
+"asin": "B07PYJ3XVF",
+"titulo": "Weezer (teal Album)",
+"artista": "Weezer",
+"ano": "",
+"preco": 126.28,
+"foto": "https://m.media-amazon.com/images/I/71vJNV6BgRL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00",
+"nota": 58,
+"nota_url": "https://www.metacritic.com/music/weezer-teal-album/weezer/critic-reviews/",
+"nota_desde": "2026-11-02T18:15"
 },
 {
 "asin": "B07ZWBH9HY",
@@ -6475,6 +6257,15 @@
 "nota": 79,
 "nota_url": "https://www.metacritic.com/music/spook-the-herd/lanterns-on-the-lake/critic-reviews/",
 "nota_desde": "2026-11-02T17:21"
+},
+{
+"asin": "B01N23RJM5",
+"titulo": "Way Out West",
+"artista": "Marty Stuart and His Fabulous Superlatives",
+"ano": "",
+"preco": 126.99,
+"foto": "https://m.media-amazon.com/images/I/71qzFRa2JwL._AC_UY218_.jpg",
+"visto": "2026-11-22T19:57-03:00"
 },
 {
 "asin": "B0C5Y66M1M",
@@ -7975,6 +7766,15 @@
 "visto": "2026-11-22T19:57-03:00"
 },
 {
+"asin": "B0CRHTVGG4",
+"titulo": "SEALS & CROFTS GREATEST HITS (GOLD SUMMER BREEZE VINYL/LIMITED EDITION)",
+"artista": "Seals & Crofts",
+"ano": "2025",
+"preco": 136.07,
+"foto": "https://m.media-amazon.com/images/I/81A48At-RfL._AC_UY218_.jpg",
+"visto": "2026-11-23T15:01-03:00"
+},
+{
 "asin": "B0DP57FRVF",
 "titulo": "War Within",
 "artista": "Jessie Wagner",
@@ -8475,6 +8275,15 @@
 "visto": "2026-11-22T19:57-03:00"
 },
 {
+"asin": "B0B99832N1",
+"titulo": "I'M WIDE AWAKE, IT'S MORNING: A COMPANION",
+"artista": "Bright Eyes",
+"ano": "2025",
+"preco": 138.38,
+"foto": "https://m.media-amazon.com/images/I/A1KRVl2Z1KL._AC_UY218_.jpg",
+"visto": "2026-11-23T15:01-03:00"
+},
+{
 "asin": "B0BZWNJDC3",
 "titulo": "LOVE WILL TEAR US APART (PURPLE/BLACK SPLATTER VINYL)",
 "artista": "Joy Division",
@@ -8500,15 +8309,6 @@
 "preco": 138.67,
 "foto": "https://m.media-amazon.com/images/I/9139feIRIFL._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
-},
-{
-"asin": "B01BTMIZK4",
-"titulo": "Bacteria Cult",
-"artista": "KAADA / PATTON",
-"ano": "2026",
-"preco": 138.68,
-"foto": "https://m.media-amazon.com/images/I/91MqM-ylsiL._AC_UY218_.jpg",
-"visto": "2026-11-22T19:57-03:00"
 },
 {
 "asin": "B094P9WLDP",
@@ -9072,15 +8872,6 @@
 "visto": "2026-11-14T07:31-03:00"
 },
 {
-"asin": "B01N23RJM5",
-"titulo": "Way Out West",
-"artista": "Marty Stuart and His Fabulous Superlatives",
-"ano": "",
-"preco": 141.1,
-"foto": "https://m.media-amazon.com/images/I/71qzFRa2JwL._AC_UY218_.jpg",
-"visto": "2026-11-22T19:57-03:00"
-},
-{
 "asin": "B01MXNOSBZ",
 "titulo": "Tachycardia / Afterthought",
 "artista": "",
@@ -9208,15 +8999,6 @@
 "bandcamp": "https://marygauthier.bandcamp.com/album/rifles-and-rosary-beads"
 },
 {
-"asin": "B096WRY5KL",
-"titulo": "The Sophtware Slump.....on a wooden piano",
-"artista": "Grandaddy",
-"ano": "2022",
-"preco": 141.54,
-"foto": "https://m.media-amazon.com/images/I/81bPOlcdycL._AC_UY218_.jpg",
-"visto": "2026-11-22T19:57-03:00"
-},
-{
 "asin": "B0DBB2BBS3",
 "titulo": "Live At Rockpalast 1982",
 "artista": "Vollenweider, Andreas",
@@ -9305,15 +9087,6 @@
 "preco": 141.81,
 "foto": "https://m.media-amazon.com/images/I/81VfCU3uv4L._AC_UY218_.jpg",
 "visto": "2026-11-22T19:57-03:00"
-},
-{
-"asin": "B00WVN2D5O",
-"titulo": "Pull the Thorns from Your Heart",
-"artista": "Senses Fail",
-"ano": "2025",
-"preco": 141.9,
-"foto": "https://m.media-amazon.com/images/I/81D2qwQ4aOL._AC_UY218_.jpg",
-"visto": "2026-11-19T07:59-03:00"
 },
 {
 "asin": "B08VR8M1YH",
@@ -9536,7 +9309,7 @@
 "titulo": "Clemens - Den Anden Verden",
 "artista": "Clemens",
 "ano": "2018",
-"preco": 143.31,
+"preco": 143.3,
 "foto": "https://m.media-amazon.com/images/I/513g0CK+--L._AC_UY218_.jpg",
 "visto": "2026-11-01T20:08-03:00"
 },
@@ -9614,6 +9387,15 @@
 "preco": 143.62,
 "foto": "https://m.media-amazon.com/images/I/715U2YH+PbL._AC_UY218_.jpg",
 "visto": "2026-11-22T19:57-03:00"
+},
+{
+"asin": "B01J1TDXXQ",
+"titulo": "Going Places",
+"artista": "Herb Alpert & the Tijuana Bras",
+"ano": "2019",
+"preco": 143.62,
+"foto": "https://m.media-amazon.com/images/I/817pMBGGLjL._AC_UY218_.jpg",
+"visto": "2026-11-23T15:01-03:00"
 },
 {
 "asin": "B08D4F8NVW",
@@ -9955,15 +9737,6 @@
 "visto": "2026-11-01T20:08-03:00"
 },
 {
-"asin": "B0BX79KGN2",
-"titulo": "ENDLESS COLOURED WAYS: THE SONGS OF NICK DRAKE - ROAD / NORTHERN SKY",
-"artista": "",
-"ano": "2025",
-"preco": 145.21,
-"foto": "https://m.media-amazon.com/images/I/714TLELYapL._AC_UY218_.jpg",
-"visto": "2026-11-01T20:08-03:00"
-},
-{
 "asin": "B0DB8WPXQW",
 "titulo": "The Love It Took to Leave You",
 "artista": "Colin Stetson",
@@ -9971,6 +9744,15 @@
 "preco": 145.23,
 "foto": "https://m.media-amazon.com/images/I/914AGxgMNjL._AC_UY218_.jpg",
 "visto": "2026-11-22T19:57-03:00"
+},
+{
+"asin": "B0BX79KGN2",
+"titulo": "ENDLESS COLOURED WAYS: THE SONGS OF NICK DRAKE - ROAD / NORTHERN SKY",
+"artista": "",
+"ano": "2025",
+"preco": 145.24,
+"foto": "https://m.media-amazon.com/images/I/714TLELYapL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B0CF85GWJN",
@@ -10493,6 +10275,15 @@
 "preco": 147.01,
 "foto": "https://m.media-amazon.com/images/I/61-k2HsStwL._AC_UY218_.jpg",
 "visto": "2026-11-04T11:36-03:00"
+},
+{
+"asin": "B07PWJXXJ4",
+"titulo": "Mother Earth's Plantasia",
+"artista": "",
+"ano": "",
+"preco": 147.04,
+"foto": "https://m.media-amazon.com/images/I/71v0MTgT6lL._AC_UY218_.jpg",
+"visto": "2026-11-01T20:08-03:00"
 },
 {
 "asin": "B0C3WHHW86",
