@@ -1,10 +1,10 @@
 {
  "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-24T16:57:28-03:00",
- "etapa": "buscando",
- "pagina": 36,
+ "mensagem": "The read operation timed out",
+ "quando": "2026-11-24T16:58:56-03:00",
+ "etapa": "esperando",
+ "pagina": 40,
  "previstas": 76,
- "discos": 573,
+ "discos": 0,
  "inicio": "2026-11-24T16:36:49-03:00"
 }
