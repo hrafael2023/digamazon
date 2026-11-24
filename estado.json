@@ -1,9 +1,9 @@
 {
  "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-24T16:37:19-03:00",
- "etapa": "buscando",
- "pagina": 0,
+ "mensagem": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+ "quando": "2026-11-24T16:37:30-03:00",
+ "etapa": "esperando",
+ "pagina": 20,
  "previstas": 76,
  "discos": 0,
  "inicio": "2026-11-24T16:36:49-03:00"
