@@ -1,9 +1,9 @@
 {
  "estado": "buscando",
- "mensagem": "",
- "quando": "2026-11-24T09:01:24-03:00",
- "etapa": "buscando",
- "pagina": 0,
+ "mensagem": "HTTP Error 503: Service Unavailable",
+ "quando": "2026-11-24T09:01:26-03:00",
+ "etapa": "esperando",
+ "pagina": 1,
  "previstas": 76,
  "discos": 0,
  "inicio": "2026-11-24T09:01:23-03:00"
