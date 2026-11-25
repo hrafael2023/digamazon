@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=3.3">
+<link rel="stylesheet" href="estilo.css?v=3.4">
 </head>
 <body>
 <header class="topo">
@@ -26,8 +26,20 @@
 </header>
 
 <main>
-  <h2>Dig! Jazz <span class="conta" id="conta"></span></h2>
-  <p class="nota">Vinis de jazz abaixo de R$ 150 na Amazon.</p>
+  <h2>Novos no jazz <span class="conta" id="conta-novos"></span>
+    <button type="button" class="tema" id="tema" aria-label="Alternar tema claro/escuro">
+      <svg viewBox="0 0 20 20" aria-hidden="true">
+        <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10 2a8 8 0 0 1 0 16z" fill="currentColor"/>
+      </svg>
+    </button>
+  </h2>
+  <p class="nota">Discos de jazz que entraram na faixa de preço na última pesquisa.</p>
+  <div class="grade" id="novos"></div>
+
+  <div class="separador">lista completa</div>
+
+  <h2 id="topo-todos">Jazz abaixo de R$ 150 <span class="conta" id="conta-todos"></span></h2>
   <div class="filtros">
     <input id="filtro" type="search" placeholder="Disco ou artista" autocomplete="off">
     <select id="ordem" aria-label="Ordenar">
@@ -36,12 +48,13 @@
       <option value="nome">A–Z</option>
     </select>
   </div>
-  <div class="grade" id="discos"></div>
+  <div class="grade" id="todos"></div>
+  <nav class="paginas" id="paginas" aria-label="Páginas"></nav>
 </main>
 
-<footer class="rodape">DigAmazon · versão 3.3</footer>
+<footer class="rodape">DigAmazon · versão 3.4</footer>
 
-<script src="comum.js?v=3.3"></script>
+<script src="comum.js?v=3.4"></script>
 <script>
 // Estrela de 10 pontas; gira por trás do texto, que fica parado.
 const ESTRELA = '<svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,0 61.4,14.8 79.4,9.5 79.9,28.3 97.6,34.5 87,50 97.6,65.5 79.9,71.7 79.4,90.5 61.4,85.2 50,100 38.6,85.2 20.6,90.5 20.1,71.7 2.4,65.5 13,50 2.4,34.5 20.1,28.3 20.6,9.5 38.6,14.8"/></svg><b>Dig!</b>';
@@ -53,38 +66,97 @@ function card(d, novo) {
   a.target = "_blank"; a.rel = "noopener";
   const capa = document.createElement("div"); capa.className = "capa";
   if (d.foto) { const img = document.createElement("img"); img.src = capaGrande(d.foto); img.alt = ""; img.loading = "lazy"; capa.append(img); }
-  const info = document.createElement("div"); info.className = "info";
-  const t = document.createElement("div"); t.className = "titulo"; t.textContent = d.titulo;
-  const ar = document.createElement("div"); ar.className = "artista"; ar.textContent = [d.artista, d.ano].filter(Boolean).join(" · ");
-  const p = document.createElement("div"); p.className = "preco"; p.textContent = real(d.preco);
-  info.append(t, ar, p); a.append(capa, info);
   if (d.nota >= DIG) {
     const selo = document.createElement("span"); selo.className = "dig"; selo.innerHTML = ESTRELA;
     selo.title = `Metacritic ${d.nota}`; selo.setAttribute("aria-label", `Dig! Nota ${d.nota} no Metacritic`);
     a.append(selo);
   }
+  const info = document.createElement("div"); info.className = "info";
+  const t = document.createElement("div"); t.className = "titulo"; t.textContent = d.titulo;
+  const ar = document.createElement("div"); ar.className = "artista"; ar.textContent = [d.artista, d.ano].filter(Boolean).join(" · ");
+  const p = document.createElement("div"); p.className = "preco"; p.textContent = real(d.preco);
+  info.append(t, ar, p); a.prepend(capa, info);
   return a;
 }
 
-const ORDENS = {
-  preco: (a, b) => a.preco - b.preco,
-  "preco-desc": (a, b) => b.preco - a.preco,
-  nome: (a, b) => (a.artista || a.titulo).localeCompare(b.artista || b.titulo, "pt-BR"),
-};
-function mostrar() {
-  const jazz = new Set(dados.jazz || []), novos = new Set(dados.novos);
-  const q = $("filtro").value.trim().toLowerCase();
-  const todos = dados.discos.filter(d => jazz.has(d.asin));
-  const lista = todos.filter(d => !q || (d.titulo + " " + d.artista).toLowerCase().includes(q)).sort(ORDENS[$("ordem").value]);
-  $("conta").textContent = q ? `${lista.length} de ${todos.length}` : (todos.length ? `${todos.length}` : "");
-  const g = $("discos");
-  if (lista.length) g.replaceChildren(...lista.map(d => card(d, novos.has(d.asin))));
-  else g.innerHTML = `<div class="vazio">${q ? "Nenhum disco com esse nome."
-    : "A lista de jazz aparece depois da próxima busca automática."}</div>`;
+const POR_PAGINA = 300;
+let pagina = 1;
+
+// Só os discos da categoria Jazz; fora isso, a página funciona igual à principal.
+function catalogo() {
+  const jazz = new Set(dados.jazz || []);
+  return dados.discos.filter(d => jazz.has(d.asin));
 }
 
-$("filtro").addEventListener("input", mostrar);
-$("ordem").addEventListener("change", mostrar);
+function mostrarTodos() {
+  if (!dados) return;
+  const q = $("filtro").value.trim().toLowerCase();
+  const novos = new Set(dados.novos);
+  let lista = catalogo().filter(d => !q || (d.titulo + " " + d.artista).toLowerCase().includes(q));
+  const ordem = $("ordem").value;
+  if (ordem === "preco-desc") lista = lista.slice().sort((a, b) => b.preco - a.preco);
+  if (ordem === "nome") lista = lista.slice().sort((a, b) => (a.artista || a.titulo).localeCompare(b.artista || b.titulo, "pt-BR"));
+  const total = Math.max(1, Math.ceil(lista.length / POR_PAGINA));
+  pagina = Math.min(pagina, total);
+  const trecho = lista.slice((pagina - 1) * POR_PAGINA, pagina * POR_PAGINA);
+  const g = $("todos"); g.replaceChildren(...trecho.map(d => card(d, novos.has(d.asin))));
+  $("conta-todos").textContent = q ? `${lista.length} de ${catalogo().length}` : `${catalogo().length}`;
+  if (!lista.length) g.innerHTML = `<div class="vazio">${q ? "Nenhum disco com esse nome." : "A lista de jazz aparece depois da próxima busca automática."}</div>`;
+  paginas(total);
+}
+
+function paginas(total) {
+  const nav = $("paginas");
+  nav.replaceChildren();
+  if (total < 2) return;
+  const botao = (rotulo, n, atual) => {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = rotulo;
+    if (atual) b.setAttribute("aria-current", "page");
+    b.disabled = n < 1 || n > total || atual;
+    b.addEventListener("click", () => irPara(n));
+    return b;
+  };
+  nav.append(botao("‹", pagina - 1));
+  for (let n = 1; n <= total; n++) nav.append(botao(String(n), n, n === pagina));
+  nav.append(botao("›", pagina + 1));
+}
+
+function irPara(n) {
+  pagina = n;
+  mostrarTodos();
+  $("topo-todos").scrollIntoView({ behavior: "smooth" });
+}
+
+function mostrar() {
+  const porAsin = new Map(catalogo().map(d => [d.asin, d]));
+  const novos = dados.novos.map(a => porAsin.get(a)).filter(Boolean);
+  $("conta-novos").textContent = novos.length ? `${novos.length}` : "";
+  const g = $("novos");
+  if (novos.length) g.replaceChildren(...novos.map(d => card(d, true)));
+  else g.innerHTML = `<div class="vazio">${(dados.jazz || []).length
+    ? "Nenhum disco de jazz novo desde a pesquisa anterior."
+    : "A lista de jazz aparece depois da próxima busca automática."}</div>`;
+  mostrarTodos();
+}
+
+// Tema: alterna entre claro e escuro e lembra a escolha neste navegador.
+const raiz = document.documentElement, sistemaEscuro = matchMedia("(prefers-color-scheme: dark)");
+const temaAtual = () => raiz.dataset.theme || (sistemaEscuro.matches ? "dark" : "light");
+const marcarTema = () => {
+  raiz.dataset.temaEfetivo = temaAtual();
+  $("tema").setAttribute("aria-pressed", temaAtual() === "dark");
+};
+$("tema").addEventListener("click", () => {
+  raiz.dataset.theme = temaAtual() === "dark" ? "light" : "dark";
+  try { localStorage.setItem("digamazon.tema", raiz.dataset.theme); } catch (e) {}
+  marcarTema();
+});
+sistemaEscuro.addEventListener("change", marcarTema);
+marcarTema();
+
+// Mudou a busca ou a ordem: volta para a primeira página.
+$("filtro").addEventListener("input", () => { pagina = 1; mostrarTodos(); });
+$("ordem").addEventListener("change", () => { pagina = 1; mostrarTodos(); });
 iniciar();
 </script>
 </body>
