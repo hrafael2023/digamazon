@@ -1,10 +1,10 @@
 {
  "estado": "buscando",
  "mensagem": "",
- "quando": "2026-11-25T12:05:14-03:00",
+ "quando": "2026-11-25T12:07:40-03:00",
  "etapa": "buscando",
- "pagina": 30,
+ "pagina": 40,
  "previstas": 75,
- "discos": 480,
+ "discos": 639,
  "inicio": "2026-11-25T11:58:53-03:00"
 }
