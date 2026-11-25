@@ -13,6 +13,7 @@ sozinha, uma vez por dia:
    (andamento, que a página mostra se for aberta durante a busca).
 3. Para cada disco novo, `notas.py` procura a nota da crítica no Metacritic (guardada em
    `notas.json`); com 85 ou mais, a capa ganha o selo **Dig!** e o disco entra na página **Dig! Discover** (`dig.html`), com um botão Escutar que abre o álbum no Bandcamp.
+   A busca também percorre a categoria Jazz; esses discos ficam na página **Dig! Jazz** (`jazz.html`).
 4. O workflow `publicar.yml` republica a página quando `dados.json` ou `index.html` mudam.
 
 Para o Mac começar a buscar sozinho: `./instalar-agendamento.sh`

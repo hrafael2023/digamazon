@@ -66,7 +66,10 @@ function desenharProgresso() {
   const previstas = e.previstas || 75, pagina = e.pagina || 0;
   const ritmo = pagina > 0 ? Math.max(3, (quando - new Date(e.inicio).getTime()) / 1000 / pagina) : SEG_POR_PAGINA;
   let atual = pagina, texto;
-  if (e.etapa === "notas") {
+  if (e.etapa === "jazz") {
+    atual = previstas;
+    texto = "Agora a categoria Jazz, para o Dig! Jazz…";
+  } else if (e.etapa === "notas") {
     atual = previstas;
     texto = "Quase lá: procurando as notas da crítica dos discos novos…";
   } else if (e.etapa === "esperando") {

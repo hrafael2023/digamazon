@@ -4,7 +4,8 @@
 Percorre a lista de discos de vinil ordenada por preço (do menor para o
 maior) até passar do limite, e grava dados.json com a lista completa e os
 discos que entraram na faixa nesta busca (os que nunca tinham aparecido em
-vistos.json).
+vistos.json). Depois percorre do mesmo jeito a categoria Jazz, para a página
+Dig! Jazz.
 
 Uso:
     python3 buscar.py
@@ -35,6 +36,10 @@ LIMITE = 150.0
 MAX_PAGINAS = 150
 URL = ("https://www.amazon.com.br/s?i=popular&rh=n%3A19549018011"
        "&s=price-asc-rank&fs=true&page={pagina}")
+# Vinis > Jazz (n:19416084011), também do mais barato para o mais caro.
+URL_JAZZ = ("https://www.amazon.com.br/s?i=popular&bbn=19549018011"
+            "&rh=n%3A7791937011%2Cn%3A19549018011%2Cn%3A19416084011"
+            "&s=price-asc-rank&page={pagina}")
 CABECALHOS = {
     "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
                    "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"),
@@ -54,8 +59,8 @@ def avisar(msg, nivel="warning"):
     print(f"::{nivel}::{msg}" if os.environ.get("GITHUB_ACTIONS") else msg, file=sys.stderr)
 
 
-def baixar(pagina):
-    pedido = urllib.request.Request(URL.format(pagina=pagina), headers=CABECALHOS)
+def baixar(pagina, url=URL):
+    pedido = urllib.request.Request(url.format(pagina=pagina), headers=CABECALHOS)
     with urllib.request.urlopen(pedido, timeout=30) as r:
         corpo = r.read()
         if r.headers.get("Content-Encoding") == "gzip":
@@ -86,10 +91,10 @@ def guardar_falha(pagina, texto):
 ESPERAS = [60, 180, 300, 600, 900]
 
 
-def baixar_com_paciencia(pagina, progresso=None):
+def baixar_com_paciencia(pagina, progresso=None, url=URL):
     for n, espera in enumerate(ESPERAS + [None]):
         try:
-            return baixar(pagina)
+            return baixar(pagina, url)
         except (Bloqueado, OSError) as e:
             if espera is None:
                 raise
@@ -174,6 +179,27 @@ def coletar(progresso=None):
     return achados
 
 
+def coletar_jazz(progresso=None):
+    """Percorre a categoria Jazz até passar do limite; devolve {asin: disco}."""
+    if progresso:
+        progresso("jazz")
+    achados, acima = {}, 0
+    for pagina in range(1, MAX_PAGINAS + 1):
+        time.sleep(random.uniform(9, 16))
+        discos = extrair(baixar_com_paciencia(pagina, url=URL_JAZZ))
+        if not discos:
+            break
+        for d in discos:
+            if d["preco"] < LIMITE:
+                achados.setdefault(d["asin"], d)
+        menor = min(d["preco"] for d in discos)
+        print(f"jazz, página {pagina}: {len(discos)} discos, menor R$ {menor:.2f}, total {len(achados)}")
+        acima = acima + 1 if menor >= LIMITE else 0
+        if acima >= 2:
+            break
+    return achados
+
+
 def anotar(discos, achados, vistos):
     """Junta a cada disco quando ele apareceu e, se tiver, a nota do Metacritic e o Bandcamp."""
     for d in discos:
@@ -206,6 +232,18 @@ def buscar(progresso=None):
     if len(achados) < 50:
         raise Falhou(f"só {len(achados)} discos: provavelmente bloqueado, mantendo os dados antigos")
 
+    # Jazz: se a Amazon bloquear aqui, a lista principal vale assim mesmo e o
+    # Dig! Jazz fica com a lista da busca anterior.
+    try:
+        jazz = coletar_jazz(progresso)
+    except Exception as e:
+        avisar(f"jazz ficou para a próxima busca: {e}")
+        anterior = json.loads(DADOS.read_text()) if DADOS.exists() else {}
+        jazz = {a: achados[a] for a in anterior.get("jazz", []) if a in achados}
+    # Um disco de jazz que a lista geral não trouxe também está abaixo do limite.
+    for asin, d in jazz.items():
+        achados.setdefault(asin, d)
+
     agora = dt.datetime.now(FUSO).isoformat(timespec="minutes")
     for asin in achados:
         vistos.setdefault(asin, agora)
@@ -223,6 +261,7 @@ def buscar(progresso=None):
         "primeira": primeira,
         "paginas": getattr(coletar, "paginas", 0),
         "novos": [d["asin"] for d in novos],
+        "jazz": [d["asin"] for d in discos if d["asin"] in jazz],
         "discos": discos,
     }, ensure_ascii=False, indent=0) + "\n")
     return len(discos), len(novos)

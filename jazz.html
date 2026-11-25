@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dig! Jazz · DigAmazon</title>
+<script>
+  // aplica o tema escolhido antes de pintar a página, para não piscar
+  try { const t = localStorage.getItem("digamazon.tema"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='11' fill='%23103028'/%3E%3Ccircle cx='24' cy='24' r='15' fill='none' stroke='%23c8f850' stroke-width='3'/%3E%3Ccircle cx='24' cy='24' r='4' fill='%23c8f850'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css?v=3.3">
+</head>
+<body>
+<header class="topo">
+  <div class="linha">
+    <div>
+      <h1><a href="./" class="logo"><i class="marca" aria-hidden="true"></i><b>Dig<span>Amazon</span></b></a></h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <nav class="acoes-topo"><a class="link-topo" href="./">← DigAmazon</a></nav>
+  </div>
+  <div id="status" role="status"></div>
+</header>
+
+<main>
+  <h2>Dig! Jazz <span class="conta" id="conta"></span></h2>
+  <p class="nota">Vinis de jazz abaixo de R$ 150 na Amazon.</p>
+  <div class="filtros">
+    <input id="filtro" type="search" placeholder="Disco ou artista" autocomplete="off">
+    <select id="ordem" aria-label="Ordenar">
+      <option value="preco">Menor preço</option>
+      <option value="preco-desc">Maior preço</option>
+      <option value="nome">A–Z</option>
+    </select>
+  </div>
+  <div class="grade" id="discos"></div>
+</main>
+
+<footer class="rodape">DigAmazon · versão 3.3</footer>
+
+<script src="comum.js?v=3.3"></script>
+<script>
+// Estrela de 10 pontas; gira por trás do texto, que fica parado.
+const ESTRELA = '<svg viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,0 61.4,14.8 79.4,9.5 79.9,28.3 97.6,34.5 87,50 97.6,65.5 79.9,71.7 79.4,90.5 61.4,85.2 50,100 38.6,85.2 20.6,90.5 20.1,71.7 2.4,65.5 13,50 2.4,34.5 20.1,28.3 20.6,9.5 38.6,14.8"/></svg><b>Dig!</b>';
+
+function card(d, novo) {
+  const a = document.createElement("a");
+  a.className = "disco" + (novo ? " novo" : "");
+  a.href = "https://www.amazon.com.br/dp/" + d.asin;
+  a.target = "_blank"; a.rel = "noopener";
+  const capa = document.createElement("div"); capa.className = "capa";
+  if (d.foto) { const img = document.createElement("img"); img.src = capaGrande(d.foto); img.alt = ""; img.loading = "lazy"; capa.append(img); }
+  const info = document.createElement("div"); info.className = "info";
+  const t = document.createElement("div"); t.className = "titulo"; t.textContent = d.titulo;
+  const ar = document.createElement("div"); ar.className = "artista"; ar.textContent = [d.artista, d.ano].filter(Boolean).join(" · ");
+  const p = document.createElement("div"); p.className = "preco"; p.textContent = real(d.preco);
+  info.append(t, ar, p); a.append(capa, info);
+  if (d.nota >= DIG) {
+    const selo = document.createElement("span"); selo.className = "dig"; selo.innerHTML = ESTRELA;
+    selo.title = `Metacritic ${d.nota}`; selo.setAttribute("aria-label", `Dig! Nota ${d.nota} no Metacritic`);
+    a.append(selo);
+  }
+  return a;
+}
+
+const ORDENS = {
+  preco: (a, b) => a.preco - b.preco,
+  "preco-desc": (a, b) => b.preco - a.preco,
+  nome: (a, b) => (a.artista || a.titulo).localeCompare(b.artista || b.titulo, "pt-BR"),
+};
+function mostrar() {
+  const jazz = new Set(dados.jazz || []), novos = new Set(dados.novos);
+  const q = $("filtro").value.trim().toLowerCase();
+  const todos = dados.discos.filter(d => jazz.has(d.asin));
+  const lista = todos.filter(d => !q || (d.titulo + " " + d.artista).toLowerCase().includes(q)).sort(ORDENS[$("ordem").value]);
+  $("conta").textContent = q ? `${lista.length} de ${todos.length}` : (todos.length ? `${todos.length}` : "");
+  const g = $("discos");
+  if (lista.length) g.replaceChildren(...lista.map(d => card(d, novos.has(d.asin))));
+  else g.innerHTML = `<div class="vazio">${q ? "Nenhum disco com esse nome."
+    : "A lista de jazz aparece depois da próxima busca automática."}</div>`;
+}
+
+$("filtro").addEventListener("input", mostrar);
+$("ordem").addEventListener("change", mostrar);
+iniciar();
+</script>
+</body>
+</html>
