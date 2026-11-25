@@ -40,8 +40,11 @@ h1 span { color: var(--accent); }
 .logo b { font-weight: inherit; }
 .sub .data { white-space: nowrap; }
 /* Link para a outra página, no canto do topo */
-.acoes-topo { margin-left: auto; display: flex; align-items: center; gap: 16px; flex: none; }
-.link-topo { color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.acoes-topo { margin-left: auto; display: flex; align-items: center; gap: 4px; flex: none; }
+.link-topo { color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 600; white-space: nowrap; padding: 6px 10px; }
+/* Página aberta: o item do menu fica com as cores do botão (verde e limão). */
+.link-topo[aria-current="page"] { background: var(--btn); color: var(--on-btn); }
+.link-topo[aria-current="page"]:hover { text-decoration: none; }
 .topo .logo { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 9px; }
 /* Marca: quadrado verde-escuro com um disco limão, no estilo do ícone do FootyLogos */
 .marca { flex: none; width: 30px; height: 30px; border-radius: 7px; background: var(--marca) radial-gradient(circle, var(--lime) 0 3px, transparent 3.5px 7px, var(--lime) 7.5px 9.5px, transparent 10px); }
@@ -121,5 +124,10 @@ dialog button.principal { background: var(--btn); color: var(--on-btn); border-c
   .grade { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 23px; }
   h2 { font-size: 21px; }
-  .acoes-topo { gap: 12px; }
+}
+/* No celular os três itens não cabem ao lado do logo: o menu desce para uma linha própria. */
+@media (max-width: 640px) {
+  .linha { flex-wrap: wrap; row-gap: 10px; }
+  .acoes-topo { margin-left: 0; width: 100%; }
+  .link-topo { font-size: 13.5px; padding: 6px 9px; }
 }
