@@ -1,10 +1,10 @@
 {
  "estado": "buscando",
- "mensagem": "[Errno 60] Operation timed out",
- "quando": "2026-11-26T09:30:45-03:00",
- "etapa": "esperando",
+ "mensagem": "",
+ "quando": "2026-11-26T09:34:48-03:00",
+ "etapa": "buscando",
  "pagina": 7,
  "previstas": 90,
- "discos": 0,
+ "discos": 112,
  "inicio": "2026-11-26T09:00:13-03:00"
 }
